@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc12="http://www.w3.org/2003/05/soap-encoding" xmlns:soapenc11="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://webservice.mpac.nari.com" xmlns:soap11="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope" targetNamespace="http://webservice.mpac.nari.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://webservice.mpac.nari.com">
+      <xsd:element name="getSealInfo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getSealInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="uploadLabel">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="uploadLabelResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="sendCtrlTaskFinishFlag">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="sendCtrlTaskFinishFlagResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="uploadSealsCode">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="uploadSealsCodeResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="sendTaskFinishFlag">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="sendTaskFinishFlagResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="applyAssistEquip">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="applyAssistEquipResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getDETedTestData">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getDETedTestDataResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="setResults">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="setResultsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getMachineHandInfo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getMachineHandInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="applyEquip">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="applyEquipResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getDBConnInfo">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="getDBConnInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="equipCheckInfo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="equipCheckInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="boxCheckInfo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="boxCheckInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="upBoxInputPileDet">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="upBoxInputPileDetResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getAlarm">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getAlarmResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="uploadPackInfo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="uploadPackInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="applyAssistEquipRequest">
+    <wsdl:part name="parameters" element="tns:applyAssistEquip" />
+  </wsdl:message>
+  <wsdl:message name="equipCheckInfoResponse">
+    <wsdl:part name="parameters" element="tns:equipCheckInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDETedTestDataRequest">
+    <wsdl:part name="parameters" element="tns:getDETedTestData" />
+  </wsdl:message>
+  <wsdl:message name="applyEquipRequest">
+    <wsdl:part name="parameters" element="tns:applyEquip" />
+  </wsdl:message>
+  <wsdl:message name="getMachineHandInfoResponse">
+    <wsdl:part name="parameters" element="tns:getMachineHandInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendTaskFinishFlagResponse">
+    <wsdl:part name="parameters" element="tns:sendTaskFinishFlagResponse" />
+  </wsdl:message>
+  <wsdl:message name="uploadSealsCodeResponse">
+    <wsdl:part name="parameters" element="tns:uploadSealsCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDETedTestDataResponse">
+    <wsdl:part name="parameters" element="tns:getDETedTestDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendCtrlTaskFinishFlagRequest">
+    <wsdl:part name="parameters" element="tns:sendCtrlTaskFinishFlag" />
+  </wsdl:message>
+  <wsdl:message name="uploadSealsCodeRequest">
+    <wsdl:part name="parameters" element="tns:uploadSealsCode" />
+  </wsdl:message>
+  <wsdl:message name="setResultsRequest">
+    <wsdl:part name="parameters" element="tns:setResults" />
+  </wsdl:message>
+  <wsdl:message name="upBoxInputPileDetResponse">
+    <wsdl:part name="parameters" element="tns:upBoxInputPileDetResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDBConnInfoResponse">
+    <wsdl:part name="parameters" element="tns:getDBConnInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="boxCheckInfoResponse">
+    <wsdl:part name="parameters" element="tns:boxCheckInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendTaskFinishFlagRequest">
+    <wsdl:part name="parameters" element="tns:sendTaskFinishFlag" />
+  </wsdl:message>
+  <wsdl:message name="boxCheckInfoRequest">
+    <wsdl:part name="parameters" element="tns:boxCheckInfo" />
+  </wsdl:message>
+  <wsdl:message name="getAlarmResponse">
+    <wsdl:part name="parameters" element="tns:getAlarmResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDBConnInfoRequest">
+    <wsdl:part name="parameters" element="tns:getDBConnInfo" />
+  </wsdl:message>
+  <wsdl:message name="applyAssistEquipResponse">
+    <wsdl:part name="parameters" element="tns:applyAssistEquipResponse" />
+  </wsdl:message>
+  <wsdl:message name="uploadPackInfoRequest">
+    <wsdl:part name="parameters" element="tns:uploadPackInfo" />
+  </wsdl:message>
+  <wsdl:message name="upBoxInputPileDetRequest">
+    <wsdl:part name="parameters" element="tns:upBoxInputPileDet" />
+  </wsdl:message>
+  <wsdl:message name="equipCheckInfoRequest">
+    <wsdl:part name="parameters" element="tns:equipCheckInfo" />
+  </wsdl:message>
+  <wsdl:message name="getMachineHandInfoRequest">
+    <wsdl:part name="parameters" element="tns:getMachineHandInfo" />
+  </wsdl:message>
+  <wsdl:message name="getSealInfoRequest">
+    <wsdl:part name="parameters" element="tns:getSealInfo" />
+  </wsdl:message>
+  <wsdl:message name="uploadPackInfoResponse">
+    <wsdl:part name="parameters" element="tns:uploadPackInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="uploadLabelResponse">
+    <wsdl:part name="parameters" element="tns:uploadLabelResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSealInfoResponse">
+    <wsdl:part name="parameters" element="tns:getSealInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendCtrlTaskFinishFlagResponse">
+    <wsdl:part name="parameters" element="tns:sendCtrlTaskFinishFlagResponse" />
+  </wsdl:message>
+  <wsdl:message name="uploadLabelRequest">
+    <wsdl:part name="parameters" element="tns:uploadLabel" />
+  </wsdl:message>
+  <wsdl:message name="applyEquipResponse">
+    <wsdl:part name="parameters" element="tns:applyEquipResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAlarmRequest">
+    <wsdl:part name="parameters" element="tns:getAlarm" />
+  </wsdl:message>
+  <wsdl:message name="setResultsResponse">
+    <wsdl:part name="parameters" element="tns:setResultsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DetectServicePortType">
+    <wsdl:operation name="getSealInfo">
+      <wsdl:input name="getSealInfoRequest" message="tns:getSealInfoRequest" />
+      <wsdl:output name="getSealInfoResponse" message="tns:getSealInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="uploadLabel">
+      <wsdl:input name="uploadLabelRequest" message="tns:uploadLabelRequest" />
+      <wsdl:output name="uploadLabelResponse" message="tns:uploadLabelResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="sendCtrlTaskFinishFlag">
+      <wsdl:input name="sendCtrlTaskFinishFlagRequest" message="tns:sendCtrlTaskFinishFlagRequest" />
+      <wsdl:output name="sendCtrlTaskFinishFlagResponse" message="tns:sendCtrlTaskFinishFlagResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="uploadSealsCode">
+      <wsdl:input name="uploadSealsCodeRequest" message="tns:uploadSealsCodeRequest" />
+      <wsdl:output name="uploadSealsCodeResponse" message="tns:uploadSealsCodeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="sendTaskFinishFlag">
+      <wsdl:input name="sendTaskFinishFlagRequest" message="tns:sendTaskFinishFlagRequest" />
+      <wsdl:output name="sendTaskFinishFlagResponse" message="tns:sendTaskFinishFlagResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="applyAssistEquip">
+      <wsdl:input name="applyAssistEquipRequest" message="tns:applyAssistEquipRequest" />
+      <wsdl:output name="applyAssistEquipResponse" message="tns:applyAssistEquipResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getDETedTestData">
+      <wsdl:input name="getDETedTestDataRequest" message="tns:getDETedTestDataRequest" />
+      <wsdl:output name="getDETedTestDataResponse" message="tns:getDETedTestDataResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="setResults">
+      <wsdl:input name="setResultsRequest" message="tns:setResultsRequest" />
+      <wsdl:output name="setResultsResponse" message="tns:setResultsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getMachineHandInfo">
+      <wsdl:input name="getMachineHandInfoRequest" message="tns:getMachineHandInfoRequest" />
+      <wsdl:output name="getMachineHandInfoResponse" message="tns:getMachineHandInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="applyEquip">
+      <wsdl:input name="applyEquipRequest" message="tns:applyEquipRequest" />
+      <wsdl:output name="applyEquipResponse" message="tns:applyEquipResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getDBConnInfo">
+      <wsdl:input name="getDBConnInfoRequest" message="tns:getDBConnInfoRequest" />
+      <wsdl:output name="getDBConnInfoResponse" message="tns:getDBConnInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="equipCheckInfo">
+      <wsdl:input name="equipCheckInfoRequest" message="tns:equipCheckInfoRequest" />
+      <wsdl:output name="equipCheckInfoResponse" message="tns:equipCheckInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="boxCheckInfo">
+      <wsdl:input name="boxCheckInfoRequest" message="tns:boxCheckInfoRequest" />
+      <wsdl:output name="boxCheckInfoResponse" message="tns:boxCheckInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="upBoxInputPileDet">
+      <wsdl:input name="upBoxInputPileDetRequest" message="tns:upBoxInputPileDetRequest" />
+      <wsdl:output name="upBoxInputPileDetResponse" message="tns:upBoxInputPileDetResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getAlarm">
+      <wsdl:input name="getAlarmRequest" message="tns:getAlarmRequest" />
+      <wsdl:output name="getAlarmResponse" message="tns:getAlarmResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="uploadPackInfo">
+      <wsdl:input name="uploadPackInfoRequest" message="tns:uploadPackInfoRequest" />
+      <wsdl:output name="uploadPackInfoResponse" message="tns:uploadPackInfoResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DetectServiceHttpBinding" type="tns:DetectServicePortType">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getSealInfo">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getSealInfoRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getSealInfoResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadLabel">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="uploadLabelRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="uploadLabelResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendCtrlTaskFinishFlag">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="sendCtrlTaskFinishFlagRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="sendCtrlTaskFinishFlagResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadSealsCode">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="uploadSealsCodeRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="uploadSealsCodeResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendTaskFinishFlag">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="sendTaskFinishFlagRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="sendTaskFinishFlagResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="applyAssistEquip">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="applyAssistEquipRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="applyAssistEquipResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDETedTestData">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getDETedTestDataRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getDETedTestDataResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setResults">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="setResultsRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setResultsResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMachineHandInfo">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getMachineHandInfoRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getMachineHandInfoResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="applyEquip">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="applyEquipRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="applyEquipResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDBConnInfo">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getDBConnInfoRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getDBConnInfoResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="equipCheckInfo">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="equipCheckInfoRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="equipCheckInfoResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="boxCheckInfo">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="boxCheckInfoRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="boxCheckInfoResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="upBoxInputPileDet">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="upBoxInputPileDetRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="upBoxInputPileDetResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAlarm">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getAlarmRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getAlarmResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadPackInfo">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="uploadPackInfoRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="uploadPackInfoResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DetectService">
+    <wsdl:port name="DetectServiceHttpPort" binding="tns:DetectServiceHttpBinding">
+      <wsdlsoap:address location="http://10.167.179.43:9000/InterfaceWS/InterfaceBusiness/services/DetectService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

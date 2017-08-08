@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E560ABE8-CB10-4C34-BE57-658019CD68DE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CLDC_Comm</RootNamespace>
+    <AssemblyName>CLDC_Comm</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <StartupObject>
+    </StartupObject>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\DLL\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\DLL\CLDC_Comm.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Resource\Client\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CLDC_CTNProtocol">
+      <HintPath>..\Dll\CLDC_CTNProtocol.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ADOX, Version=2.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resource\Client\DLL\Interop.ADOX.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.JRO, Version=2.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resource\Client\DLL\Interop.JRO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.SpeechLib, Version=5.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resource\Client\DLL\Interop.SpeechLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\CLDC_Dispatcher\bin\x86\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resource\Client\DLL\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseClass\SingletonBase.cs" />
+    <Compile Include="ConsoleHelper.cs" />
+    <Compile Include="DesignTools\ModeMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignTools\ModeMenu.Designer.cs">
+      <DependentUpon>ModeMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignTools\配色工具.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignTools\配色工具.Designer.cs">
+      <DependentUpon>配色工具.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawXieBo\CCLBackground.cs" />
+    <Compile Include="DrawXieBo\CCLCurve.cs" />
+    <Compile Include="DrawXieBo\CClEnumLib.cs" />
+    <Compile Include="DrawXieBo\CCLHarmonious.cs" />
+    <Compile Include="DrawXieBo\CCLLine.cs" />
+    <Compile Include="DrawXieBo\CCLLineGroup.cs" />
+    <Compile Include="Enum\Cus_CommandType.cs" />
+    <Compile Include="Enum\Cus_CommunType.cs" />
+    <Compile Include="Enum\Cus_MultiboardType.cs" />
+    <Compile Include="Enum\Cus_PowerErrorLevel.cs" />
+    <Compile Include="Enum\Cus_CheckStaute.cs" />
+    <Compile Include="Enum\Cus_Clfs.cs" />
+    <Compile Include="Enum\Cus_CostControlItem.cs" />
+    <Compile Include="Enum\Cus_DBTableName.cs" />
+    <Compile Include="Enum\Cus_DgnItem.cs" />
+    <Compile Include="Enum\Cus_DgnProcotolPara.cs" />
+    <Compile Include="Enum\Cus_EncryptionMachineType.cs" />
+    <Compile Include="Enum\Cus_EquipMentType.cs" />
+    <Compile Include="Enum\Cus_ErrorAccordItem.cs" />
+    <Compile Include="Enum\Cus_ErrorID.cs" />
+    <Compile Include="Enum\Cus_EventLogItem.cs" />
+    <Compile Include="Enum\Cus_FAGroup.cs" />
+    <Compile Include="Enum\Cus_FeiLv.cs" />
+    <Compile Include="Enum\Cus_FreezeItem.cs" />
+    <Compile Include="Enum\Cus_FunctionItem.cs" />
+    <Compile Include="Enum\Cus_Gygy.cs" />
+    <Compile Include="Enum\Cus_LossBoardType.cs" />
+    <Compile Include="Enum\Cus_MenuEventID.cs" />
+    <Compile Include="Enum\Cus_MessageType.cs" />
+    <Compile Include="Enum\Cus_MeterDataType.cs" />
+    <Compile Include="Enum\Cus_MeterResultPriID.cs" />
+    <Compile Include="Enum\Cus_MeterType_DianziOrGanYing.cs" />
+    <Compile Include="Enum\Cus_NetState.cs" />
+    <Compile Include="Enum\Cus_PowerFangXiang.cs" />
+    <Compile Include="Enum\Cus_PowerType.cs" />
+    <Compile Include="Enum\Cus_PowerWorkFlow.cs" />
+    <Compile Include="Enum\Cus_PowerYuanJian.cs" />
+    <Compile Include="Enum\Cus_PrepareItem.cs" />
+    <Compile Include="Enum\Cus_PulseChannelNo.cs" />
+    <Compile Include="Enum\Cus_PulseType.cs" />
+    <Compile Include="Enum\Cus_RemoteProtocol.cs" />
+    <Compile Include="Enum\Cus_SeiBiaoType.cs" />
+    <Compile Include="Enum\Cus_SetStatus.cs" />
+    <Compile Include="Enum\Cus_StdMeterDangWei.cs" />
+    <Compile Include="Enum\Cus_StdMeterScreen.cs" />
+    <Compile Include="Enum\Cus_StdPulseType.cs" />
+    <Compile Include="Enum\Cus_stVerifyStep.cs" />
+    <Compile Include="Enum\Cus_TaiType.cs" />
+    <Compile Include="Enum\Cus_TestType.cs" />
+    <Compile Include="Enum\Cus_UpdateKeyType.cs" />
+    <Compile Include="Enum\Cus_VerifyMode.cs" />
+    <Compile Include="Enum\Cus_VolFallOffType.cs" />
+    <Compile Include="Enum\Cus_WcType.cs" />
+    <Compile Include="Enum\Cus_WorkStatus.cs" />
+    <Compile Include="Enum\Cus_Ywg.cs" />
+    <Compile Include="Enum\Cus_ZouZiMethod.cs" />
+    <Compile Include="Enum\Cus_CarrierType.cs" />
+    <Compile Include="Enum\Cus_UIXXType.cs" />
+    <Compile Include="Enum\Cus_LightSelect.cs" />
+    <Compile Include="Enum\Cus_BothRoad.cs" />
+    <Compile Include="Enum\Cus_IChannelType.cs" />
+    <Compile Include="Enum\Cus_WcMeterStatus.cs" />
+    <Compile Include="Enum\Cus_WuchaType.cs" />
+    <Compile Include="Enum\Cus_LightType.cs" />
+    <Compile Include="Enum\Cus_ButtonEventID.cs" />
+    <Compile Include="Enum\Cus_ReadParaType.cs" />
+    <Compile Include="Enum\EmEquipmentType.cs" />
+    <Compile Include="Enum\Cus_EncryptionTrialType.cs" />
+    <Compile Include="Enum\Cus_EncryptionUserControlType.cs" />
+    <Compile Include="Enum\Cus_TaskType.cs" />
+    <Compile Include="Enum\Cus_PhaseType.cs" />
+    <Compile Include="Enum\Cus_PowerPhase.cs" />
+    <Compile Include="Exceptions\EquipmentControlException.cs" />
+    <Compile Include="LoginSettingData.cs" />
+    <Compile Include="Log\Log4netHelper.cs" />
+    <Compile Include="MessageArgs\BasicErrorArgs.cs" />
+    <Compile Include="MessageArgs\DgnArgs.cs" />
+    <Compile Include="MessageArgs\EventConstandArgs.cs" />
+    <Compile Include="MessageArgs\EventMessageArgs.cs" />
+    <Compile Include="MessageArgs\EventProcessArgs.cs" />
+    <Compile Include="MessageArgs\ExceptionEx.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\ArrayHelper.cs" />
+    <Compile Include="Win32Api\Win32Api.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DesignTools\ModeMenu.resx">
+      <DependentUpon>ModeMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignTools\配色工具.resx">
+      <DependentUpon>配色工具.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\button3.bmp" />
+    <Content Include="Resources\Cancel.ico" />
+    <Content Include="Resources\Ok.ico" />
+    <Content Include="Resources\Top_Right.bmp" />
+    <None Include="AppConfigs\log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Speechs\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

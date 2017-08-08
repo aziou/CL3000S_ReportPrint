@@ -1,0 +1,2521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{44715076-14BA-4EE8-A796-6D0F309B3793}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CLDC_MeterUI</RootNamespace>
+    <AssemblyName>CLDC_MeterUI</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Resource\Client\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Resource\Client\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CLDC_CTNProtocol">
+      <HintPath>..\Dll\CLDC_CTNProtocol.dll</HintPath>
+    </Reference>
+    <Reference Include="CLDC_DeviceDriver">
+      <HintPath>..\CLDC_DeviceDriver\obj\x86\Debug\CLDC_DeviceDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="CLDC_Dispatcher">
+      <HintPath>..\CLDC_Dispatcher\bin\x86\Debug\CLDC_Dispatcher.dll</HintPath>
+    </Reference>
+    <Reference Include="CLDC_Encryption">
+      <HintPath>..\CLDC_Encryption\obj\x86\Debug\CLDC_Encryption.dll</HintPath>
+    </Reference>
+    <Reference Include="CLDC_VerifyAdapter">
+      <HintPath>..\CLDC_VerifyAdapter\obj\x86\Debug\CLDC_VerifyAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\CLDC_MeterProtocolSetup\bin\x86\Debug\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\CLDC_Dispatcher\bin\x86\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PropertyGridEx">
+      <HintPath>..\CLDC_MeterProtocolSetup\bin\x86\Debug\PropertyGridEx.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLZDataGridView\Cell\DataGridViewCellExHelper.cs" />
+    <Compile Include="CLZDataGridView\Cell\DataGridViewTextBoxCellEx.cs" />
+    <Compile Include="CLZDataGridView\Column\DataGridViewTextBoxColumnEx.cs" />
+    <Compile Include="CLZDataGridView\DataGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CLZDataGridView\Interface\ISpannedCell.cs" />
+    <Compile Include="DisplayInfo\Base.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\Base.Designer.cs">
+      <DependentUpon>Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\CheckInsulation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\CheckInsulation.Designer.cs">
+      <DependentUpon>CheckInsulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayCarrier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayCarrier.Designer.cs">
+      <DependentUpon>DisplayCarrier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayConnProtocol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayConnProtocol.Designer.cs">
+      <DependentUpon>DisplayConnProtocol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayContrast.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayContrast.Designer.cs">
+      <DependentUpon>DisplayContrast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayCost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayCost.Designer.cs">
+      <DependentUpon>DisplayCost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayDateTimeErr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayDateTimeErr.Designer.cs">
+      <DependentUpon>DisplayDateTimeErr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayDgn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayDgn.Designer.cs">
+      <DependentUpon>DisplayDgn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayErrAccord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayErrAccord.Designer.cs">
+      <DependentUpon>DisplayErrAccord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayESAMDataReturn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayESAMDataReturn.Designer.cs">
+      <DependentUpon>DisplayESAMDataReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayEventLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayEventLog.Designer.cs">
+      <DependentUpon>DisplayEventLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayFreeze.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayFreeze.Designer.cs">
+      <DependentUpon>DisplayFreeze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayFunction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayFunction.Designer.cs">
+      <DependentUpon>DisplayFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayMeterDetailInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayMeterDetailInfo.designer.cs">
+      <DependentUpon>DisplayMeterDetailInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayOver.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayOver.Designer.cs">
+      <DependentUpon>DisplayOver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayQiQianDong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayQiQianDong.Designer.cs">
+      <DependentUpon>DisplayQiQianDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayRatePeriod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayRatePeriod.Designer.cs">
+      <DependentUpon>DisplayRatePeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayReadPeriod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayReadPeriod.Designer.cs">
+      <DependentUpon>DisplayReadPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayRegister.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayRegister.Designer.cs">
+      <DependentUpon>DisplayRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplaySdtq.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplaySdtq.Designer.cs">
+      <DependentUpon>DisplaySdtq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplaySpecial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplaySpecial.Designer.cs">
+      <DependentUpon>DisplaySpecial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayUpDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayUpDown.Designer.cs">
+      <DependentUpon>DisplayUpDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayWcAndPianCha.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayWcAndPianCha.Designer.cs">
+      <DependentUpon>DisplayWcAndPianCha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayWC_Normal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayWC_Normal.Designer.cs">
+      <DependentUpon>DisplayWC_Normal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayWC_PianCha.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayWC_PianCha.Designer.cs">
+      <DependentUpon>DisplayWC_PianCha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayWGJC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayWGJC.Designer.cs">
+      <DependentUpon>DisplayWGJC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayZZ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\DisplayZZ.Designer.cs">
+      <DependentUpon>DisplayZZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayInfo\MeterBasicInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayInfo\MeterBasicInfo.Designer.cs">
+      <DependentUpon>MeterBasicInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendedPanel\BufferPaintingCtrl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExtendedPanel\CaptionCtrl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExtendedPanel\CaptionDraggingEventArgs.cs" />
+    <Compile Include="ExtendedPanel\ChangeStyleEventArgs.cs" />
+    <Compile Include="ExtendedPanel\CollapseAnimation.cs" />
+    <Compile Include="ExtendedPanel\CornerCtrl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExtendedPanel\DirectionCtrl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExtendedPanel\Enums.cs" />
+    <Compile Include="ExtendedPanel\ExtendedPanel\ExtendedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExtendedPanel\ExtendedPanel\ExtendedPanel.Designer.cs">
+      <DependentUpon>ExtendedPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendedPanel\WIN32Wrapper.cs" />
+    <Compile Include="MeterProtocolSetup\ConsoleRedirect.cs" />
+    <Compile Include="MeterProtocolSetup\Frm_Setup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeterProtocolSetup\Frm_Setup.Designer.cs">
+      <DependentUpon>Frm_Setup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeterProtocolSetup\Program.cs" />
+    <Compile Include="MeterProtocolSetup\ProtocolView\A1600.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MeterProtocolSetup\ProtocolView\A1600.Designer.cs">
+      <DependentUpon>A1600.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeterProtocolSetup\ProtocolView\BaseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MeterProtocolSetup\ProtocolView\BaseControl.Designer.cs">
+      <DependentUpon>BaseControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeterProtocolSetup\ProtocolView\DLT645.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MeterProtocolSetup\ProtocolView\DLT645.Designer.cs">
+      <DependentUpon>DLT645.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeterProtocolSetup\ProtocolView\DLT6452007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MeterProtocolSetup\ProtocolView\DLT6452007.Designer.cs">
+      <DependentUpon>DLT6452007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeterProtocolSetup\ProtocolView\EDMIMK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MeterProtocolSetup\ProtocolView\EDMIMK.Designer.cs">
+      <DependentUpon>EDMIMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeterProtocolSetup\ProtocolView\IEC1107St.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MeterProtocolSetup\ProtocolView\IEC1107St.Designer.cs">
+      <DependentUpon>IEC1107St.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monitor.designer.cs">
+      <DependentUpon>Monitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MotorDelayTimeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MotorDelayTimeControl.designer.cs">
+      <DependentUpon>MotorDelayTimeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="PublicControls\UI_ClientTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PublicControls\UI_ClientTable.Designer.cs">
+      <DependentUpon>UI_ClientTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowCheckStep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowCheckStep.Designer.cs">
+      <DependentUpon>ShowCheckStep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckDataSend.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckDataSend.Designer.cs">
+      <DependentUpon>CheckDataSend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckDataShowALL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckDataShowALL.Designer.cs">
+      <DependentUpon>CheckDataShowALL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckInfrared.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckInfrared.designer.cs">
+      <DependentUpon>CheckInfrared.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckInsulation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckInsulation.Designer.cs">
+      <DependentUpon>CheckInsulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckLoadRecord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckLoadRecord.designer.cs">
+      <DependentUpon>CheckLoadRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckPrePareTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckPrePareTest.Designer.cs">
+      <DependentUpon>CheckPrePareTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckWGJC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckWGJC.Designer.cs">
+      <DependentUpon>CheckWGJC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewChangeLocalMode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewChangeLocalMode.Designer.cs">
+      <DependentUpon>ViewChangeLocalMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewChangeRemoteMode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewChangeRemoteMode.Designer.cs">
+      <DependentUpon>ViewChangeRemoteMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewControlFunction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewControlFunction.Designer.cs">
+      <DependentUpon>ViewControlFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewDirectCloseTrip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewDirectCloseTrip.Designer.cs">
+      <DependentUpon>ViewDirectCloseTrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewKeyRecoveryData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewKeyRecoveryData.Designer.cs">
+      <DependentUpon>ViewKeyRecoveryData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewLeftEnergyAccuracy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewLeftEnergyAccuracy.Designer.cs">
+      <DependentUpon>ViewLeftEnergyAccuracy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewLoadSwitchData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewLoadSwitchData.Designer.cs">
+      <DependentUpon>ViewLoadSwitchData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewOverdrawData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewOverdrawData.Designer.cs">
+      <DependentUpon>ViewOverdrawData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewPresetContent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewPresetContent.designer.cs">
+      <DependentUpon>ViewPresetContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewUserCardInitUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewUserCardInitUser.Designer.cs">
+      <DependentUpon>ViewUserCardInitUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewRatesTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewRatesTime.Designer.cs">
+      <DependentUpon>ViewRatesTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewStepTariff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewStepTariff.Designer.cs">
+      <DependentUpon>ViewStepTariff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventPassCurrent_485.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventPassCurrent_485.Designer.cs">
+      <DependentUpon>ViewEventPassCurrent_485.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventOverVoltage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventOverVoltage.Designer.cs">
+      <DependentUpon>ViewEventOverVoltage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventUnderVoltage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventUnderVoltage.Designer.cs">
+      <DependentUpon>ViewEventUnderVoltage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventStopPhase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventStopPhase.Designer.cs">
+      <DependentUpon>ViewEventStopPhase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventLoseCurrent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventLoseCurrent.Designer.cs">
+      <DependentUpon>ViewEventLoseCurrent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventStopCurrent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventStopCurrent.Designer.cs">
+      <DependentUpon>ViewEventStopCurrent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventOverCurrent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventOverCurrent.Designer.cs">
+      <DependentUpon>ViewEventOverCurrent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventOverLoad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventOverLoad.Designer.cs">
+      <DependentUpon>ViewEventOverLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventReversePhaseI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventReversePhaseI.Designer.cs">
+      <DependentUpon>ViewEventReversePhaseI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventImbalanceU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventImbalanceU.Designer.cs">
+      <DependentUpon>ViewEventImbalanceU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventImbalanceI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventImbalanceI.Designer.cs">
+      <DependentUpon>ViewEventImbalanceI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventPrograme.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventPrograme.Designer.cs">
+      <DependentUpon>ViewEventPrograme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventACdump.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventACdump.Designer.cs">
+      <DependentUpon>ViewEventACdump.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventCalibrationTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventCalibrationTime.Designer.cs">
+      <DependentUpon>ViewEventCalibrationTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventClearDemand.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventClearDemand.Designer.cs">
+      <DependentUpon>ViewEventClearDemand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventLoseFullVoltage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventLoseFullVoltage.Designer.cs">
+      <DependentUpon>ViewEventLoseFullVoltage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventClearEvent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventClearEvent.Designer.cs">
+      <DependentUpon>ViewEventClearEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventReverseTrend.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventReverseTrend.Designer.cs">
+      <DependentUpon>ViewEventReverseTrend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventTransDemand.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventTransDemand.Designer.cs">
+      <DependentUpon>ViewEventTransDemand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventTransPF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventTransPF.Designer.cs">
+      <DependentUpon>ViewEventTransPF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventReversePower.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventReversePower.Designer.cs">
+      <DependentUpon>ViewEventReversePower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\LoadRecordDataView\ViewLoadRecord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\LoadRecordDataView\ViewLoadRecord.Designer.cs">
+      <DependentUpon>ViewLoadRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\FrmMotorDelaySetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\FrmMotorDelaySetting.Designer.cs">
+      <DependentUpon>FrmMotorDelaySetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\Frm_ModuleTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\Frm_ModuleTest.Designer.cs">
+      <DependentUpon>Frm_ModuleTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\FunctionDataView\ViewMaxDemand.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\FunctionDataView\ViewMaxDemand.Designer.cs">
+      <DependentUpon>ViewMaxDemand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\InfraredDataView\ViewInfrared.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\InfraredDataView\ViewInfrared.Designer.cs">
+      <DependentUpon>ViewInfrared.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\ModuleTestControl\Ctr_ErrPlate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\ModuleTestControl\Ctr_ErrPlate.Designer.cs">
+      <DependentUpon>Ctr_ErrPlate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\ProtocolControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\ProtocolControl.Designer.cs">
+      <DependentUpon>ProtocolControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeViewCheckStyel\Enumerations\CheckBoxState.cs" />
+    <Compile Include="TreeViewCheckStyel\ThreeStateTreeNodes.cs" />
+    <Compile Include="TreeViewCheckStyel\ThreeStateTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewCheckStyel\ThreeStateTreeView.Designer.cs">
+      <DependentUpon>ThreeStateTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_AboutUs.designer.cs">
+      <DependentUpon>UI_AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_AutoPowerControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_AutoPowerControl.Designer.cs">
+      <DependentUpon>UI_AutoPowerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Client.designer.cs">
+      <DependentUpon>UI_Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_ClientFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_ClientFrame.designer.cs">
+      <DependentUpon>UI_ClientFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\AuditingSave.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\AuditingSave.Designer.cs">
+      <DependentUpon>AuditingSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\Base.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\Base.Designer.cs">
+      <DependentUpon>Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckBase.Designer.cs">
+      <DependentUpon>CheckBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckCarrier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckCarrier.designer.cs">
+      <DependentUpon>CheckCarrier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckConnProtocol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckConnProtocol.designer.cs">
+      <DependentUpon>CheckConnProtocol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckCostControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckCostControl.designer.cs">
+      <DependentUpon>CheckCostControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckDgn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckDgn.Designer.cs">
+      <DependentUpon>CheckDgn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckErr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckErr.Designer.cs">
+      <DependentUpon>CheckErr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckErrAccord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckErrAccord.Designer.cs">
+      <DependentUpon>CheckErrAccord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckEventLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckEventLog.designer.cs">
+      <DependentUpon>CheckEventLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckFreeze.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckFreeze.designer.cs">
+      <DependentUpon>CheckFreeze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckFunction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckFunction.designer.cs">
+      <DependentUpon>CheckFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckPowerConsume.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckPowerConsume.Designer.cs">
+      <DependentUpon>CheckPowerConsume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckQianDong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckQianDong.Designer.cs">
+      <DependentUpon>CheckQianDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckQiDong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckQiDong.Designer.cs">
+      <DependentUpon>CheckQiDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckTeShu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckTeShu.Designer.cs">
+      <DependentUpon>CheckTeShu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckYuRe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckYuRe.Designer.cs">
+      <DependentUpon>CheckYuRe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckZouZi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CheckDataView\CheckZouZi.Designer.cs">
+      <DependentUpon>CheckZouZi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\ControlBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\ControlBox.Designer.cs">
+      <DependentUpon>ControlBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewESAMDataReturn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewESAMDataReturn.Designer.cs">
+      <DependentUpon>ViewESAMDataReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewKeyUpdateData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewKeyUpdateData.Designer.cs">
+      <DependentUpon>ViewKeyUpdateData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewUserControlData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewUserControlData.Designer.cs">
+      <DependentUpon>ViewUserControlData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewWaringData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CostControlDataView\ViewWaringData.Designer.cs">
+      <DependentUpon>ViewWaringData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewDateTimeErr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewDateTimeErr.Designer.cs">
+      <DependentUpon>ViewDateTimeErr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewDianLiang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewDianLiang.Designer.cs">
+      <DependentUpon>ViewDianLiang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewGpsTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewGpsTime.Designer.cs">
+      <DependentUpon>ViewGpsTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewMaxXl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewMaxXl.Designer.cs">
+      <DependentUpon>ViewMaxXl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewMemoryCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewMemoryCheck.Designer.cs">
+      <DependentUpon>ViewMemoryCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewSdtq.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewSdtq.Designer.cs">
+      <DependentUpon>ViewSdtq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewRegister.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewRegister.Designer.cs">
+      <DependentUpon>ViewRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewRatePeriod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewRatePeriod.Designer.cs">
+      <DependentUpon>ViewRatePeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\CarrierDataView\ViewCarrier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\CarrierDataView\ViewCarrier.Designer.cs">
+      <DependentUpon>ViewCarrier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewReadPeriod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\DgnDataView\ViewReadPeriod.Designer.cs">
+      <DependentUpon>ViewReadPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\ErrAccordView\ViewContrast.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\ErrAccordView\ViewContrast.Designer.cs">
+      <DependentUpon>ViewContrast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\ErrAccordView\ViewErrAccord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\ErrAccordView\ViewErrAccord.Designer.cs">
+      <DependentUpon>ViewErrAccord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\ErrAccordView\ViewOver.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\ErrAccordView\ViewOver.Designer.cs">
+      <DependentUpon>ViewOver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\ErrAccordView\ViewUpDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\ErrAccordView\ViewUpDown.Designer.cs">
+      <DependentUpon>ViewUpDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventClearEnergy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventClearEnergy.Designer.cs">
+      <DependentUpon>ViewEventClearEnergy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventLoseVoltage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventLoseVoltage.Designer.cs">
+      <DependentUpon>ViewEventLoseVoltage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventOpenButtonCover.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventOpenButtonCover.Designer.cs">
+      <DependentUpon>ViewEventOpenButtonCover.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventOpenMeterCover.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventOpenMeterCover.Designer.cs">
+      <DependentUpon>ViewEventOpenMeterCover.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventReversePhaseU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\EventLogDataView\ViewEventReversePhaseU.Designer.cs">
+      <DependentUpon>ViewEventReversePhaseU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\FrameYouSee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\FrameYouSee.Designer.cs">
+      <DependentUpon>FrameYouSee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\FreezeDataView\ViewDataAppoint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\FreezeDataView\ViewDataAppoint.Designer.cs">
+      <DependentUpon>ViewDataAppoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\FreezeDataView\ViewDataDay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\FreezeDataView\ViewDataDay.Designer.cs">
+      <DependentUpon>ViewDataDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\FreezeDataView\ViewDataInstant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\FreezeDataView\ViewDataInstant.Designer.cs">
+      <DependentUpon>ViewDataInstant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\FreezeDataView\ViewDataTiming.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\FreezeDataView\ViewDataTiming.Designer.cs">
+      <DependentUpon>ViewDataTiming.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\FreezeDataView\ViewDataWholePoint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\FreezeDataView\ViewDataWholePoint.Designer.cs">
+      <DependentUpon>ViewDataWholePoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\FrmNewFA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\FrmNewFA.Designer.cs">
+      <DependentUpon>FrmNewFA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\Frm_PROTOCOL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\Frm_PROTOCOL.Designer.cs">
+      <DependentUpon>Frm_PROTOCOL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\FunctionDataView\ViewComputation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\FunctionDataView\ViewComputation.Designer.cs">
+      <DependentUpon>ViewComputation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\FunctionDataView\ViewPulseOutPut.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\FunctionDataView\ViewPulseOutPut.Designer.cs">
+      <DependentUpon>ViewPulseOutPut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\FunctionDataView\ViewRatePeriod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\FunctionDataView\ViewRatePeriod.Designer.cs">
+      <DependentUpon>ViewRatePeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\FunctionDataView\ViewShowFunction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\FunctionDataView\ViewShowFunction.Designer.cs">
+      <DependentUpon>ViewShowFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\FunctionDataView\ViewTimingData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\FunctionDataView\ViewTimingData.Designer.cs">
+      <DependentUpon>ViewTimingData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\InputPara_V80Style.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\InputPara_V80Style.Designer.cs">
+      <DependentUpon>InputPara_V80Style.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\ShowDataView\FaParam\DgnPramView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\ShowDataView\FaParam\DgnPramView.Designer.cs">
+      <DependentUpon>DgnPramView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\ShowDataView\FaParam\QianDongPrjView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\ShowDataView\FaParam\QianDongPrjView.Designer.cs">
+      <DependentUpon>QianDongPrjView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\ShowDataView\FaParam\QiDongPrjView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\ShowDataView\FaParam\QiDongPrjView.Designer.cs">
+      <DependentUpon>QiDongPrjView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\ShowDataView\FaParam\WcPrjView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\ShowDataView\FaParam\WcPrjView.Designer.cs">
+      <DependentUpon>WcPrjView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\ShowDataView\Frm_CheckParamView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\ShowDataView\Frm_CheckParamView.Designer.cs">
+      <DependentUpon>Frm_CheckParamView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\ShowDataView\Frm_ControlMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\ShowDataView\Frm_ControlMessage.Designer.cs">
+      <DependentUpon>Frm_ControlMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\ShowDataView\Frm_DnbDataView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\ShowDataView\Frm_DnbDataView.Designer.cs">
+      <DependentUpon>Frm_DnbDataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\ShowDataView\Frm_DnbInfoView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\ShowDataView\Frm_DnbInfoView.Designer.cs">
+      <DependentUpon>Frm_DnbInfoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\ShowDataView\StateBarCircle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\ShowDataView\StateBarCircle.Designer.cs">
+      <DependentUpon>StateBarCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\ShowDataView\StepUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\ShowDataView\StepUserControl.Designer.cs">
+      <DependentUpon>StepUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\StatesShow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\StatesShow.Designer.cs">
+      <DependentUpon>StatesShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Detection_New\UI_ElectShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Detection_New\UI_ElectShow.designer.cs">
+      <DependentUpon>UI_ElectShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjCostControl\CostControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjCostControl\CostControlBase.Designer.cs">
+      <DependentUpon>CostControlBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjCostControl\CostControlInitPurse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjCostControl\CostControlInitPurse.Designer.cs">
+      <DependentUpon>CostControlInitPurse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjCostControl\CostPresetContentSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjCostControl\CostPresetContentSettings.designer.cs">
+      <DependentUpon>CostPresetContentSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjCostControl\CostRatesTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjCostControl\CostRatesTime.Designer.cs">
+      <DependentUpon>CostRatesTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjCostControl\CostStepTariff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjCostControl\CostStepTariff.Designer.cs">
+      <DependentUpon>CostStepTariff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjCostControl\NotParmPrj.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjCostControl\NotParmPrj.Designer.cs">
+      <DependentUpon>NotParmPrj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjCostControl\CostControlFunction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjCostControl\CostControlFunction.Designer.cs">
+      <DependentUpon>CostControlFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjDgn\DgnChangePassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjDgn\DgnChangePassword.Designer.cs">
+      <DependentUpon>DgnChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjDgn\DgnBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjDgn\DgnBase.Designer.cs">
+      <DependentUpon>DgnBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjDgn\DgnDayCheckTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjDgn\DgnDayCheckTime.Designer.cs">
+      <DependentUpon>DgnDayCheckTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjDgn\DgnDlMemory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjDgn\DgnDlMemory.Designer.cs">
+      <DependentUpon>DgnDlMemory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjDgn\DgnReadDl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjDgn\DgnReadDl.Designer.cs">
+      <DependentUpon>DgnReadDl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjDgn\DgnSdtq.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjDgn\DgnSdtq.Designer.cs">
+      <DependentUpon>DgnSdtq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjDgn\DgnZdxl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjDgn\DgnZdxl.Designer.cs">
+      <DependentUpon>DgnZdxl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjDgn\NotParmPrj.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjDgn\NotParmPrj.Designer.cs">
+      <DependentUpon>NotParmPrj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjEventLog\EventLogBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjEventLog\EventLogBase.Designer.cs">
+      <DependentUpon>EventLogBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjEventLog\NotParmPrj.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjEventLog\NotParmPrj.Designer.cs">
+      <DependentUpon>NotParmPrj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjEventLog\ELLosePhase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjEventLog\ELLosePhase.Designer.cs">
+      <DependentUpon>ELLosePhase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjEventLog\ELLoseComm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjEventLog\ELLoseComm.Designer.cs">
+      <DependentUpon>ELLoseComm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjFreeze\FreezeBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjFreeze\FreezeBase.Designer.cs">
+      <DependentUpon>FreezeBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjFreeze\FreezeTiming.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjFreeze\FreezeTiming.Designer.cs">
+      <DependentUpon>FreezeTiming.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjFreeze\NotParmPrj.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjFreeze\NotParmPrj.Designer.cs">
+      <DependentUpon>NotParmPrj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjFunction\FunctionComm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjFunction\FunctionComm.Designer.cs">
+      <DependentUpon>FunctionComm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjFunction\FcShow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjFunction\FcShow.Designer.cs">
+      <DependentUpon>FcShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjFunction\FunctionBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjFunction\FunctionBase.Designer.cs">
+      <DependentUpon>FunctionBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjFunction\NotParmPrj.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjFunction\NotParmPrj.Designer.cs">
+      <DependentUpon>NotParmPrj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjPrePare\NotParmPrj.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjPrePare\NotParmPrj.Designer.cs">
+      <DependentUpon>NotParmPrj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjPrePare\PreBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjPrePare\PreBase.Designer.cs">
+      <DependentUpon>PreBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjPrePare\PreDayClock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\PrjPrePare\PreDayClock.Designer.cs">
+      <DependentUpon>PreDayClock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\UI_InsulationItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\UI_InsulationItem.Designer.cs">
+      <DependentUpon>UI_InsulationItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\UI_QianDongPrj.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\UI_QianDongPrj.Designer.cs">
+      <DependentUpon>UI_QianDongPrj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\UI_SpecialPrj.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\UI_SpecialPrj.Designer.cs">
+      <DependentUpon>UI_SpecialPrj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\UI_ZouZiFeiLv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\UI_ZouZiFeiLv.Designer.cs">
+      <DependentUpon>UI_ZouZiFeiLv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\WcFaSetup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\WcFaSetup.Designer.cs">
+      <DependentUpon>WcFaSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\WcLimitSetup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\PrjUI\WcLimitSetup.Designer.cs">
+      <DependentUpon>WcLimitSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_Carrier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_Carrier.designer.cs">
+      <DependentUpon>UI_Carrier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_ConnProtocolCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_ConnProtocolCheck.Designer.cs">
+      <DependentUpon>UI_ConnProtocolCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_CostControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_CostControl.designer.cs">
+      <DependentUpon>UI_CostControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_DataSendForRelay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_DataSendForRelay.Designer.cs">
+      <DependentUpon>UI_DataSendForRelay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_Dgn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_Dgn.Designer.cs">
+      <DependentUpon>UI_Dgn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_ErrAccord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_ErrAccord.designer.cs">
+      <DependentUpon>UI_ErrAccord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_Error.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_Error.Designer.cs">
+      <DependentUpon>UI_Error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_EventLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_EventLog.designer.cs">
+      <DependentUpon>UI_EventLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_Freeze.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_Freeze.designer.cs">
+      <DependentUpon>UI_Freeze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_Function.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_Function.designer.cs">
+      <DependentUpon>UI_Function.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_Infrared.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_Infrared.designer.cs">
+      <DependentUpon>UI_Infrared.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_Insulation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_Insulation.Designer.cs">
+      <DependentUpon>UI_Insulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_LoadRecord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_LoadRecord.Designer.cs">
+      <DependentUpon>UI_LoadRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_PowerConsume.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_PowerConsume.Designer.cs">
+      <DependentUpon>UI_PowerConsume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_PrepareTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_PrepareTest.Designer.cs">
+      <DependentUpon>UI_PrepareTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_QianDong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_QianDong.Designer.cs">
+      <DependentUpon>UI_QianDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_QiDong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_QiDong.Designer.cs">
+      <DependentUpon>UI_QiDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_Special.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_Special.Designer.cs">
+      <DependentUpon>UI_Special.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_TableBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_TableBase.Designer.cs">
+      <DependentUpon>UI_TableBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_TableBaseNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_TableBaseNew.Designer.cs">
+      <DependentUpon>UI_TableBaseNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_WGJC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_WGJC.Designer.cs">
+      <DependentUpon>UI_WGJC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_YuRe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_YuRe.Designer.cs">
+      <DependentUpon>UI_YuRe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_ZouZi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_FA\FAPrj\UI_ZouZi.Designer.cs">
+      <DependentUpon>UI_ZouZi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\Frm_FaSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_FA\Frm_FaSetup.Designer.cs">
+      <DependentUpon>Frm_FaSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\Frm_XieBoSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_FA\Frm_XieBoSetup.Designer.cs">
+      <DependentUpon>Frm_XieBoSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FA\UI_FA_WcLimit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_FA\UI_FA_WcLimit.Designer.cs">
+      <DependentUpon>UI_FA_WcLimit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_FrmColsShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_FrmColsShow.Designer.cs">
+      <DependentUpon>UI_FrmColsShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Login.designer.cs">
+      <DependentUpon>UI_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_ShowCOMData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_ShowCOMData.designer.cs">
+      <DependentUpon>UI_ShowCOMData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_SystemManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_SystemManager.designer.cs">
+      <DependentUpon>UI_SystemManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Waiting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Waiting.designer.cs">
+      <DependentUpon>Waiting.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DisplayInfo\Base.resx">
+      <DependentUpon>Base.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\CheckInsulation.resx">
+      <DependentUpon>CheckInsulation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayCarrier.resx">
+      <DependentUpon>DisplayCarrier.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayConnProtocol.resx">
+      <DependentUpon>DisplayConnProtocol.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayContrast.resx">
+      <DependentUpon>DisplayContrast.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayCost.resx">
+      <DependentUpon>DisplayCost.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayDateTimeErr.resx">
+      <DependentUpon>DisplayDateTimeErr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayDgn.resx">
+      <DependentUpon>DisplayDgn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayErrAccord.resx">
+      <DependentUpon>DisplayErrAccord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayESAMDataReturn.resx">
+      <DependentUpon>DisplayESAMDataReturn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayEventLog.resx">
+      <DependentUpon>DisplayEventLog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayFreeze.resx">
+      <DependentUpon>DisplayFreeze.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayFunction.resx">
+      <DependentUpon>DisplayFunction.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayMeterDetailInfo.resx">
+      <DependentUpon>DisplayMeterDetailInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayOver.resx">
+      <DependentUpon>DisplayOver.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayQiQianDong.resx">
+      <DependentUpon>DisplayQiQianDong.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayRatePeriod.resx">
+      <DependentUpon>DisplayRatePeriod.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayReadPeriod.resx">
+      <DependentUpon>DisplayReadPeriod.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayRegister.resx">
+      <DependentUpon>DisplayRegister.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplaySdtq.resx">
+      <DependentUpon>DisplaySdtq.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplaySpecial.resx">
+      <DependentUpon>DisplaySpecial.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayUpDown.resx">
+      <DependentUpon>DisplayUpDown.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayWcAndPianCha.resx">
+      <DependentUpon>DisplayWcAndPianCha.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayWC_Normal.resx">
+      <DependentUpon>DisplayWC_Normal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayWC_PianCha.resx">
+      <DependentUpon>DisplayWC_PianCha.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayWGJC.resx">
+      <DependentUpon>DisplayWGJC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\DisplayZZ.resx">
+      <DependentUpon>DisplayZZ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayInfo\MeterBasicInfo.resx">
+      <DependentUpon>MeterBasicInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtendedPanel\ExtendedPanel\ExtendedPanel.resx">
+      <DependentUpon>ExtendedPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeterProtocolSetup\Frm_Setup.resx">
+      <DependentUpon>Frm_Setup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeterProtocolSetup\ProtocolView\A1600.resx">
+      <DependentUpon>A1600.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeterProtocolSetup\ProtocolView\BaseControl.resx">
+      <DependentUpon>BaseControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeterProtocolSetup\ProtocolView\DLT645.resx">
+      <DependentUpon>DLT645.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeterProtocolSetup\ProtocolView\DLT6452007.resx">
+      <DependentUpon>DLT6452007.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeterProtocolSetup\ProtocolView\EDMIMK.resx">
+      <DependentUpon>EDMIMK.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeterProtocolSetup\ProtocolView\IEC1107St.resx">
+      <DependentUpon>IEC1107St.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monitor.resx">
+      <DependentUpon>Monitor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MotorDelayTimeControl.resx">
+      <DependentUpon>MotorDelayTimeControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PublicControls\UI_ClientTable.resx">
+      <DependentUpon>UI_ClientTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowCheckStep.resx">
+      <DependentUpon>ShowCheckStep.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_AboutUs.resx">
+      <DependentUpon>UI_AboutUs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_AutoPowerControl.resx">
+      <DependentUpon>UI_AutoPowerControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Client.resx">
+      <DependentUpon>UI_Client.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_ClientFrame.resx">
+      <DependentUpon>UI_ClientFrame.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\AuditingSave.resx">
+      <DependentUpon>AuditingSave.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\Base.resx">
+      <DependentUpon>Base.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckBase.resx">
+      <DependentUpon>CheckBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckCarrier.resx">
+      <DependentUpon>CheckCarrier.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckConnProtocol.resx">
+      <DependentUpon>CheckConnProtocol.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckCostControl.resx">
+      <DependentUpon>CheckCostControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckDataSend.resx">
+      <DependentUpon>CheckDataSend.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckDataShowALL.resx">
+      <DependentUpon>CheckDataShowALL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckDgn.resx">
+      <DependentUpon>CheckDgn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckErr.resx">
+      <DependentUpon>CheckErr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckErrAccord.resx">
+      <DependentUpon>CheckErrAccord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckEventLog.resx">
+      <DependentUpon>CheckEventLog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckFreeze.resx">
+      <DependentUpon>CheckFreeze.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckFunction.resx">
+      <DependentUpon>CheckFunction.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckInfrared.resx">
+      <DependentUpon>CheckInfrared.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckInsulation.resx">
+      <DependentUpon>CheckInsulation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckLoadRecord.resx">
+      <DependentUpon>CheckLoadRecord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckPowerConsume.resx">
+      <DependentUpon>CheckPowerConsume.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckPrePareTest.resx">
+      <DependentUpon>CheckPrePareTest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckQianDong.resx">
+      <DependentUpon>CheckQianDong.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckQiDong.resx">
+      <DependentUpon>CheckQiDong.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckTeShu.resx">
+      <DependentUpon>CheckTeShu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckYuRe.resx">
+      <DependentUpon>CheckYuRe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckZouZi.resx">
+      <DependentUpon>CheckZouZi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CheckDataView\CheckWGJC.resx">
+      <DependentUpon>CheckWGJC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\ControlBox.resx">
+      <DependentUpon>ControlBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CostControlDataView\ViewChangeLocalMode.resx">
+      <DependentUpon>ViewChangeLocalMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CostControlDataView\ViewChangeRemoteMode.resx">
+      <DependentUpon>ViewChangeRemoteMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CostControlDataView\ViewControlFunction.resx">
+      <DependentUpon>ViewControlFunction.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CostControlDataView\ViewDirectCloseTrip.resx">
+      <DependentUpon>ViewDirectCloseTrip.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CostControlDataView\ViewESAMDataReturn.resx">
+      <DependentUpon>ViewESAMDataReturn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CostControlDataView\ViewKeyRecoveryData.resx">
+      <DependentUpon>ViewKeyRecoveryData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CostControlDataView\ViewKeyUpdateData.resx">
+      <DependentUpon>ViewKeyUpdateData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CostControlDataView\ViewOverdrawData.resx">
+      <DependentUpon>ViewOverdrawData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CostControlDataView\ViewPresetContent.resx">
+      <DependentUpon>ViewPresetContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CostControlDataView\ViewUserCardInitUser.resx">
+      <DependentUpon>ViewUserCardInitUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CostControlDataView\ViewUserControlData.resx">
+      <DependentUpon>ViewUserControlData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CostControlDataView\ViewWaringData.resx">
+      <DependentUpon>ViewWaringData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CostControlDataView\ViewLeftEnergyAccuracy.resx">
+      <DependentUpon>ViewLeftEnergyAccuracy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CostControlDataView\ViewLoadSwitchData.resx">
+      <DependentUpon>ViewLoadSwitchData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\DgnDataView\ViewDateTimeErr.resx">
+      <DependentUpon>ViewDateTimeErr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\DgnDataView\ViewDianLiang.resx">
+      <DependentUpon>ViewDianLiang.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\DgnDataView\ViewGpsTime.resx">
+      <DependentUpon>ViewGpsTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\DgnDataView\ViewMaxXl.resx">
+      <DependentUpon>ViewMaxXl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\DgnDataView\ViewMemoryCheck.resx">
+      <DependentUpon>ViewMemoryCheck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\DgnDataView\ViewRatesTime.resx">
+      <DependentUpon>ViewRatesTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\DgnDataView\ViewSdtq.resx">
+      <DependentUpon>ViewSdtq.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\DgnDataView\ViewRegister.resx">
+      <DependentUpon>ViewRegister.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\DgnDataView\ViewRatePeriod.resx">
+      <DependentUpon>ViewRatePeriod.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\CarrierDataView\ViewCarrier.resx">
+      <DependentUpon>ViewCarrier.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\DgnDataView\ViewReadPeriod.resx">
+      <DependentUpon>ViewReadPeriod.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\DgnDataView\ViewStepTariff.resx">
+      <DependentUpon>ViewStepTariff.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\ErrAccordView\ViewContrast.resx">
+      <DependentUpon>ViewContrast.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\ErrAccordView\ViewErrAccord.resx">
+      <DependentUpon>ViewErrAccord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\ErrAccordView\ViewOver.resx">
+      <DependentUpon>ViewOver.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\ErrAccordView\ViewUpDown.resx">
+      <DependentUpon>ViewUpDown.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventClearEnergy.resx">
+      <DependentUpon>ViewEventClearEnergy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventLoseVoltage.resx">
+      <DependentUpon>ViewEventLoseVoltage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventOpenButtonCover.resx">
+      <DependentUpon>ViewEventOpenButtonCover.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventOpenMeterCover.resx">
+      <DependentUpon>ViewEventOpenMeterCover.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventPassCurrent_485.resx">
+      <DependentUpon>ViewEventPassCurrent_485.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventReversePhaseU.resx">
+      <DependentUpon>ViewEventReversePhaseU.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventOverVoltage.resx">
+      <DependentUpon>ViewEventOverVoltage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventUnderVoltage.resx">
+      <DependentUpon>ViewEventUnderVoltage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventStopPhase.resx">
+      <DependentUpon>ViewEventStopPhase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventLoseCurrent.resx">
+      <DependentUpon>ViewEventLoseCurrent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventStopCurrent.resx">
+      <DependentUpon>ViewEventStopCurrent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventOverCurrent.resx">
+      <DependentUpon>ViewEventOverCurrent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventOverLoad.resx">
+      <DependentUpon>ViewEventOverLoad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventReversePhaseI.resx">
+      <DependentUpon>ViewEventReversePhaseI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventImbalanceU.resx">
+      <DependentUpon>ViewEventImbalanceU.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventImbalanceI.resx">
+      <DependentUpon>ViewEventImbalanceI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventPrograme.resx">
+      <DependentUpon>ViewEventPrograme.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventACdump.resx">
+      <DependentUpon>ViewEventACdump.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventCalibrationTime.resx">
+      <DependentUpon>ViewEventCalibrationTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventClearDemand.resx">
+      <DependentUpon>ViewEventClearDemand.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventLoseFullVoltage.resx">
+      <DependentUpon>ViewEventLoseFullVoltage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventClearEvent.resx">
+      <DependentUpon>ViewEventClearEvent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventReverseTrend.resx">
+      <DependentUpon>ViewEventReverseTrend.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventTransDemand.resx">
+      <DependentUpon>ViewEventTransDemand.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventTransPF.resx">
+      <DependentUpon>ViewEventTransPF.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\EventLogDataView\ViewEventReversePower.resx">
+      <DependentUpon>ViewEventReversePower.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\LoadRecordDataView\ViewLoadRecord.resx">
+      <DependentUpon>ViewLoadRecord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\FrameYouSee.resx">
+      <DependentUpon>FrameYouSee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\FreezeDataView\ViewDataAppoint.resx">
+      <DependentUpon>ViewDataAppoint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\FreezeDataView\ViewDataDay.resx">
+      <DependentUpon>ViewDataDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\FreezeDataView\ViewDataInstant.resx">
+      <DependentUpon>ViewDataInstant.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\FreezeDataView\ViewDataTiming.resx">
+      <DependentUpon>ViewDataTiming.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\FreezeDataView\ViewDataWholePoint.resx">
+      <DependentUpon>ViewDataWholePoint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\FrmMotorDelaySetting.resx">
+      <DependentUpon>FrmMotorDelaySetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\FrmNewFA.resx">
+      <DependentUpon>FrmNewFA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\Frm_ModuleTest.resx">
+      <DependentUpon>Frm_ModuleTest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\Frm_PROTOCOL.resx">
+      <DependentUpon>Frm_PROTOCOL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\FunctionDataView\ViewComputation.resx">
+      <DependentUpon>ViewComputation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\FunctionDataView\ViewPulseOutPut.resx">
+      <DependentUpon>ViewPulseOutPut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\FunctionDataView\ViewRatePeriod.resx">
+      <DependentUpon>ViewRatePeriod.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\FunctionDataView\ViewShowFunction.resx">
+      <DependentUpon>ViewShowFunction.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\FunctionDataView\ViewTimingData.resx">
+      <DependentUpon>ViewTimingData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\FunctionDataView\ViewMaxDemand.resx">
+      <DependentUpon>ViewMaxDemand.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\InfraredDataView\ViewInfrared.resx">
+      <DependentUpon>ViewInfrared.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\InputPara_V80Style.resx">
+      <DependentUpon>InputPara_V80Style.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\ModuleTestControl\Ctr_ErrPlate.resx">
+      <DependentUpon>Ctr_ErrPlate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\ProtocolControl.resx">
+      <DependentUpon>ProtocolControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\ShowDataView\FaParam\DgnPramView.resx">
+      <DependentUpon>DgnPramView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\ShowDataView\FaParam\QianDongPrjView.resx">
+      <DependentUpon>QianDongPrjView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\ShowDataView\FaParam\QiDongPrjView.resx">
+      <DependentUpon>QiDongPrjView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\ShowDataView\FaParam\WcPrjView.resx">
+      <DependentUpon>WcPrjView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\ShowDataView\Frm_CheckParamView.resx">
+      <DependentUpon>Frm_CheckParamView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\ShowDataView\Frm_ControlMessage.resx">
+      <DependentUpon>Frm_ControlMessage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\ShowDataView\Frm_DnbDataView.resx">
+      <DependentUpon>Frm_DnbDataView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\ShowDataView\Frm_DnbInfoView.resx">
+      <DependentUpon>Frm_DnbInfoView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\ShowDataView\StateBarCircle.resx">
+      <DependentUpon>StateBarCircle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\ShowDataView\StepUserControl.resx">
+      <DependentUpon>StepUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\StatesShow.resx">
+      <DependentUpon>StatesShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Detection_New\UI_ElectShow.resx">
+      <DependentUpon>UI_ElectShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjCostControl\CostControlBase.resx">
+      <DependentUpon>CostControlBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjCostControl\CostControlInitPurse.resx">
+      <DependentUpon>CostControlInitPurse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjCostControl\CostPresetContentSettings.resx">
+      <DependentUpon>CostPresetContentSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjCostControl\CostRatesTime.resx">
+      <DependentUpon>CostRatesTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjCostControl\CostStepTariff.resx">
+      <DependentUpon>CostStepTariff.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjCostControl\NotParmPrj.resx">
+      <DependentUpon>NotParmPrj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjCostControl\CostControlFunction.resx">
+      <DependentUpon>CostControlFunction.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjDgn\DgnChangePassword.resx">
+      <DependentUpon>DgnChangePassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjDgn\DgnBase.resx">
+      <DependentUpon>DgnBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjDgn\DgnDayCheckTime.resx">
+      <DependentUpon>DgnDayCheckTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjDgn\DgnDlMemory.resx">
+      <DependentUpon>DgnDlMemory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjDgn\DgnReadDl.resx">
+      <DependentUpon>DgnReadDl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjDgn\DgnSdtq.resx">
+      <DependentUpon>DgnSdtq.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjDgn\DgnZdxl.resx">
+      <DependentUpon>DgnZdxl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjDgn\NotParmPrj.resx">
+      <DependentUpon>NotParmPrj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjEventLog\EventLogBase.resx">
+      <DependentUpon>EventLogBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjEventLog\NotParmPrj.resx">
+      <DependentUpon>NotParmPrj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjEventLog\ELLosePhase.resx">
+      <DependentUpon>ELLosePhase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjEventLog\ELLoseComm.resx">
+      <DependentUpon>ELLoseComm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjFreeze\FreezeBase.resx">
+      <DependentUpon>FreezeBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjFreeze\FreezeTiming.resx">
+      <DependentUpon>FreezeTiming.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjFreeze\NotParmPrj.resx">
+      <DependentUpon>NotParmPrj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjFunction\FunctionComm.resx">
+      <DependentUpon>FunctionComm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjFunction\FcShow.resx">
+      <DependentUpon>FcShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjFunction\FunctionBase.resx">
+      <DependentUpon>FunctionBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjFunction\NotParmPrj.resx">
+      <DependentUpon>NotParmPrj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\PrjPrePare\PreBase.resx">
+      <DependentUpon>PreBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\UI_InsulationItem.resx">
+      <DependentUpon>UI_InsulationItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\UI_QianDongPrj.resx">
+      <DependentUpon>UI_QianDongPrj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\UI_SpecialPrj.resx">
+      <DependentUpon>UI_SpecialPrj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\UI_ZouZiFeiLv.resx">
+      <DependentUpon>UI_ZouZiFeiLv.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\WcFaSetup.resx">
+      <DependentUpon>WcFaSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\PrjUI\WcLimitSetup.resx">
+      <DependentUpon>WcLimitSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_Carrier.resx">
+      <DependentUpon>UI_Carrier.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_ConnProtocolCheck.resx">
+      <DependentUpon>UI_ConnProtocolCheck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_CostControl.resx">
+      <DependentUpon>UI_CostControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_DataSendForRelay.resx">
+      <DependentUpon>UI_DataSendForRelay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_Dgn.resx">
+      <DependentUpon>UI_Dgn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_ErrAccord.resx">
+      <DependentUpon>UI_ErrAccord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_Error.resx">
+      <DependentUpon>UI_Error.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_EventLog.resx">
+      <DependentUpon>UI_EventLog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_Freeze.resx">
+      <DependentUpon>UI_Freeze.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_Function.resx">
+      <DependentUpon>UI_Function.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_Infrared.resx">
+      <DependentUpon>UI_Infrared.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_Insulation.resx">
+      <DependentUpon>UI_Insulation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_LoadRecord.resx">
+      <DependentUpon>UI_LoadRecord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_PowerConsume.resx">
+      <DependentUpon>UI_PowerConsume.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_PrepareTest.resx">
+      <DependentUpon>UI_PrepareTest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_QianDong.resx">
+      <DependentUpon>UI_QianDong.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_QiDong.resx">
+      <DependentUpon>UI_QiDong.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_Special.resx">
+      <DependentUpon>UI_Special.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_TableBase.resx">
+      <DependentUpon>UI_TableBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_TableBaseNew.resx">
+      <DependentUpon>UI_TableBaseNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_YuRe.resx">
+      <DependentUpon>UI_YuRe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\FAPrj\UI_ZouZi.resx">
+      <DependentUpon>UI_ZouZi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\Frm_FaSetup.resx">
+      <DependentUpon>Frm_FaSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\Frm_XieBoSetup.resx">
+      <DependentUpon>Frm_XieBoSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FA\UI_FA_WcLimit.resx">
+      <DependentUpon>UI_FA_WcLimit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_FrmColsShow.resx">
+      <DependentUpon>UI_FrmColsShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Login.resx">
+      <DependentUpon>UI_Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_ShowCOMData.resx">
+      <DependentUpon>UI_ShowCOMData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_SystemManager.resx">
+      <DependentUpon>UI_SystemManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Waiting.resx">
+      <DependentUpon>Waiting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MeterProtocolSetup\clou.ico" />
+    <None Include="Resources\BControl.bmp" />
+    <None Include="Resources\autoPowerControl.png" />
+    <None Include="Resources\buju02_54.gif" />
+    <Content Include="Resources\back.png" />
+    <Content Include="Resources\button1.bmp" />
+    <None Include="Resources\dgn.png" />
+    <None Include="Resources\kaishi.png" />
+    <None Include="Resources\lrcs.png" />
+    <None Include="Resources\pzfa.png" />
+    <None Include="Resources\qdsy.png" />
+    <None Include="Resources\qiandsy.png" />
+    <None Include="Resources\shcp.png" />
+    <None Include="Resources\StepStart.png" />
+    <None Include="Resources\DnbButton.png" />
+    <None Include="Resources\LogButton.png" />
+    <None Include="Resources\LogButton.jpg" />
+    <None Include="Resources\DnbButton.jpg" />
+    <None Include="Resources\tiaobiao.png" />
+    <None Include="Resources\tingzhi.png" />
+    <None Include="Resources\tsjd.png" />
+    <None Include="Resources\wcjd.png" />
+    <None Include="Resources\yrsy.png" />
+    <None Include="Resources\zzsy.png" />
+    <None Include="Resources\Style.png" />
+    <None Include="Resources\Style.jpg" />
+    <None Include="Resources\options.png" />
+    <Content Include="Resources\未标题-1.jpg" />
+    <Content Include="Resources\未标题-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CLDC_Comm\CLDC_Comm.csproj">
+      <Project>{E560ABE8-CB10-4C34-BE57-658019CD68DE}</Project>
+      <Name>CLDC_Comm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CLDC_DataCore\CLDC_DataCore.csproj">
+      <Project>{20D2784F-DB83-45AA-B9F0-41D0BC951426}</Project>
+      <Name>CLDC_DataCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

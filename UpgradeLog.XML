@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="CLDC_3000S-H">
+</Property><Property Name="解决方案文件" Value="E:\科陆软件备份\Test3.1.2.x\CLDC_3000S-H.sln">
+</Property><Property Name="Date" Value="2015年12月1日">
+</Property><Property Name="Time" Value="16:32">
+</Property></Properties><Event ErrorLevel="1" Project="CLDC_MeterProtocol" Source="CLDC_MeterProtocol\CLDC_MeterProtocol.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="CLDC_MeterProtocol" Source="CLDC_MeterProtocol\CLDC_MeterProtocol.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="CLDC_MeterProtocol" Source="CLDC_MeterProtocol\CLDC_MeterProtocol.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="CLDC_MeterUI" Source="CLDC_MeterUI\CLDC_MeterUI.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="CLDC_MeterUI" Source="CLDC_MeterUI\CLDC_MeterUI.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="CLDC_MeterUI" Source="CLDC_MeterUI\CLDC_MeterUI.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="CLDC_VerifyAdapter" Source="CLDC_VerifyAdapter\CLDC_VerifyAdapter.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="CLDC_VerifyAdapter" Source="CLDC_VerifyAdapter\CLDC_VerifyAdapter.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="CLDC_VerifyAdapter" Source="CLDC_VerifyAdapter\CLDC_VerifyAdapter.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="CLDC_StartUp" Source="CLDC_StartUp\CLDC_StartUp.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="CLDC_StartUp" Source="CLDC_StartUp\CLDC_StartUp.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="CLDC_StartUp" Source="CLDC_StartUp\CLDC_StartUp.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="CLDC_DataCore" Source="CLDC_DataCore\CLDC_DataCore.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="CLDC_DataCore" Source="CLDC_DataCore\CLDC_DataCore.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="CLDC_DataCore" Source="CLDC_DataCore\CLDC_DataCore.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="CLDC_Encryption" Source="CLDC_Encryption\CLDC_Encryption.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="CLDC_Encryption" Source="CLDC_Encryption\CLDC_Encryption.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="CLDC_Encryption" Source="CLDC_Encryption\CLDC_Encryption.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="CLDC_DeviceDriver" Source="CLDC_DeviceDriver\CLDC_DeviceDriver.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="CLDC_DeviceDriver" Source="CLDC_DeviceDriver\CLDC_DeviceDriver.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="CLDC_DeviceDriver" Source="CLDC_DeviceDriver\CLDC_DeviceDriver.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="CLDC_Comm" Source="CLDC_Comm\CLDC_Comm.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="CLDC_Comm" Source="CLDC_Comm\CLDC_Comm.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="CLDC_Comm" Source="CLDC_Comm\CLDC_Comm.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="CLDC_DataManager" Source="CLDC_DataManager\CLDC_DataManager.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="CLDC_DataManager" Source="CLDC_DataManager\CLDC_DataManager.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="CLDC_DataManager" Source="CLDC_DataManager\CLDC_DataManager.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="CLDC_Report_Standard" Source="CLDC_Report_Standard\CLDC_Report_Standard.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="CLDC_Report_Standard" Source="CLDC_Report_Standard\CLDC_Report_Standard.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="CLDC_Report_Standard" Source="CLDC_Report_Standard\CLDC_Report_Standard.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="CLDC_MeterProtocolSetup" Source="CLDC_MeterProtocolSetup\CLDC_MeterProtocolSetup.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="CLDC_MeterProtocolSetup" Source="CLDC_MeterProtocolSetup\CLDC_MeterProtocolSetup.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="CLDC_MeterProtocolSetup" Source="CLDC_MeterProtocolSetup\CLDC_MeterProtocolSetup.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="CLDC_MisInterface" Source="CLDC_MisInterface\CLDC_MisInterface.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="CLDC_MisInterface" Source="CLDC_MisInterface\CLDC_MisInterface.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="CLDC_MisInterface" Source="CLDC_MisInterface\CLDC_MisInterface.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="CLDC_3000S-H.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="CLDC_3000S-H.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CLDC_MeterProtocol" Source="CLDC_MeterProtocol\CLDC_MeterProtocol.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="CLDC_MeterUI" Source="CLDC_MeterUI\CLDC_MeterUI.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="CLDC_VerifyAdapter" Source="CLDC_VerifyAdapter\app.config" Description="文件已成功转换。所有的 &lt;supportedRuntime&gt; 和 &lt;requiredRuntime&gt; 标记都已移除，以使项目能够用 Visual Studio 2005 生成并运行。">
+</Event><Event ErrorLevel="3" Project="CLDC_VerifyAdapter" Source="CLDC_VerifyAdapter\app.config" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CLDC_StartUp" Source="CLDC_StartUp\CLDC_StartUp.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="CLDC_DataCore" Source="CLDC_DataCore\CLDC_DataCore.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="CLDC_Encryption" Source="CLDC_Encryption\app.config" Description="文件已成功转换。所有的 &lt;supportedRuntime&gt; 和 &lt;requiredRuntime&gt; 标记都已移除，以使项目能够用 Visual Studio 2005 生成并运行。">
+</Event><Event ErrorLevel="3" Project="CLDC_Encryption" Source="CLDC_Encryption\app.config" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CLDC_DeviceDriver" Source="CLDC_DeviceDriver\CLDC_DeviceDriver.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="CLDC_Comm" Source="CLDC_Comm\CLDC_Comm.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="CLDC_DataManager" Source="CLDC_DataManager\CLDC_DataManager.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="CLDC_Report_Standard" Source="CLDC_Report_Standard\CLDC_Report_Standard.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="CLDC_MeterProtocolSetup" Source="CLDC_MeterProtocolSetup\CLDC_MeterProtocolSetup.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="CLDC_MisInterface" Source="CLDC_MisInterface\CLDC_MisInterface.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

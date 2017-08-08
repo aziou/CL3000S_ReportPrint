@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20D2784F-DB83-45AA-B9F0-41D0BC951426}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CLDC_DataCore</RootNamespace>
+    <AssemblyName>CLDC_DataCore</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Resource\Client\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CLDC_CTNProtocol">
+      <HintPath>..\Dll\CLDC_CTNProtocol.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ADOX">
+      <HintPath>..\Resource\Client\Dll\Interop.ADOX.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.JRO">
+      <HintPath>..\Resource\Client\Dll\Interop.JRO.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resource\Client\DLL\log4net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CautionLights\CautionLightManager.cs" />
+    <Compile Include="Check.cs" />
+    <Compile Include="Command\ChangePoint.cs" />
+    <Compile Include="Command\CheckMeter\ChangeOnePoint_Answer.cs" />
+    <Compile Include="Command\CheckMeter\ChangeOnePoint_Ask.cs" />
+    <Compile Include="Command\CheckMeter\ChangePoint_Answer.cs" />
+    <Compile Include="Command\CheckMeter\ChangePoint_Ask.cs" />
+    <Compile Include="Command\CheckMeter\CheckAdjust_Answer.cs" />
+    <Compile Include="Command\CheckMeter\CheckAdjust_Ask.cs" />
+    <Compile Include="Command\CheckMeter\CheckStop_Answer.cs" />
+    <Compile Include="Command\CheckMeter\CheckStop_Ask.cs" />
+    <Compile Include="Command\CheckNow.cs" />
+    <Compile Include="Command\CheckState.cs" />
+    <Compile Include="Command\CheckZZ.cs" />
+    <Compile Include="Command\Command_Answer.cs" />
+    <Compile Include="Command\Command_Ask.cs" />
+    <Compile Include="Command\Control.cs" />
+    <Compile Include="Command\Controlling\RequestControlling_Answer.cs" />
+    <Compile Include="Command\Controlling\RequestControlling_Ask.cs" />
+    <Compile Include="Command\Controlling\RequestNewMeter_Answer.cs" />
+    <Compile Include="Command\Controlling\RequestNewMeter_Ask.cs" />
+    <Compile Include="Command\Controlling\SendControlling_Answer.cs" />
+    <Compile Include="Command\Controlling\SendControlling_Ask.cs" />
+    <Compile Include="Command\EquipmentInfo\SendStdInfo_Answer.cs" />
+    <Compile Include="Command\EquipmentInfo\SendStdInfo_Ask.cs" />
+    <Compile Include="Command\ErrorCounters\ErrorCounterInfo.cs" />
+    <Compile Include="Command\ErrorCounters\ErrorCounter_Answer.cs" />
+    <Compile Include="Command\ErrorCounters\ErrorCounter_Ask.cs" />
+    <Compile Include="Command\Error\SendError_Answer.cs" />
+    <Compile Include="Command\Error\SendError_Ask.cs" />
+    <Compile Include="Command\Error\SendPowerError_Answer.cs" />
+    <Compile Include="Command\Error\SendPowerError_Ask.cs" />
+    <Compile Include="Command\InPutTxm.cs" />
+    <Compile Include="Command\Login2\Login_Answer.cs" />
+    <Compile Include="Command\Login2\Login_Ask.cs" />
+    <Compile Include="Command\Messages\CheckMessage_Answer.cs" />
+    <Compile Include="Command\Messages\CheckMessage_Ask.cs" />
+    <Compile Include="Command\Model\GetMeterData_Answer.cs" />
+    <Compile Include="Command\Model\GetMeterData_Ask.cs" />
+    <Compile Include="Command\Model\GetMeterGroup_Answer.cs" />
+    <Compile Include="Command\Model\GetMeterGroup_Ask.cs" />
+    <Compile Include="Command\Model\SendMeterData_Answer.cs" />
+    <Compile Include="Command\Model\SendMeterData_Ask.cs" />
+    <Compile Include="Command\Model\SendMeterGroup_Answer.cs" />
+    <Compile Include="Command\Model\SendMeterGroup_Ask.cs" />
+    <Compile Include="Command\Plan\CreatePlan_Complated_Answer.cs" />
+    <Compile Include="Command\Plan\CreatePlan_Complated_Ask.cs" />
+    <Compile Include="Command\Plan\GetPlanFile_Answer.cs" />
+    <Compile Include="Command\Plan\GetPlanFile_Ask.cs" />
+    <Compile Include="Command\Plan\SendResult_Answer.cs" />
+    <Compile Include="Command\Plan\SendResult_Ask.cs" />
+    <Compile Include="Command\ReadPara\ReadPara_Answer.cs" />
+    <Compile Include="Command\ReadPara\ReadPara_Ask.cs" />
+    <Compile Include="Command\RequestCmd.cs" />
+    <Compile Include="Command\SaveData\SaveData_Answer.cs" />
+    <Compile Include="Command\SaveData\SaveData_Ask.cs" />
+    <Compile Include="Command\SendMeterData.cs" />
+    <Compile Include="Command\ServerControl.cs" />
+    <Compile Include="Command\Txm\InputParam_Complated_Answer.cs" />
+    <Compile Include="Command\Txm\InputParam_Complated_Ask.cs" />
+    <Compile Include="Command\Txm\InputTxm_Answer.cs" />
+    <Compile Include="Command\Txm\InputTxm_Ask.cs" />
+    <Compile Include="Command\Txm\InputTxm_Complated_Answer.cs" />
+    <Compile Include="Command\Txm\InputTxm_Complated_Ask.cs" />
+    <Compile Include="Command\Txm\InputTxm_Update_Answer.cs" />
+    <Compile Include="Command\Txm\InputTxm_Update_Ask.cs" />
+    <Compile Include="Command\Update\UpdateActiveId_Answer.cs" />
+    <Compile Include="Command\Update\UpdateActiveId_Ask.cs" />
+    <Compile Include="Command\Update\UpdateCheckState_Answer.cs" />
+    <Compile Include="Command\Update\UpdateCheckState_Ask.cs" />
+    <Compile Include="Command\Update\UpdateData_Answer.cs" />
+    <Compile Include="Command\Update\UpdateData_Ask.cs" />
+    <Compile Include="Command\Update\UpdateProgressBar_Answer.cs" />
+    <Compile Include="Command\Update\UpdateProgressBar_Ask.cs" />
+    <Compile Include="Command\Update\UpdateYaoJian_Answer.cs" />
+    <Compile Include="Command\Update\UpdateYaoJian_Ask.cs" />
+    <Compile Include="Command\Update\UpdateRealTimeData_Answer.cs" />
+    <Compile Include="Command\Update\UpdateRealTimeData_Ask.cs" />
+    <Compile Include="Command\VeryfiItemProcess.cs" />
+    <Compile Include="Const\GlobalUnit.cs" />
+    <Compile Include="Const\MessageText.cs" />
+    <Compile Include="Const\StdMeterConst.cs" />
+    <Compile Include="Const\Variable.cs" />
+    <Compile Include="DataBase\clsDataManage.cs" />
+    <Compile Include="DataBase\clsMain.cs" />
+    <Compile Include="DataBase\clsWcLimitDataControl.cs" />
+    <Compile Include="DataBase\clsXmlControl.cs" />
+    <Compile Include="DataBase\CreateMdb.cs" />
+    <Compile Include="DataBase\DataControl.cs" />
+    <Compile Include="DataBase\DbHelperOleDb.cs" />
+    <Compile Include="DataBase\DbHelperOra.cs" />
+    <Compile Include="DataBase\DbHelperSQL.cs" />
+    <Compile Include="DataBase\DESEncrypt.cs" />
+    <Compile Include="DataBase\Page.cs" />
+    <Compile Include="DataBase\PubConstant.cs" />
+    <Compile Include="ErrorCounterInfoContainer.cs" />
+    <Compile Include="Function\Base64.cs" />
+    <Compile Include="Function\BindCombox.cs" />
+    <Compile Include="Function\BindCombox_NewValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Function\BindCombox_NewValue.Designer.cs">
+      <DependentUpon>BindCombox_NewValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\BindGridCellControl.cs" />
+    <Compile Include="Function\BitmapRegion.cs" />
+    <Compile Include="Function\Common.cs" />
+    <Compile Include="Function\ConvertArray.cs" />
+    <Compile Include="Function\DateTimes.cs" />
+    <Compile Include="Function\DoDataTable.cs" />
+    <Compile Include="Function\ErrorLog.cs" />
+    <Compile Include="Function\File.cs" />
+    <Compile Include="Function\Folder.cs" />
+    <Compile Include="Function\InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Function\MessageBoxB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Function\MessageBoxB.Designer.cs">
+      <DependentUpon>MessageBoxB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\MultiHeadDataGridView.cs" />
+    <Compile Include="Function\Net.cs" />
+    <Compile Include="Function\Number.cs" />
+    <Compile Include="Function\QiDQianDFunction.cs" />
+    <Compile Include="Function\RowMergeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Function\RowMergeView.Designer.cs">
+      <DependentUpon>RowMergeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\RunLog.cs" />
+    <Compile Include="Function\RunLogFrame.cs" />
+    <Compile Include="Function\Screen.cs" />
+    <Compile Include="Function\SetControl.cs" />
+    <Compile Include="Function\ThreadCallBack.cs" />
+    <Compile Include="Function\ThreadManage.cs" />
+    <Compile Include="Function\TopWaiting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Function\TopWaiting.Designer.cs">
+      <DependentUpon>TopWaiting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\Waiting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Function\Waiting.designer.cs">
+      <DependentUpon>Waiting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\ICautionLight.cs" />
+    <Compile Include="Interfaces\IControlPanel.cs" />
+    <Compile Include="Interfaces\IDatatomis.cs" />
+    <Compile Include="Interfaces\ILoggingService.cs" />
+    <Compile Include="Interfaces\IMeterInfoUpdateDownEnablecs.cs" />
+    <Compile Include="Interfaces\IReportInterface.cs" />
+    <Compile Include="Model\CarrierProtocol\CarrierProtocolInfo.cs" />
+    <Compile Include="Model\CusModel.cs" />
+    <Compile Include="Model\DgnProtocol\DgnProtocolInfo.cs" />
+    <Compile Include="Model\DnbModel\DnbGroupInfo.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterBasicInfo.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterCarrierData.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterConsistency.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterCostControl.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterDgn.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterDLTData.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterErrAccord.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterErrAccordBase.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterError.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterErrorBase.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterEventLog.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterFK.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterFLSDgn.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterFreeze.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterFunction.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterInfraredData.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterJLgn.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterOtherSoftData.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterPower.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterPrepareTest.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterQdQid.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterResult.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterShow.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterSjJLgn.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterSpecialErr.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterXLgn.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterZZError.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterInsulation.cs" />
+    <Compile Include="Model\DnbModel\DnbInfo\MeterLoadRecord.cs" />
+    <Compile Include="Model\LogModel\LogFrameInfo.cs" />
+    <Compile Include="Model\Plan\Plan_Infrared.cs" />
+    <Compile Include="Model\Plan\Plan_LoadRecord.cs" />
+    <Compile Include="Model\Plan\Plan_PrepareTest.cs" />
+    <Compile Include="Model\Plan\Plan_WcPoint.cs" />
+    <Compile Include="Model\Plan\Plan_QianDong.cs" />
+    <Compile Include="Model\Plan\Plan_QiDong.cs" />
+    <Compile Include="Model\Plan\Plan_YuRe.cs" />
+    <Compile Include="Model\Plan\Model_Plan.cs" />
+    <Compile Include="Model\Plan\PlanModel\Scheme_AdvancePlan.cs" />
+    <Compile Include="Model\Plan\PlanModel\Scheme_AutoGrp.cs" />
+    <Compile Include="Model\Plan\PlanModel\Scheme_Check.cs" />
+    <Compile Include="Model\Plan\PlanModel\Scheme_Consistency.cs" />
+    <Compile Include="Model\Plan\PlanModel\Scheme_Dgn.cs" />
+    <Compile Include="Model\Plan\PlanModel\Scheme_DLTData.cs" />
+    <Compile Include="Model\Plan\PlanModel\Scheme_DynamicParameterList.cs" />
+    <Compile Include="Model\Plan\PlanModel\Scheme_FK.cs" />
+    <Compile Include="Model\Plan\PlanModel\Scheme_Grp.cs" />
+    <Compile Include="Model\Plan\PlanModel\Scheme_Show.cs" />
+    <Compile Include="Model\Plan\PlanModel\Scheme_Spec.cs" />
+    <Compile Include="Model\Plan\PlanModel\Scheme_Wc.cs" />
+    <Compile Include="Model\Plan\PlanModel\Scheme_Zz.cs" />
+    <Compile Include="Model\Plan\Plan_Base.cs" />
+    <Compile Include="Model\Plan\Plan_Carrier.cs" />
+    <Compile Include="Model\Plan\Plan_ConnProtocolCheck.cs" />
+    <Compile Include="Model\Plan\Plan_CostControl.cs" />
+    <Compile Include="Model\Plan\Plan_DataSendForRelay.cs" />
+    <Compile Include="Model\Plan\Plan_Dgn.cs" />
+    <Compile Include="Model\Plan\Plan_ErrAccord.cs" />
+    <Compile Include="Model\Plan\Plan_EventLog.cs" />
+    <Compile Include="Model\Plan\Plan_Freeze.cs" />
+    <Compile Include="Model\Plan\Plan_Function.cs" />
+    <Compile Include="Model\Plan\Plan_Insulation.cs" />
+    <Compile Include="Model\Plan\Plan_PowerConsume.cs" />
+    <Compile Include="Model\Plan\Plan_Scheme_AdvancePlan.cs" />
+    <Compile Include="Model\Plan\Plan_Scheme_AutoGrp.cs" />
+    <Compile Include="Model\Plan\Plan_Scheme_Check.cs" />
+    <Compile Include="Model\Plan\Plan_Scheme_Consistency.cs" />
+    <Compile Include="Model\Plan\Plan_Scheme_Dgn.cs" />
+    <Compile Include="Model\Plan\Plan_Scheme_DLTData.cs" />
+    <Compile Include="Model\Plan\Plan_Scheme_DynamicParameterList.cs" />
+    <Compile Include="Model\Plan\Plan_Scheme_FK.cs" />
+    <Compile Include="Model\Plan\Plan_Scheme_Grp.cs" />
+    <Compile Include="Model\Plan\Plan_Scheme_Show.cs" />
+    <Compile Include="Model\Plan\Plan_Scheme_Spec.cs" />
+    <Compile Include="Model\Plan\Plan_Scheme_Wc.cs" />
+    <Compile Include="Model\Plan\Plan_Scheme_Zz.cs" />
+    <Compile Include="Model\Plan\Plan_Specal.cs" />
+    <Compile Include="Model\Plan\Plan_ZouZi.cs" />
+    <Compile Include="Model\Plan\Plan_WGJC.cs" />
+    <Compile Include="Model\PROTOCOLModel\PROTOCOLinfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SocketModule\ByteBuffer.cs" />
+    <Compile Include="SocketModule\Packet\Packet.cs" />
+    <Compile Include="SocketModule\Packet\RecvPacket.cs" />
+    <Compile Include="SocketModule\Packet\RecvResult.cs" />
+    <Compile Include="SocketModule\Packet\SendPacket.cs" />
+    <Compile Include="SocketModule\SockPool.cs" />
+    <Compile Include="SocketModule\Sock\COM32.cs" />
+    <Compile Include="SocketModule\Sock\Connection.cs" />
+    <Compile Include="SocketModule\Sock\IConnection.cs" />
+    <Compile Include="SocketModule\Sock\UDPClient.cs" />
+    <Compile Include="Struct\St2050Info.cs" />
+    <Compile Include="Struct\StLCType.cs" />
+    <Compile Include="Struct\StCarrierInfo.cs" />
+    <Compile Include="Struct\StCarrierMaster.cs" />
+    <Compile Include="Struct\StPCodeDicForMis.cs" />
+    <Compile Include="Struct\StPlan_Carrier.cs" />
+    <Compile Include="Struct\StColsVisiable.cs" />
+    <Compile Include="Struct\StPlan_ConnProtocol.cs" />
+    <Compile Include="Struct\StCostControlConfig.cs" />
+    <Compile Include="Struct\StPlan_CostControl.cs" />
+    <Compile Include="Struct\StDataFlagInfo.cs" />
+    <Compile Include="Struct\StDataSendForRelay.cs" />
+    <Compile Include="Struct\StDgnConfig.cs" />
+    <Compile Include="Struct\StPlan_Dgn.cs" />
+    <Compile Include="Struct\StEncryptionInfo.cs" />
+    <Compile Include="Struct\StEquipInfo.cs" />
+    <Compile Include="Struct\StErrAccord.cs" />
+    <Compile Include="Struct\StErrAccordbase.cs" />
+    <Compile Include="Struct\StError.cs" />
+    <Compile Include="Struct\StEventLogConfig.cs" />
+    <Compile Include="Struct\StPlan_EventLog.cs" />
+    <Compile Include="Struct\StFAGroup.cs" />
+    <Compile Include="Struct\StFreezeConfig.cs" />
+    <Compile Include="Struct\StPlan_Freeze.cs" />
+    <Compile Include="Struct\StFunctionConfig.cs" />
+    <Compile Include="Struct\StPlan_Function.cs" />
+    <Compile Include="Struct\StIdentityInfo.cs" />
+    <Compile Include="Struct\StInsulationParam.cs" />
+    <Compile Include="Struct\StKeyInfo.cs" />
+    <Compile Include="Struct\StKeyUpdateInfo.cs" />
+    <Compile Include="Struct\StLogin.cs" />
+    <Compile Include="Struct\StPlan_Infrared.cs" />
+    <Compile Include="Struct\StPlan_LoadRecord.cs" />
+    <Compile Include="Struct\StPlan_PrePareTest.cs" />
+    <Compile Include="Struct\StPortInfo.cs" />
+    <Compile Include="Struct\StPower.cs" />
+    <Compile Include="Struct\StPowerConsume.cs" />
+    <Compile Include="Struct\StPowerPramerter.cs" />
+    <Compile Include="Struct\StProgrammingTip.cs" />
+    <Compile Include="Struct\StPlan_QianDong.cs" />
+    <Compile Include="Struct\StPlan_QiDong.cs" />
+    <Compile Include="Struct\Struct.cs" />
+    <Compile Include="Struct\StPlan_SpecalCheck.cs" />
+    <Compile Include="Struct\StSRFrame.cs" />
+    <Compile Include="Struct\StSystemInfo.cs" />
+    <Compile Include="Struct\StTime.cs" />
+    <Compile Include="Struct\StUserInfo.cs" />
+    <Compile Include="Struct\StVerifyMsg.cs" />
+    <Compile Include="Struct\StPlan_WcPoint.cs" />
+    <Compile Include="Struct\StWuChaResult.cs" />
+    <Compile Include="Struct\StXieBo.cs" />
+    <Compile Include="Struct\StPlan_YuRe.cs" />
+    <Compile Include="Struct\StPlan_ZouZi.cs" />
+    <Compile Include="Struct\StZZResult.cs" />
+    <Compile Include="Struct\StWuChaDeal.cs" />
+    <Compile Include="Struct\StPlan_WGJC.cs" />
+    <Compile Include="Struct\StRealTimeMsg.cs" />
+    <Compile Include="SystemModel\Item\csCarrier.cs" />
+    <Compile Include="SystemModel\Item\csColsVisiable.cs" />
+    <Compile Include="SystemModel\Item\csCostControlDic.cs" />
+    <Compile Include="SystemModel\Item\csDataFlagDic.cs" />
+    <Compile Include="SystemModel\Item\csDgnDic.cs" />
+    <Compile Include="SystemModel\Item\csDictionary.cs" />
+    <Compile Include="SystemModel\Item\csEventLogDic.cs" />
+    <Compile Include="SystemModel\Item\csFreezeDic.cs" />
+    <Compile Include="SystemModel\Item\csFunctionDic.cs" />
+    <Compile Include="SystemModel\Item\csGlys.cs" />
+    <Compile Include="SystemModel\Item\csUserInfo.cs" />
+    <Compile Include="SystemModel\Item\csWcLimit.cs" />
+    <Compile Include="SystemModel\Item\csxIbDic.cs" />
+    <Compile Include="SystemModel\Item\csXieBo.cs" />
+    <Compile Include="SystemModel\Item\MethodAndBasis.cs" />
+    <Compile Include="SystemModel\Item\SystemConfigure.cs" />
+    <Compile Include="SystemModel\Item\TestSetting.cs" />
+    <Compile Include="SystemModel\SystemInfo.cs" />
+    <Compile Include="Update\UpdateToTempDB.cs" />
+    <Compile Include="Update\UpdateVerifyData.cs" />
+    <Compile Include="VerifyMsgControl.cs" />
+    <Compile Include="WuChaDeal\AccordError.cs" />
+    <Compile Include="WuChaDeal\BasicError.cs" />
+    <Compile Include="WuChaDeal\MaxXL.cs" />
+    <Compile Include="WuChaDeal\RJSError.cs" />
+    <Compile Include="WuChaDeal\SDTQError.cs" />
+    <Compile Include="WuChaDeal\WindageError.cs" />
+    <Compile Include="WuChaDeal\WuChaBase.cs" />
+    <Compile Include="WuChaDeal\WuChaContext.cs" />
+    <Compile Include="WuChaDeal\XLError.cs" />
+    <Compile Include="WuChaDeal\ZZError.cs" />
+    <Compile Include="RealTimeMsgControl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Function\BindCombox_NewValue.resx">
+      <DependentUpon>BindCombox_NewValue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Function\InputBox.resx">
+      <DependentUpon>InputBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Function\MessageBoxB.resx">
+      <DependentUpon>MessageBoxB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Function\RowMergeView.resx">
+      <DependentUpon>RowMergeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Function\TopWaiting.resx">
+      <DependentUpon>TopWaiting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Function\Waiting.resx">
+      <DependentUpon>Waiting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CLDC_Comm\CLDC_Comm.csproj">
+      <Project>{E560ABE8-CB10-4C34-BE57-658019CD68DE}</Project>
+      <Name>CLDC_Comm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Command\State\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

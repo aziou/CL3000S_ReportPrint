@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{57D1FB9C-8689-45F9-8449-EE923BD0042A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CLDC_Dispatcher</RootNamespace>
+    <AssemblyName>CLDC_Dispatcher</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CLDC_Comm, Version=1.0.5274.29601, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resource\Client\CLDC_Comm.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DispatcherEnum.cs" />
+    <Compile Include="DispatcherManager.cs" />
+    <Compile Include="DispatcherModel.cs" />
+    <Compile Include="Helper\DispatcherHelper.cs" />
+    <Compile Include="Dispatcher\BLL\DSPTCH_CUR_MESSAGE.cs" />
+    <Compile Include="Dispatcher\BLL\DSPTCH_CUR_SCHEME.cs" />
+    <Compile Include="Dispatcher\BLL\DSPTCH_DIC_CHECK.cs" />
+    <Compile Include="Dispatcher\BLL\DSPTCH_EQUIP_INFO.cs" />
+    <Compile Include="Dispatcher\BLL\DSPTCH_LOG.cs" />
+    <Compile Include="Dispatcher\BLL\DSPTCH_SCHEME.cs" />
+    <Compile Include="Dispatcher\BLL\DSPTCH_TASKS.cs" />
+    <Compile Include="Dispatcher\DAL\DSPTCH_CUR_MESSAGE.cs" />
+    <Compile Include="Dispatcher\DAL\DSPTCH_CUR_SCHEME.cs" />
+    <Compile Include="Dispatcher\DAL\DSPTCH_DIC_CHECK.cs" />
+    <Compile Include="Dispatcher\DAL\DSPTCH_EQUIP_INFO.cs" />
+    <Compile Include="Dispatcher\DAL\DSPTCH_LOG.cs" />
+    <Compile Include="Dispatcher\DAL\DSPTCH_SCHEME.cs" />
+    <Compile Include="Dispatcher\DAL\DSPTCH_TASKS.cs" />
+    <Compile Include="Dispatcher\Model\DSPTCH_CUR_MESSAGE.cs" />
+    <Compile Include="Dispatcher\Model\DSPTCH_CUR_SCHEME.cs" />
+    <Compile Include="Dispatcher\Model\DSPTCH_DIC_CHECK.cs" />
+    <Compile Include="Dispatcher\Model\DSPTCH_EQUIP_INFO.cs" />
+    <Compile Include="Dispatcher\Model\DSPTCH_LOG.cs" />
+    <Compile Include="Dispatcher\Model\DSPTCH_SCHEME.cs" />
+    <Compile Include="Dispatcher\Model\DSPTCH_TASKS.cs" />
+    <Compile Include="IDispatcherHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CLDC_DataCore\CLDC_DataCore.csproj">
+      <Project>{20D2784F-DB83-45AA-B9F0-41D0BC951426}</Project>
+      <Name>CLDC_DataCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,695 @@
+未处理的异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToInt16(String value)
+   在 CLDC_DataManager.Frm_SystemInfo.Frm_SystemInfo_Load(Object sender, EventArgs e) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Frm_SystemInfo.cs:行号 153
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+True
+未处理的异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToInt16(String value)
+   在 CLDC_DataManager.Frm_SystemInfo.Frm_SystemInfo_Load(Object sender, EventArgs e) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Frm_SystemInfo.cs:行号 153
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+True
+未处理的异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToInt16(String value)
+   在 CLDC_DataManager.Frm_SystemInfo.Frm_SystemInfo_Load(Object sender, EventArgs e) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Frm_SystemInfo.cs:行号 153
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+True
+未处理的异常
+System.Runtime.InteropServices.COMException (0x800A175D): 无法打开宏储存。
+   在 Microsoft.Office.Interop.Word.Documents.Add(Object& Template, Object& NewTemplate, Object& DocumentType, Object& Visible)
+   在 CLReport_Standard.clsWordControl.LoadDot(String strPath) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_Report_Standard\clsWordControl.cs:行号 127
+   在 CLReport_Standard.ClReport.PrintRpt(List`1 Items, Int32 ReportTao, Int32 ReportType, String Jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_Report_Standard\ClReport.cs:行号 270
+   在 CLDC_DataManager.clsMain.LoadReportScript(List`1 MeterInfo, Int32 PrintReportTao, Int32 PrintType, String jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Class\clsMain.cs:行号 117
+   在 CLDC_DataManager.Frm_Main.Cmd_Print_Click(Object sender, EventArgs e) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Frm_Main.cs:行号 828
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.Run(Form mainForm)
+   在 CLDC_DataManager.Program.Main() 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Program.cs:行号 42
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+True
+未处理的异常
+System.Runtime.InteropServices.COMException (0x800A1554): 文件发生错误。
+   在 Microsoft.Office.Interop.Word.Documents.Add(Object& Template, Object& NewTemplate, Object& DocumentType, Object& Visible)
+   在 CLReport_Standard.clsWordControl.LoadDot(String strPath) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_Report_Standard\clsWordControl.cs:行号 127
+   在 CLReport_Standard.ClReport.PrintRpt(List`1 Items, Int32 ReportTao, Int32 ReportType, String Jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_Report_Standard\ClReport.cs:行号 270
+   在 CLDC_DataManager.clsMain.LoadReportScript(List`1 MeterInfo, Int32 PrintReportTao, Int32 PrintType, String jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Class\clsMain.cs:行号 117
+   在 CLDC_DataManager.Frm_Main.Cmd_Print_Click(Object sender, EventArgs e) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Frm_Main.cs:行号 828
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.Run(Form mainForm)
+   在 CLDC_DataManager.Program.Main() 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Program.cs:行号 42
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+True
+未处理的异常
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CLReport_Standard.clsWordControl.PasteWord(Document WordTemplet, Document CopyDoc) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_Report_Standard\clsWordControl.cs:行号 142
+   在 CLReport_Standard.ClReport.PrintRpt(List`1 Items, Int32 ReportTao, Int32 ReportType, String Jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_Report_Standard\ClReport.cs:行号 281
+   在 CLDC_DataManager.clsMain.LoadReportScript(List`1 MeterInfo, Int32 PrintReportTao, Int32 PrintType, String jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Class\clsMain.cs:行号 117
+   在 CLDC_DataManager.Frm_Main.Cmd_Print_Click(Object sender, EventArgs e) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Frm_Main.cs:行号 828
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.Run(Form mainForm)
+   在 CLDC_DataManager.Program.Main() 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Program.cs:行号 42
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+True
+未处理的异常
+System.Runtime.InteropServices.COMException (0x800A178C): 无法删除范围。
+   在 Microsoft.Office.Interop.Word.Range.set_Text(String prop)
+   在 CLReport_Standard.ClReport.ReplaceReport(Document& Word_DocTemplet, List`1 Group, Int32 Index, Int32 CurPage, Int32 MaxPage, Boolean IsNull) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_Report_Standard\ClReport.cs:行号 607
+   在 CLReport_Standard.ClReport.ReplaceReport(Document& Word_DocTemplet, List`1 Group, Int32 Index, Int32 CurPage, Int32 MaxPage) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_Report_Standard\ClReport.cs:行号 431
+   在 CLReport_Standard.ClReport.GetReportWord(String DocName, List`1 Group, Int32 Index, Int32 CurPage, Int32 MaxPage) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_Report_Standard\ClReport.cs:行号 415
+   在 CLReport_Standard.ClReport.PrintRpt(List`1 Items, Int32 ReportTao, Int32 ReportType, String Jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_Report_Standard\ClReport.cs:行号 277
+   在 CLDC_DataManager.clsMain.LoadReportScript(List`1 MeterInfo, Int32 PrintReportTao, Int32 PrintType, String jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Class\clsMain.cs:行号 117
+   在 CLDC_DataManager.Frm_Main.Cmd_Print_Click(Object sender, EventArgs e) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Frm_Main.cs:行号 828
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.Run(Form mainForm)
+   在 CLDC_DataManager.Program.Main() 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Program.cs:行号 42
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+True
+未处理的异常
+System.Runtime.InteropServices.COMException (0x800A18AC): 不能将文字插入到已合并至另一单元格的表格单元格中。
+   在 Microsoft.Office.Interop.Word.Range.set_Text(String prop)
+   在 CLReport_Standard.ClReport.ReplaceReport(Document& Word_DocTemplet, List`1 Group, Int32 Index, Int32 CurPage, Int32 MaxPage, Boolean IsNull) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_Report_Standard\ClReport.cs:行号 607
+   在 CLReport_Standard.ClReport.ReplaceReport(Document& Word_DocTemplet, List`1 Group, Int32 Index, Int32 CurPage, Int32 MaxPage) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_Report_Standard\ClReport.cs:行号 431
+   在 CLReport_Standard.ClReport.GetReportWord(String DocName, List`1 Group, Int32 Index, Int32 CurPage, Int32 MaxPage) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_Report_Standard\ClReport.cs:行号 415
+   在 CLReport_Standard.ClReport.PrintRpt(List`1 Items, Int32 ReportTao, Int32 ReportType, String Jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_Report_Standard\ClReport.cs:行号 277
+   在 CLDC_DataManager.clsMain.LoadReportScript(List`1 MeterInfo, Int32 PrintReportTao, Int32 PrintType, String jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Class\clsMain.cs:行号 117
+   在 CLDC_DataManager.Frm_Main.Cmd_Print_Click(Object sender, EventArgs e) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Frm_Main.cs:行号 828
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.Run(Form mainForm)
+   在 CLDC_DataManager.Program.Main() 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Program.cs:行号 42
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+True
+未处理的异常
+System.IO.IOException: 文件“C:\Users\screw\Desktop\证书\电能表检定模板(完成).xls”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   在 System.IO.File.OpenWrite(String path)
+   在 CLDC_DataManager.clsExcelControl.InsertErrorExcel(ObservableCollection`1 Error_obser, List`1 EType_Count, List`1 EGLFX_Count, Int32 RowNum) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Class\clsExcelControl.cs:行号 1050
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(List`1 Meter_Id) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Class\clsExcelControl.cs:行号 1372
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(Object ob_List) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Class\clsExcelControl.cs:行号 1061
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart(Object obj)
+True
+未处理的异常
+System.FormatException: 该字符串未被识别为有效的 DateTime。有一个未知单词(从索引 4 处开始)。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value)
+   在 CLDC_DataManager.Frm_Main.Cmd_Print_Click(Object sender, EventArgs e) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Frm_Main.cs:行号 803
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.Run(Form mainForm)
+   在 CLDC_DataManager.Program.Main() 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Program.cs:行号 42
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+True
+未处理的异常
+System.IO.IOException: 文件“C:\Users\screw\Desktop\证书\20170510\05021SF000002016CI000624_检定证书.doc”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalDelete(String path, Boolean checkHost)
+   在 System.IO.File.Delete(String path)
+   在 CLReport_Standard.clsWordControl.SaveDoc(Document Doc, String SavePath) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_Report_Standard\clsWordControl.cs:行号 361
+   在 CLReport_Standard.ClReport.PrintRpt(List`1 Items, Int32 ReportTao, Int32 ReportType, String Jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_Report_Standard\ClReport.cs:行号 297
+   在 CLDC_DataManager.clsMain.LoadReportScript(List`1 MeterInfo, Int32 PrintReportTao, Int32 PrintType, String jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Class\clsMain.cs:行号 117
+   在 CLDC_DataManager.Frm_Main.Cmd_Print_Click(Object sender, EventArgs e) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Frm_Main.cs:行号 978
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.Run(Form mainForm)
+   在 CLDC_DataManager.Program.Main() 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Program.cs:行号 42
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+True
+未处理的异常
+System.UnauthorizedAccessException: 对路径“C:\Users\screw\Desktop\证书”的访问被拒绝。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   在 System.IO.File.Open(String path, FileMode mode)
+   在 CLDC_DataManager.Frm_Main.Accomplish() 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Frm_Main.cs:行号 1642
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(List`1 Meter_Id) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Class\clsExcelControl.cs:行号 1389
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(Object ob_List) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\CLDC_DataManager\Class\clsExcelControl.cs:行号 1061
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart(Object obj)
+True
+未处理的异常
+System.Threading.ThreadStateException: 在可以调用 OLE 之前，必须将当前线程设置为单线程单元(STA)模式。请确保您的 Main 函数带有 STAThreadAttribute 标记。 只有将调试程序附加到该进程才会引发此异常。
+   在 System.Windows.Forms.FileDialog.RunDialog(IntPtr hWndOwner)
+   在 System.Windows.Forms.CommonDialog.ShowDialog(IWin32Window owner)
+   在 System.Windows.Forms.CommonDialog.ShowDialog()
+   在 CLDC_DataManager.clsExcelControl.InsertMeterBaseInfo(Int32 startFromCol, ObservableCollection`1 meterOutPut) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1578
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(List`1 Meter_Id) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1388
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(Object ob_List) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1061
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart(Object obj)
+True
+未处理的异常
+System.Threading.ThreadStateException: 在可以调用 OLE 之前，必须将当前线程设置为单线程单元(STA)模式。请确保您的 Main 函数带有 STAThreadAttribute 标记。 只有将调试程序附加到该进程才会引发此异常。
+   在 System.Windows.Forms.FileDialog.RunDialog(IntPtr hWndOwner)
+   在 System.Windows.Forms.CommonDialog.ShowDialog(IWin32Window owner)
+   在 System.Windows.Forms.CommonDialog.ShowDialog()
+   在 CLDC_DataManager.clsExcelControl.InsertMeterBaseInfo(Int32 startFromCol, ObservableCollection`1 meterOutPut) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1578
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(List`1 Meter_Id) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1388
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(Object ob_List) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1061
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart(Object obj)
+True
+未处理的异常
+System.ComponentModel.Win32Exception (0x80004005): 系统找不到指定的文件。
+   在 System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   在 System.Diagnostics.Process.Start()
+   在 System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   在 System.Diagnostics.Process.Start(String fileName)
+   在 CLDC_DataManager.Frm_Main.Accomplish() 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Frm_Main.cs:行号 1479
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(List`1 Meter_Id) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1389
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(Object ob_List) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1061
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart(Object obj)
+True
+未处理的异常
+System.IO.IOException: 当文件已存在时，无法创建该文件。
+
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.__Error.WinIOError()
+   在 System.IO.File.InternalMove(String sourceFileName, String destFileName, Boolean checkHost)
+   在 System.IO.File.Move(String sourceFileName, String destFileName)
+   在 CLDC_DataManager.clsExcelControl.InsertMeterBaseInfo(Int32 startFromCol, ObservableCollection`1 meterOutPut) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1583
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(List`1 Meter_Id) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1388
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(Object ob_List) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1061
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart(Object obj)
+True
+未处理的异常
+System.IO.IOException: 文件“C:\Users\screw\Desktop\证书\电能表检定模板(完成).xls”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   在 System.IO.File.OpenWrite(String path)
+   在 CLDC_DataManager.clsExcelControl.InsertErrorExcel(ObservableCollection`1 Error_obser, List`1 EType_Count, List`1 EGLFX_Count)
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(List`1 Meter_Id)
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(Object ob_List)
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart(Object obj)
+True
+未处理的异常
+System.IO.IOException: 文件“C:\Users\screw\Desktop\证书\电能表检定模板(完成).xls”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   在 System.IO.File.OpenWrite(String path)
+   在 CLDC_DataManager.clsExcelControl.InsertErrorExcel(ObservableCollection`1 Error_obser, List`1 EType_Count, List`1 EGLFX_Count, Int32 RowNum)
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(List`1 Meter_Id)
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(Object ob_List)
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart(Object obj)
+True
+未处理的异常
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CLDC_DataManager.clsExcelControl.InsertMeterBaseInfo(Int32 startFromCol, ObservableCollection`1 meterOutPut) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1431
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(List`1 Meter_Id) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1388
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(Object ob_List) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1061
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart(Object obj)
+True
+未处理的异常
+System.IO.IOException: 另一个进程正在使用此文件，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.__Error.WinIOError()
+   在 System.IO.File.InternalMove(String sourceFileName, String destFileName, Boolean checkHost)
+   在 System.IO.File.Move(String sourceFileName, String destFileName)
+   在 CLDC_DataManager.clsExcelControl.InsertMeterBaseInfo(Int32 startFromCol, ObservableCollection`1 meterOutPut)
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(List`1 Meter_Id)
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(Object ob_List)
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart(Object obj)
+True
+未处理的异常
+System.IO.IOException: 文件“C:\Users\screw\Desktop\证书\电能表检定模板(完成).xls”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   在 System.IO.File.OpenWrite(String path)
+   在 CLDC_DataManager.clsExcelControl.InsertErrorExcel(ObservableCollection`1 Error_obser, List`1 EType_Count, List`1 EGLFX_Count) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 978
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(List`1 Meter_Id) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1368
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(Object ob_List) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1061
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart(Object obj)
+True
+未处理的异常
+System.IO.IOException: 文件“C:\Users\screw\Desktop\MyExcel.xls”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalDelete(String path, Boolean checkHost)
+   在 System.IO.File.Delete(String path)
+   在 CLDC_DataManager.clsExcelControl.InsertMeterBaseInfo(Int32 startFromCol, ObservableCollection`1 meterOutPut) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1625
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(List`1 Meter_Id) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1392
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(Object ob_List) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1061
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart(Object obj)
+True
+未处理的异常
+System.IO.IOException: 文件“C:\Users\screw\Desktop\MyExcel.xls”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalDelete(String path, Boolean checkHost)
+   在 System.IO.File.Delete(String path)
+   在 CLDC_DataManager.clsExcelControl.InsertMeterBaseInfo(Int32 startFromCol, ObservableCollection`1 meterOutPut) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1631
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(List`1 Meter_Id) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1392
+   在 CLDC_DataManager.clsExcelControl.OutPutAllError(Object ob_List) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsExcelControl.cs:行号 1061
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart(Object obj)
+True
+未处理的异常
+System.Runtime.InteropServices.COMException (0x800A18AC): 不能将文字插入到已合并至另一单元格的表格单元格中。
+   在 Microsoft.Office.Interop.Word.Range.set_Text(String prop)
+   在 CLReport_Standard.ClReport.ReplaceReport(Document& Word_DocTemplet, List`1 Group, Int32 Index, Int32 CurPage, Int32 MaxPage, Boolean IsNull) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_Standard\ClReport.cs:行号 607
+   在 CLReport_Standard.ClReport.ReplaceReport(Document& Word_DocTemplet, List`1 Group, Int32 Index, Int32 CurPage, Int32 MaxPage) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_Standard\ClReport.cs:行号 431
+   在 CLReport_Standard.ClReport.GetReportWord(String DocName, List`1 Group, Int32 Index, Int32 CurPage, Int32 MaxPage) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_Standard\ClReport.cs:行号 415
+   在 CLReport_Standard.ClReport.PrintRpt(List`1 Items, Int32 ReportTao, Int32 ReportType, String Jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_Standard\ClReport.cs:行号 277
+   在 CLDC_DataManager.clsMain.LoadReportScript(List`1 MeterInfo, Int32 PrintReportTao, Int32 PrintType, String jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsMain.cs:行号 117
+   在 CLDC_DataManager.Frm_Main.Cmd_Print_Click(Object sender, EventArgs e) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Frm_Main.cs:行号 1012
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.Run(Form mainForm)
+   在 CLDC_DataManager.Program.Main() 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Program.cs:行号 42
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+True
+未处理的异常
+System.Runtime.InteropServices.COMException (0x800A18AC): 不能将文字插入到已合并至另一单元格的表格单元格中。
+   在 Microsoft.Office.Interop.Word.Range.set_Text(String prop)
+   在 CLReport_Standard.ClReport.ReplaceReport(Document& Word_DocTemplet, List`1 Group, Int32 Index, Int32 CurPage, Int32 MaxPage, Boolean IsNull) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_Standard\ClReport.cs:行号 607
+   在 CLReport_Standard.ClReport.ReplaceReport(Document& Word_DocTemplet, List`1 Group, Int32 Index, Int32 CurPage, Int32 MaxPage) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_Standard\ClReport.cs:行号 431
+   在 CLReport_Standard.ClReport.GetReportWord(String DocName, List`1 Group, Int32 Index, Int32 CurPage, Int32 MaxPage) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_Standard\ClReport.cs:行号 415
+   在 CLReport_Standard.ClReport.PrintRpt(List`1 Items, Int32 ReportTao, Int32 ReportType, String Jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_Standard\ClReport.cs:行号 277
+   在 CLDC_DataManager.clsMain.LoadReportScript(List`1 MeterInfo, Int32 PrintReportTao, Int32 PrintType, String jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsMain.cs:行号 117
+   在 CLDC_DataManager.Frm_Main.Cmd_Print_Click(Object sender, EventArgs e) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Frm_Main.cs:行号 1012
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.Run(Form mainForm)
+   在 CLDC_DataManager.Program.Main() 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Program.cs:行号 42
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+True
+未处理的异常
+System.ArgumentOutOfRangeException: InvalidArgument=“0”的值对于“SelectedIndex”无效。
+参数名: SelectedIndex
+   在 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   在 CLDC_DataManager.Frm_Main.StartLoadTimeAndData() 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Frm_Main.cs:行号 173
+   在 CLDC_DataManager.Frm_Main..ctor() 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Frm_Main.cs:行号 75
+   在 CLDC_DataManager.Program.Main() 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Program.cs:行号 42
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+True
+未处理的异常
+System.Runtime.InteropServices.COMException (0x80010001): 被呼叫方拒绝接收呼叫。 (异常来自 HRESULT:0x80010001 (RPC_E_CALL_REJECTED))
+   在 Microsoft.Office.Interop.Word.DocumentClass.get_Bookmarks()
+   在 CLReport_Standard.ClReport.ReplaceReport(Document& Word_DocTemplet, List`1 Group, Int32 Index, Int32 CurPage, Int32 MaxPage, Boolean IsNull) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_Standard\ClReport.cs:行号 446
+   在 CLReport_Standard.ClReport.ReplaceReport(Document& Word_DocTemplet, List`1 Group, Int32 Index, Int32 CurPage, Int32 MaxPage) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_Standard\ClReport.cs:行号 431
+   在 CLReport_Standard.ClReport.GetReportWord(String DocName, List`1 Group, Int32 Index, Int32 CurPage, Int32 MaxPage) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_Standard\ClReport.cs:行号 415
+   在 CLReport_Standard.ClReport.PrintRpt(List`1 Items, Int32 ReportTao, Int32 ReportType, String Jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_Standard\ClReport.cs:行号 277
+   在 CLDC_DataManager.clsMain.LoadReportScript(List`1 MeterInfo, Int32 PrintReportTao, Int32 PrintType, String jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsMain.cs:行号 117
+   在 CLDC_DataManager.Frm_Main.Cmd_Print_Click(Object sender, EventArgs e) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Frm_Main.cs:行号 1020
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.Run(Form mainForm)
+   在 CLDC_DataManager.Program.Main() 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Program.cs:行号 42
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+True
+未处理的异常
+System.IO.IOException: 文件“C:\Users\screw\Desktop\证书\20170721\03001SF00000211700006032_检定证书.doc”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalDelete(String path, Boolean checkHost)
+   在 System.IO.File.Delete(String path)
+   在 CLReport_Standard.clsWordControl.SaveDoc(Document Doc, String SavePath) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_Standard\clsWordControl.cs:行号 361
+   在 CLReport_Standard.ClReport.PrintRpt(List`1 Items, Int32 ReportTao, Int32 ReportType, String Jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_Standard\ClReport.cs:行号 297
+   在 CLDC_DataManager.clsMain.LoadReportScript(List`1 MeterInfo, Int32 PrintReportTao, Int32 PrintType, String jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsMain.cs:行号 117
+   在 CLDC_DataManager.Frm_Main.Cmd_Print_Click(Object sender, EventArgs e) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Frm_Main.cs:行号 1020
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.Run(Form mainForm)
+   在 CLDC_DataManager.Program.Main() 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Program.cs:行号 42
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+True
+未处理的异常
+System.IO.IOException: 文件“C:\Users\screw\Desktop\证书\20170721\03001SF00000211700006032_检定证书.doc”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalDelete(String path, Boolean checkHost)
+   在 System.IO.File.Delete(String path)
+   在 CLReport_Standard.clsWordControl.SaveDoc(Document Doc, String SavePath) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_Standard\clsWordControl.cs:行号 361
+   在 CLReport_Standard.ClReport.PrintRpt(List`1 Items, Int32 ReportTao, Int32 ReportType, String Jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_Standard\ClReport.cs:行号 297
+   在 CLDC_DataManager.clsMain.LoadReportScript(List`1 MeterInfo, Int32 PrintReportTao, Int32 PrintType, String jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsMain.cs:行号 117
+   在 CLDC_DataManager.Frm_Main.Cmd_Print_Click(Object sender, EventArgs e) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Frm_Main.cs:行号 1020
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.Run(Form mainForm)
+   在 CLDC_DataManager.Program.Main() 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Program.cs:行号 42
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+True
+未处理的异常
+System.IO.IOException: 文件“C:\Users\screw\Desktop\证书\20170721\03001SF00000211700006032_检定证书.doc”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalDelete(String path, Boolean checkHost)
+   在 System.IO.File.Delete(String path)
+   在 CLReport_Standard.clsWordControl.SaveDoc(Document Doc, String SavePath) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_Standard\clsWordControl.cs:行号 361
+   在 CLReport_Standard.ClReport.PrintRpt(List`1 Items, Int32 ReportTao, Int32 ReportType, String Jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_Standard\ClReport.cs:行号 307
+   在 CLDC_DataManager.clsMain.LoadReportScript(List`1 MeterInfo, Int32 PrintReportTao, Int32 PrintType, String jdyj, String zzbz) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Class\clsMain.cs:行号 117
+   在 CLDC_DataManager.Frm_Main.Cmd_Print_Click(Object sender, EventArgs e) 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Frm_Main.cs:行号 1020
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.Run(Form mainForm)
+   在 CLDC_DataManager.Program.Main() 位置 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataManager\Program.cs:行号 42
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+True

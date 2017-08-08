@@ -1,0 +1,17 @@
+D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.02.15\PrintLable\bin\Debug\PrintLable.dll
+D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.02.15\PrintLable\bin\Debug\PrintLable.pdb
+D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.02.15\PrintLable\obj\Debug\PrintLable.dll
+D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.02.15\PrintLable\obj\Debug\PrintLable.pdb
+D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.02.15\Resource\Client\PrintLable.dll
+D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.02.15\Resource\Client\PrintLable.pdb
+D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.02.15\PrintLable\obj\Debug\PrintLable.csprojResolveAssemblyReference.cache
+D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\Resource\Client\PrintLable.dll
+D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\Resource\Client\PrintLable.pdb
+D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\PrintLable\obj\Debug\PrintLable.csprojResolveAssemblyReference.cache
+D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\PrintLable\obj\Debug\PrintLable.dll
+D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.06.21\PrintLable\obj\Debug\PrintLable.pdb
+D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\Resource\Client\PrintLable.dll
+D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\Resource\Client\PrintLable.pdb
+D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\PrintLable\obj\Debug\PrintLable.dll
+D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\PrintLable\obj\Debug\PrintLable.pdb
+D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\PrintLable\obj\Debug\PrintLable.csprojResolveAssemblyReference.cache

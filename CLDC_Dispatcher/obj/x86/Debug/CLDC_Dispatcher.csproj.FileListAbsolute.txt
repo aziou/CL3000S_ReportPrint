@@ -1,0 +1,45 @@
+E:\MyProject\CL3000S-H_20140630\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_Dispatcher.dll
+E:\MyProject\CL3000S-H_20140630\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_Dispatcher.pdb
+E:\MyProject\CL3000S-H_20140630\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_Comm.dll
+E:\MyProject\CL3000S-H_20140630\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_DataCore.dll
+E:\MyProject\CL3000S-H_20140630\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_CTNProtocol.dll
+E:\MyProject\CL3000S-H_20140630\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\Interop.SpeechLib.dll
+E:\MyProject\CL3000S-H_20140630\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\log4net.dll
+E:\MyProject\CL3000S-H_20140630\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\Interop.ADOX.dll
+E:\MyProject\CL3000S-H_20140630\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\Interop.JRO.dll
+E:\MyProject\CL3000S-H_20140630\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_Comm.pdb
+E:\MyProject\CL3000S-H_20140630\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_Comm.xml
+E:\MyProject\CL3000S-H_20140630\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_DataCore.pdb
+E:\MyProject\CL3000S-H_20140630\CL3000S-H\CLDC_Dispatcher\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\MyProject\CL3000S-H_20140630\CL3000S-H\CLDC_Dispatcher\obj\x86\Debug\CLDC_Dispatcher.dll
+E:\MyProject\CL3000S-H_20140630\CL3000S-H\CLDC_Dispatcher\obj\x86\Debug\CLDC_Dispatcher.pdb
+E:\SVN\CL3000S-H\新建文件夹 (5)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_Dispatcher.dll
+E:\SVN\CL3000S-H\新建文件夹 (5)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_Dispatcher.pdb
+E:\SVN\CL3000S-H\新建文件夹 (5)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_Comm.dll
+E:\SVN\CL3000S-H\新建文件夹 (5)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_DataCore.dll
+E:\SVN\CL3000S-H\新建文件夹 (5)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_CTNProtocol.dll
+E:\SVN\CL3000S-H\新建文件夹 (5)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\log4net.dll
+E:\SVN\CL3000S-H\新建文件夹 (5)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\Interop.ADOX.dll
+E:\SVN\CL3000S-H\新建文件夹 (5)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\Interop.SpeechLib.dll
+E:\SVN\CL3000S-H\新建文件夹 (5)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\Interop.JRO.dll
+E:\SVN\CL3000S-H\新建文件夹 (5)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_Comm.pdb
+E:\SVN\CL3000S-H\新建文件夹 (5)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_Comm.xml
+E:\SVN\CL3000S-H\新建文件夹 (5)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_DataCore.pdb
+E:\SVN\CL3000S-H\新建文件夹 (5)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\SVN\CL3000S-H\新建文件夹 (5)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\obj\x86\Debug\CLDC_Dispatcher.dll
+E:\SVN\CL3000S-H\新建文件夹 (5)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\obj\x86\Debug\CLDC_Dispatcher.pdb
+E:\SVN\CL3000S-H\新建文件夹 (6)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_Dispatcher.dll
+E:\SVN\CL3000S-H\新建文件夹 (6)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_Dispatcher.pdb
+E:\SVN\CL3000S-H\新建文件夹 (6)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_Comm.dll
+E:\SVN\CL3000S-H\新建文件夹 (6)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_DataCore.dll
+E:\SVN\CL3000S-H\新建文件夹 (6)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_CTNProtocol.dll
+E:\SVN\CL3000S-H\新建文件夹 (6)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\log4net.dll
+E:\SVN\CL3000S-H\新建文件夹 (6)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\Interop.ADOX.dll
+E:\SVN\CL3000S-H\新建文件夹 (6)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\Interop.SpeechLib.dll
+E:\SVN\CL3000S-H\新建文件夹 (6)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\Interop.JRO.dll
+E:\SVN\CL3000S-H\新建文件夹 (6)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_Comm.pdb
+E:\SVN\CL3000S-H\新建文件夹 (6)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_Comm.xml
+E:\SVN\CL3000S-H\新建文件夹 (6)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\bin\x86\Debug\CLDC_DataCore.pdb
+E:\SVN\CL3000S-H\新建文件夹 (6)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\SVN\CL3000S-H\新建文件夹 (6)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\obj\x86\Debug\CLDC_Dispatcher.dll
+E:\SVN\CL3000S-H\新建文件夹 (6)\CL3000S-H\CL3000S-H\CLDC_Dispatcher\obj\x86\Debug\CLDC_Dispatcher.pdb

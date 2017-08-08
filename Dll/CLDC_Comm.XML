@@ -1,0 +1,5588 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CLDC_Comm</name>
+    </assembly>
+    <members>
+        <member name="T:CLDC_Comm.Enum.Cus_EncryptionUserControlType">
+            <summary>
+            加密机远程控制相关试验类型
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionUserControlType.远程拉闸">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionUserControlType.远程合闸">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionUserControlType.远程保电">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionUserControlType.解除保电">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionUserControlType.远程报警">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionUserControlType.解除报警">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_LightSelect">
+            <summary>
+            通讯选择
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_LightSelect.一对一模式485通讯">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_LightSelect.奇数表位485通讯">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_LightSelect.偶数表位485通讯">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_LightSelect.一对一模式红外通讯">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_LightSelect.奇数表位红外通讯">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_LightSelect.偶数表位红外通讯">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_LightSelect.切换到485总线">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_VolFallOffType">
+            <summary>
+            电压跌落试验类型
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_VolFallOffType.电压跌落和短时中断">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_VolFallOffType.电压逐渐变化">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_VolFallOffType.逐渐关机和启动">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_SetStatus">
+            <summary>
+            集控工作状态枚举
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_SetStatus.CUSINVALID">
+            <summary>
+            错误状态
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_SetStatus.CUSFREE">
+            <summary>
+            空闲状态
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_SetStatus.CUSCONNECT">
+            <summary>
+            已经连机
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_SetStatus.CUSWORKING">
+            <summary>
+            工作中
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_SetStatus.CUSCHECKOVER">
+            <summary>
+            项目检定完毕
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_SetStatus.CUSCONTROL">
+            <summary>
+            脱机控制
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_SetStatus.CUSCLOSED">
+            <summary>
+            断开
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_MeterResultPrjID">
+            <summary>
+            检定项目对照--数据库结构设计文档附2
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.错误类型">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.外观检查试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.通电检查">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.工频耐压试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.基本误差试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.标准偏差">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.最大偏差">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.走字试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.多功能试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.特殊检定">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.起动试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.潜动试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.走字组合误差试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.走字组合误差值">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.通讯协议检查试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.载波试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.误差一致性">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.功耗试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.冻结功能试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.费控功能试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.事件记录功能试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.智能表功能试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.数据转发试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.红外数据比对试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterResultPrjID.负荷记录试验">
+            <summary>
+            负荷记录试验
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_ErrorID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_ErrorID.ERR_LOGIC_PLANCOUNTOUTOFRANGE">
+            <summary>
+            方案下标越界
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_PowerErrorLevel">
+            <summary>
+            电源错误等级
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerErrorLevel.提示">
+            <summary>
+            提示信息，
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerErrorLevel.警告">
+            <summary>
+            警告信息
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerErrorLevel.错误">
+            <summary>
+            错误，服务端应该停止检定工作
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.DrawXieBo.ClfsType">
+            <summary>
+            测量方式
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.ClfsType.三相四线有功">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.ClfsType.三相四线无功">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.ClfsType.三相三线有功">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.ClfsType.三相三线无功">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.ClfsType.二元件跨相90">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.ClfsType.二元件跨相60">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.ClfsType.三元件跨相90">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.ClfsType.单相">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.DrawXieBo.ElementType">
+            <summary>
+            元件类型
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.ElementType.H">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.ElementType.A">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.ElementType.B">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.ElementType.C">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.DrawXieBo.AxisType">
+            <summary>
+            坐标轴的位置类型
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.AxisType.None">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.AxisType.LeftTop">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.AxisType.LeftMiddle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.AxisType.LeftBottom">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.AxisType.MiddleTop">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.AxisType.Middle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.AxisType.MiddleBottom">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.AxisType.RightTop">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.AxisType.RightMiddle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.AxisType.RightBottom">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.DrawXieBo.CoordinateType">
+            <summary>
+            坐标方向
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.CoordinateType.None">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.CoordinateType.Top">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.CoordinateType.Middle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.CoordinateType.Bottom">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.CoordinateType.Left">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DrawXieBo.CoordinateType.Right">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.DesignTools.ModeMenu">
+            <summary>
+            模式菜单
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DesignTools.ModeMenu.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.DesignTools.ModeMenu.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:CLDC_Comm.DesignTools.ModeMenu.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DesignTools.ModeMenu.Value">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.DesignTools.ModeMenu.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_PowerPhase">
+            <summary>
+            相序
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerPhase.Error">
+            <summary>
+            错误的、未赋值的
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerPhase.正相序">
+            <summary>
+            正相序
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerPhase.电压逆相序">
+            <summary>
+            电压逆相序
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerPhase.电流逆相序">
+            <summary>
+            电流逆相序
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_TaskType">
+            <summary>
+            试验类型
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_TaskType.电能误差">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_TaskType.需量周期">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_TaskType.时钟日误差">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_TaskType.脉冲计数">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_TaskType.对标">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_TaskType.走字">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_TaskType.设置预付费试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_TaskType.设置底度对齐">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.enmStdPulseType">
+            <summary>
+            标准脉冲类型
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.enmStdPulseType.标准时钟脉冲">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.enmStdPulseType.标准电能脉冲">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_DgnProcotolPara">
+            <summary>
+            多功能协议参数对照
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnProcotolPara.错误参数">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnProcotolPara.通信测试">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnProcotolPara.写表时间">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnProcotolPara.读表时间">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnProcotolPara.清空需量">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnProcotolPara.读取需量">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnProcotolPara.读取电量">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnProcotolPara.读取时段">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnProcotolPara.清空电量">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnProcotolPara.事件记录">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnProcotolPara.瞬时寄存器">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnProcotolPara.状态寄存器">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnProcotolPara.失压寄存器">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnProcotolPara.运行状态">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnProcotolPara.预付费检查">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.DrawXieBo.CCLLineGroup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLLineGroup.#ctor(System.Drawing.Graphics)">
+            <summary>
+            
+            </summary>
+            <param name="gph_Map"></param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLLineGroup.SetLine(System.Int32,System.Collections.Generic.List{System.Drawing.PointF},System.Drawing.Pen)">
+            <summary>
+            
+            </summary>
+            <param name="int_Index"></param>
+            <param name="lst_XY"></param>
+            <param name="pen_DrawPen"></param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLLineGroup.Add(System.Int32)">
+            <summary>
+            添加线
+            </summary>
+            <param name="int_Count">线条数</param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLLineGroup.Add(CLDC_Comm.DrawXieBo.CCLLine)">
+            <summary>
+            添加线
+            </summary>
+            <param name="cle_Line">新增的表格行</param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLLineGroup.Add(System.Collections.Generic.List{System.Drawing.PointF})">
+            <summary>
+            添加线
+            </summary>
+            <param name="lst_XY"></param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLLineGroup.Add(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            添加线
+            </summary>
+            <param name="flt_X1">起点X位置</param>
+            <param name="flt_Y1">起点Y位置</param>
+            <param name="flt_X2">结束X位置</param>
+            <param name="flt_Y2">结束Y位置</param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLLineGroup.Add(System.Single,System.Single,System.Single,System.Single,System.Drawing.Pen)">
+            <summary>
+            添加线
+            </summary>
+            <param name="flt_X1">起点X位置</param>
+            <param name="flt_Y1">起点Y位置</param>
+            <param name="flt_X2">结束X位置</param>
+            <param name="flt_Y2">结束Y位置</param>
+            <param name="pen_DrawPen">画笔</param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLLineGroup.Add(System.Drawing.PointF[])">
+            <summary>
+            添加线
+            </summary>
+            <param name="pit_XY"></param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLLineGroup.Add(System.Collections.Generic.List{System.Drawing.PointF},System.Drawing.Pen)">
+            <summary>
+            添加线
+            </summary>
+            <param name="lst_XY"></param>
+            <param name="pen_DrawPen"></param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLLineGroup.Add(System.Drawing.PointF[],System.Drawing.Pen)">
+            <summary>
+            添加线
+            </summary>
+            <param name="pit_XY"></param>
+            <param name="pen_DrawPen"></param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLLineGroup.Remove(System.Int32)">
+            <summary>
+            移除线
+            </summary>
+            <param name="int_Index"></param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLLineGroup.DrawLines">
+            <summary>
+            画线
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLLineGroup.Item(System.Int32)">
+            <summary>
+            画线
+            </summary>
+            <param name="Index">序号</param>
+            <returns></returns>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLLineGroup.Margin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.MessageArgs.BasicErrorArgs">
+            <summary>
+            误差数据消息
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.MessageArgs.BasicErrorArgs.Result">
+            <summary>
+            误差结论
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.MessageArgs.BasicErrorArgs.WcCount">
+            <summary>
+            误差次数
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.MessageArgs.BasicErrorArgs.LastVerifyData">
+            <summary>
+            最后一次误差数据
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.MessageArgs.BasicErrorArgs.VerifyData">
+            <summary>
+            返回所有误差
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Log.Log4netHelper">
+            <summary>
+            日志 操作类
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Log.Log4netHelper.LOGFILENAME">
+            <summary>
+            日志文件名称
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Log.Log4netHelper.LOG4NETCONFIGFILENAME">
+            <summary>
+            日志文件配置名称
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Log.Log4netHelper.MAXFILESIZE">
+            <summary>
+            日志记录文件最大值
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.Log.Log4netHelper.InitLogCommpent">
+            <summary>
+            初始化日志组件
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.Log.Log4netHelper.UnLoadLogCommpent">
+            <summary>
+            卸载日志记录组件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_LightType">
+            <summary>
+            警示灯类型
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_LightType.关灯">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_LightType.红灯">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_LightType.黄灯">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_LightType.绿灯">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_Ywg">
+            <summary>
+            有无功
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_Ywg.P">
+            <summary>
+            有功
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_Ywg.Q">
+            <summary>
+            无功
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_StdPulseType">
+            <summary>
+            标准脉冲类型
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdPulseType.标准时钟脉冲">
+            <summary>
+            标准时钟脉冲
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdPulseType.标准电能脉冲">
+            <summary>
+            标准电能脉冲
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_FAGroup">
+            <summary>
+            总方案项目
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.Error">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.预热试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.预先调试">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.外观检查试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.工频耐压试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.起动试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.潜动试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.基本误差试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.走字试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.通讯协议检查试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.多功能试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.影响量试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.载波试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.误差一致性">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.功耗试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.费控功能试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.智能表功能试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.事件记录试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.冻结功能试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.数据转发试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.红外数据比对试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FAGroup.负荷记录试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.DrawXieBo.CCLHarmonious">
+            <summary>
+            类功能：谐波含量示意图
+            编写者：Kobe.Zhang
+            日  期：2009.01.19
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLHarmonious.#ctor(System.Windows.Forms.PictureBox)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="pic_PicMap">图</param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLHarmonious.ClearXieBo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLHarmonious.#ctor(System.Windows.Forms.PictureBox,System.Int32)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="pic_PicMap">图</param>
+            <param name="int_MaxTimes">最大次数</param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLHarmonious.SpliceHarmonious(System.Int32,System.Double,System.Int32,System.Single,System.Single)">
+            <summary>
+            在基波上迭加谐波含量
+            </summary>
+            <param name="int_X">X轴</param>
+            <param name="dbl_YY">基波数据</param>
+            <param name="int_Times">谐波次数</param>
+            <param name="flt_Content">谐波含量</param>
+            <param name="flt_Phase">谐波相位</param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLHarmonious.GetHarmonious(System.Single,System.Boolean[],System.Single[],System.Single[])">
+            <summary>
+            计算谐波迭加谐波含量后的线点
+            </summary>
+            <param name="flt_XPhase">相移角度</param>
+            <param name="bln_Selected">各次谐波是否迭加</param>
+            <param name="flt_HValue">各次谐波含量</param>
+            <param name="flt_HPhase">各次谐波相位</param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLHarmonious.Draw">
+            <summary>
+            画加谐波
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.MaxTimes">
+            <summary>
+            谐波最大次数
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.AxisType">
+            <summary>
+            坐标类型
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.CellWidth">
+            <summary>
+            背景格的宽度
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.BackColor">
+            <summary>
+            背景着色
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.BackLineColor">
+            <summary>
+            背景线着色
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.XXSelected">
+            <summary>
+            各相电压电流是否显示
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.Margin">
+            <summary>
+            边距
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.UaSelected">
+            <summary>
+            A相电压各次谐波是否设置
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.UbSelected">
+            <summary>
+            B相电压各次谐波是否设置
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.UcSelected">
+            <summary>
+            C相电压各次谐波是否设置
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.IaSelected">
+            <summary>
+            A相电流各次谐波是否设置
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.IbSelected">
+            <summary>
+            B相电流各次谐波是否设置
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.IcSelected">
+            <summary>
+            C相电流各次谐波是否设置
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.UaValue">
+            <summary>
+            A相电压各次谐波含量
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.UbValue">
+            <summary>
+            B相电压各次谐波含量
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.UcValue">
+            <summary>
+            C相电压各次谐波含量
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.IaValue">
+            <summary>
+            A相电流各次谐波含量
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.IbValue">
+            <summary>
+            B相电流各次谐波含量
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.IcValue">
+            <summary>
+            C相电流各次谐波含量
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.UaPhase">
+            <summary>
+            A相电压各次谐波相位
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.UbPhase">
+            <summary>
+            B相电压各次谐波相位
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.UcPhase">
+            <summary>
+            C相电压各次谐波相位
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.IaPhase">
+            <summary>
+            A相电流各次谐波相位
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.IbPhase">
+            <summary>
+            B相电流各次谐波相位
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLHarmonious.IcPhase">
+            <summary>
+            C相电流各次谐波相位
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.MessageArgs.ExceptionEx">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.MessageArgs.ExceptionEx.ErrorID">
+            <summary>
+            错误编号
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.MessageArgs.ExceptionEx.m_lstErrors">
+            <summary>
+            错误描述，通过错误ID
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.MessageArgs.ExceptionEx.#ctor(System.Int32)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="ErrID">错误ID，与系统错误对照表对应。</param>
+        </member>
+        <member name="M:CLDC_Comm.MessageArgs.ExceptionEx.InitDefaultLanguage">
+            <summary>
+            初始化错误描述内容
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.MessageArgs.ExceptionEx.Message">
+            <summary>
+            获取错误描述
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.MessageArgs.EventProcessArgs">
+            <summary>
+            预热
+            </summary>
+            
+        </member>
+        <member name="T:CLDC_Comm.MessageArgs.EventMessageArgs">
+            <summary>
+            检定控制器消息
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.MessageArgs.EventMessageArgs.RefreshData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.MessageArgs.EventMessageArgs.ActiveItemID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.MessageArgs.EventMessageArgs.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.MessageArgs.EventMessageArgs.Message">
+            <summary>
+            运行时消息
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.MessageArgs.EventMessageArgs.MessageType">
+            <summary>
+            消息类型
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.MessageArgs.EventMessageArgs.VerifyOver">
+            <summary>
+            检定是否完成
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.MessageArgs.EventProcessArgs.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.MessageArgs.EventProcessArgs.TotalTime">
+            <summary>
+            需要处理总时间(分)
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.MessageArgs.EventProcessArgs.PastTime">
+            <summary>
+            当前已经进行时间
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.MessageArgs.EventProcessArgs.Process">
+            <summary>
+            当前进度百分数
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.MessageArgs.EventProcessArgs.OtherMessage">
+            <summary>
+            其它信息，主要由应用的检定项目确定数据功能.目前约定如下：
+            预热试验：无数据
+            起动试验：如果被检表已经收到脉冲，则此字段记录第一个脉冲出来时间
+            潜动试验：同起动试验
+            走字试验：标准表电量/误差板脉冲计数
+            多功能试验：待定
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.MessageArgs.EventProcessArgs.VerifyOver">
+            <summary>
+            检定完毕
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_VerifyMode">
+            参数检查的模式
+            <summary>
+            参数检查的模式
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PrepareItem.接线检查">
+            <summary>
+            接线检查
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PrepareItem.通信测试">
+            <summary>
+            通信测试
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PrepareItem.日计时误差">
+            <summary>
+            日计时误差
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PrepareItem.费率时段检查">
+            <summary>
+            费率时段检查
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PrepareItem.GPS对时">
+            <summary>
+            GPS对时
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PrepareItem.需量清空">
+            <summary>
+            需量清空
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PrepareItem.电量清零">
+            <summary>
+            电量清零
+            </summary>   
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_MeterType_DianziOrGanYing">
+            <summary>
+            表类型：电子式感应式
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterType_DianziOrGanYing.DianZiShi">
+            <summary>
+            电子式
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterType_DianziOrGanYing.GanYingShi">
+            <summary>
+            感应式
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_MessageType">
+            <summary>
+            检定器消息提示类型
+            使用Bit运算，一个消息可以属于多种类型
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MessageType.提示消息">
+            <summary>
+            需要UI用消息框提示给用户[不需要交互]
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MessageType.错误消息">
+            <summary>
+            检定方案或是操作中出现错误。提示此消息后所有检定停止
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MessageType.运行时消息">
+            <summary>
+            运行时的提示信息。提供给操作者参考
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MessageType.检定跳点">
+            <summary>
+            项目检定点改变,报告给服务器
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MessageType.检定完毕">
+            <summary>
+            所有项目检定完毕
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MessageType.清空消息队列">
+            <summary>
+            内部消息:清空消息队列
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MessageType.清空数据队列">
+            <summary>
+            内部消息:清空数据队列
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MessageType.录入电量起码">
+            <summary>
+            手工录入电量
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MessageType.录入电量止码">
+            <summary>
+            手工录入电量止码
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MessageType.客户端消息">
+            <summary>
+            此消息类型不上报到服务器
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MessageType.服务器消息">
+            <summary>
+            此消息只上报到服务器
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MessageType.本地表密钥插卡">
+            <summary>
+            本地表密钥插卡
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MessageType.语音消息">
+            <summary>
+            本消息需要通过语音朗读
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_DBTableName">
+            <summary>
+            对应所有被检表信息以及结论数据库表名
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_INFO">
+            <summary>
+            基本信息
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_ERROR">
+            <summary>
+            误差结论
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_COMMUNICATION">
+            <summary>
+            多功能结论
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_ENERGY_TEST_DATA">
+            <summary>
+            走字结论
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_START_NO_LOAD">
+            <summary>
+            潜动起动数据
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_POWER_CONSUM_DATA">
+            <summary>
+            功耗数据
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_CARRIER_WAVE">
+            <summary>
+            载波数据
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_INFRARED_DATA">
+            <summary>
+            红外数据比对试验数据
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_SPECIAL_DATA">
+            <summary>
+            特殊检定数据
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_RATES_CONTROL">
+            <summary>
+            费控数据
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_FUN_RATES_TIME_CONS">
+            <summary>
+            费率时段功能
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_FUN_ENERGY_MEASURE">
+            <summary>
+            计量功能
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_FUN_SHOW">
+            <summary>
+            数据显示功能
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_FUN_MAX_DEMAND">
+            <summary>
+            需量功能
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_FUN_EVENT_RECORD">
+            <summary>
+            事件记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_STANDARD_DLT_DATA">
+            <summary>
+            规约(协议)一致性数据
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_CONSISTENCY_DATA">
+            <summary>
+            一致性试验数据
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_RESULTS">
+            <summary>
+            结论表
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_FREEZE">
+            <summary>
+            冻结试验
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_HIGH_VOLTAGE">
+            <summary>
+            交流电压试验（兼耐压台）
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_FUN_TIME_KEEPING">
+            <summary>
+            计时功能
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DBTableName.METER_FUN_LOAD_RECORD">
+            <summary>
+            负荷记录
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_PhaseType">
+            <summary>
+            指A,B,C相
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PhaseType.A">
+            <summary>
+            A相
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PhaseType.B">
+            <summary>
+            B相
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PhaseType.C">
+            <summary>
+            C相
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.enmPulseComType">
+            <summary>
+            脉冲接口类型
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.enmPulseComType.脉冲盒">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.enmPulseComType.光电头">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_PowerWorkFlow">
+            <summary>
+            电源工作流程
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerWorkFlow.None">
+            <summary>
+            未进行过电源操作
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerWorkFlow.PowerOn">
+            <summary>
+            升源
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerWorkFlow.PowerOff">
+            <summary>
+            关源
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_LossBoardType">
+            <summary>
+            从什么板卡读取表的功耗信息
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_LossBoardType.LossBoard">
+            <summary>
+            功耗板
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_LossBoardType.ErrorBoard">
+            <summary>
+            误差板
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_SeiBiaoType">
+            <summary>
+            台体的对色标功能
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_SeiBiaoType.不支持">
+            <summary>
+            不支持
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_SeiBiaoType.电压">
+            <summary>
+            电压
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_SeiBiaoType.电流">
+            <summary>
+            电流
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.DesignTools.配色工具">
+            <summary>
+            动态调色工具，使用方法:Comm.DesignTools.配色工具.Bind(需要调色的控件)
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DesignTools.配色工具.WM_SYSCOMMAND">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.DesignTools.配色工具.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.DesignTools.配色工具.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:CLDC_Comm.DesignTools.配色工具.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.DesignTools.配色工具.Bind(System.Windows.Forms.Control)">
+            <summary>
+            绑定[配色工具]、使他里面的所有控件，在右键时都会弹出一个调色控制面版
+            </summary>
+            <param name="parentControl"></param>
+        </member>
+        <member name="F:CLDC_Comm.DesignTools.配色工具.HandleControl">
+            <summary>
+            被绑定对象
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.DesignTools.配色工具.ReleaseCapture">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.DesignTools.配色工具.OnClosing(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_StdMeterIDangWei">
+            <summary>
+            电流档位
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdMeterIDangWei.档位100A">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdMeterIDangWei.档位50A">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdMeterIDangWei.档位20A">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdMeterIDangWei.档位10A">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdMeterIDangWei.档位5A">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdMeterIDangWei.档位2A">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdMeterIDangWei.档位1A">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdMeterIDangWei.档位05A">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdMeterIDangWei.档位02A">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdMeterIDangWei.档位01A">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdMeterIDangWei.档位005A">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdMeterIDangWei.档位002A">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdMeterIDangWei.档位001A">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_StdMeterVDangWei">
+            <summary>
+            电压档位
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdMeterVDangWei.档位480V">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdMeterVDangWei.档位240V">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdMeterVDangWei.档位120V">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdMeterVDangWei.档位60V">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_Clfs">
+            <summary>
+            测量方式
+            
+              三相四线 = 0,
+              三相三线 = 1,
+              二元件跨相90 = 2,
+              二元件跨相60 = 3,
+              三元件跨相90 = 4,
+              单相 = 5,
+              
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_Clfs.三相四线">
+            <summary>
+            测量方式-三相四线
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_Clfs.三相三线">
+            <summary>
+            测量方式-三相三线
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_Clfs.二元件跨相90">
+            <summary>
+            测量方式-二元件跨相90
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_Clfs.二元件跨相60">
+            <summary>
+            测量方式-二元件跨相60
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_Clfs.三元件跨相90">
+            <summary>
+            测量方式-三元件跨相90
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_Clfs.单相">
+            <summary>
+            测量方式-单相
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.ConsoleHelper">
+            <summary>
+            控制台，管理 类
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.ConsoleHelper.AllocConsole">
+            <summary>
+            启动控制台
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.ConsoleHelper.FreeConsole">
+            <summary>
+            释放控制台
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CLDC_Comm.MessageArgs.EventConstandArgs">
+            <summary>
+            走字试验数据
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.MessageArgs.EventConstandArgs.ItemKey">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_WuchaType">
+            <summary>
+            误差板当前状态
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WuchaType.电能误差">
+            <summary>
+            电能误差
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WuchaType.需量周期误差">
+            <summary>
+            需量周期误差
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WuchaType.日计时误差">
+            <summary>
+            日计时误差
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WuchaType.脉冲个数">
+            <summary>
+            脉冲个数
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WuchaType.对标状态">
+            <summary>
+            对标状态
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_BothIRoadType">
+            <summary>
+            电流的输出回路
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_BothIRoadType.第一个电流回路">
+            <summary>
+            第一个电流回路
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_BothIRoadType.第二个电流回路">
+            <summary>
+            第二个电流回路
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_BothVRoadType">
+            <summary>
+            电表电压回路选择
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_BothVRoadType.直接接入式">
+            <summary>
+            直接接入式
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_BothVRoadType.互感器接入式">
+            <summary>
+            互感器接入式
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_BothVRoadType.本表位无电表接入">
+            <summary>
+            本表位无电表接入
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_TestType">
+            <summary>
+            检定类型
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_TestType.CHECK_INVALID">
+            <summary>
+            错误类型
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_TestType.CHECK_FIRST">
+            <summary>
+            首检
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_TestType.CHECK_CYCLE">
+            <summary>
+            周期检定
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_TestType.CHECK_ACCEPT">
+            <summary>
+            验收检定
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_TestType.CHECK_OTHER">
+            <summary>
+            自定义
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_FeiLv">
+            <summary>
+            费率
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FeiLv.总">
+            <summary>
+            总
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FeiLv.尖">
+            <summary>
+            尖
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FeiLv.峰">
+            <summary>
+            锋
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FeiLv.平">
+            <summary>
+            平
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FeiLv.谷">
+            <summary>
+            谷
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_DgnItem">
+            <summary>
+            多功能检定项目枚举，注意！！！顺序不能变，只能往后续加.
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.无效的项目">
+            <summary>
+            无效的项目
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.通信测试">
+            <summary>
+            通信测试
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.日计时误差">
+            <summary>
+            日计时误差
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.费率时段检查">
+            <summary>
+            费率时段检查
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.时段投切">
+            <summary>
+            时段投切(默认正向有功)
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.计度器示值组合误差">
+            <summary>
+            计度器示值组合误差
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.费率时段示值误差">
+            <summary>
+            费率时段示值误差
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.GPS对时">
+            <summary>
+            GPS对时
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.闰年判断功能">
+            <summary>
+            闰年判断功能
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.事件记录检查">
+            <summary>
+            事件记录检查
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.需量清空">
+            <summary>
+            需量清空
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.电压逐渐变化">
+            <summary>
+            电压逐渐变化
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.电压跌落">
+            <summary>
+            电压跌落
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.时钟示值误差">
+            <summary>
+            时钟示值误差
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.最大需量01Ib">
+            <summary>
+            最大需量01Ib
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.最大需量10Ib">
+            <summary>
+            最大需量10Ib
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.最大需量Imax">
+            <summary>
+            最大需量Imax
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.读取电量">
+            <summary>
+            读取电量
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.电量清零">
+            <summary>
+            电量清零
+            </summary>   
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.电量寄存器检查">
+            <summary>
+            电量寄存器检查
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.需量寄存器检查">
+            <summary>
+            需量寄存器检查
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.瞬时寄存器检查">
+            <summary>
+            瞬时寄存器检查
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.状态寄存器检查">
+            <summary>
+            状态寄存器检查
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.失压寄存器检查">
+            <summary>
+            失压寄存器检查
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.校对电量">
+            <summary>
+            校对电量
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.校对需量">
+            <summary>
+            校对需量
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.检查电表运行状态">
+            <summary>
+            检查电表运行状态
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.预付费检测">
+            <summary>
+            预付费检测
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.反向有功时段投切">
+            <summary>
+            反向有功时段投切
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.正向无功时段投切">
+            <summary>
+            正向无功时段投切
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.反向无功时段投切">
+            <summary>
+            反向无功时段投切
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.反向有功计度器示值组合误差">
+            <summary>
+            反向有功计度器示值组合误差
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.正向无功计度器示值组合误差">
+            <summary>
+            正向无功计度器示值组合误差
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.反向无功计度器示值组合误差">
+            <summary>
+            反向无功计度器示值组合误差
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.反向有功费率时段示值误差">
+            <summary>
+            反向有功费率时段示值误差
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.正向无功费率时段示值误差">
+            <summary>
+            正向无功费率时段示值误差
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.反向无功费率时段示值误差">
+            <summary>
+            反向无功费率时段示值误差
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.电压短时中断">
+            <summary>
+            电压短时终端试验
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnItem.修改密码">
+            <summary>
+            修改密码
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.DrawXieBo.CCLLine">
+            <summary>
+            画线
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLLine.#ctor(System.Drawing.Graphics)">
+            <summary>
+            画线
+            </summary>
+            <param name="gph_Map">绘图板</param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLLine.#ctor(System.Drawing.Graphics,System.Collections.Generic.List{System.Drawing.PointF})">
+            <summary>
+            画线
+            </summary>
+            <param name="gph_Map">绘图板</param>
+            <param name="lst_XY">画点集合</param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLLine.#ctor(System.Drawing.Graphics,System.Drawing.PointF[])">
+            <summary>
+            画线
+            </summary>
+            <param name="gph_Map">绘图板</param>
+            <param name="pit_XY">画点数组</param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLLine.Add(System.Drawing.PointF)">
+            <summary>
+            增加画点
+            </summary>
+            <param name="pit_XY">画点</param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLLine.DrawLine">
+            <summary>
+            画线
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLLine.DrawLine(System.Drawing.PointF[])">
+            <summary>
+            画线
+            </summary>
+            <param name="pit_XY">画点数组</param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLLine.DrawLine(System.Collections.Generic.List{System.Drawing.PointF})">
+            <summary>
+            画线
+            </summary>
+            <param name="lst_XY">画点数组</param>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLLine.Margin">
+            <summary>
+            边距
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLLine.ChartMap">
+            <summary>
+            画板
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLLine.DrawPen">
+            <summary>
+            画笔
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLLine.LineColor">
+            <summary>
+            线色
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLLine.MaxPoint">
+            <summary>
+            最大画点
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_NetState">
+            <summary>
+            网络连接状态
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_NetState.DisConnected">
+            <summary>
+            非连接状态
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_NetState.Connected">
+            <summary>
+            连接状态
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_GyGyType">
+            <summary>
+            共阳共阴
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_GyGyType.共阴">
+            <summary>
+            共阴
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_GyGyType.共阳">
+            <summary>
+            共阳
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_FreezeItem">
+            <summary>
+            冻结检定项目枚举
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FreezeItem.无效的项目">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FreezeItem.定时冻结">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FreezeItem.瞬时冻结">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FreezeItem.日冻结">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FreezeItem.约定冻结">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FreezeItem.整点冻结">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_ErrorAccordItem">
+            <summary>
+            误差一致性项目枚举
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_ErrorAccordItem.无效的项目">
+            <summary>
+            无效的项目
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_ErrorAccordItem.误差一致性">
+            <summary>
+            1
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_ErrorAccordItem.误差变差">
+            <summary>
+            2
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_ErrorAccordItem.负载电流升降变差">
+            <summary>
+            3
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_ErrorAccordItem.电流过载">
+            <summary>
+            4
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.BaseClass.SingletonBase`1">
+            <summary>
+            要求有采用默认无参构造的单例基类
+            </summary>
+            <typeparam name="T">派生类类型</typeparam>
+        </member>
+        <member name="P:CLDC_Comm.BaseClass.SingletonBase`1.Instance">
+            <summary>
+            获取对象的单例实例
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Win32Api">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_PAINT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_SETFOCUS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_KILLFOCUS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_ENABLE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_SETTEXT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_GETTEXT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_GETTEXTLENGTH">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_CLOSE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_QUIT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_GETICON">
+            <summary>
+            获取和设置图标
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_SETICON">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.ICON_SMALL">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.ICON_BIG">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.ICON_SMALL2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.BM_GETCHECK">
+            <summary>
+            获取和设置图标
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.BM_SETCHECK">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.BM_GETSTATE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.BM_SETSTATE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.BM_SETSTYLE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.BM_CLICK">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.BM_GETIMAGE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.BM_SETIMAGE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.BST_UNCHECKED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.BST_CHECKED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.BST_INDETERMINATE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.BST_PUSHED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.BST_FOCUS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_KEYFIRST">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_KEYDOWN">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_KEYUP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_CHAR">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_DEADCHAR">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_SYSKEYDOWN">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_SYSKEYUP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_SYSCHAR">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_SYSDEADCHAR">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_UNICHAR">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_KEYLAST">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.UNICODE_NOCHAR">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_MOUSEFIRST">
+            <summary>
+            鼠标消息ID
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_MOUSEMOVE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_LBUTTONDOWN">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_LBUTTONUP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_LBUTTONDBLCLK">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_RBUTTONDOWN">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_RBUTTONUP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_RBUTTONDBLCLK">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_MBUTTONDOWN">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_MBUTTONUP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_MBUTTONDBLCLK">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_MOUSEWHEEL">
+            <summary>
+            滚轮消息
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_XBUTTONDOWN">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_XBUTTONUP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WM_XBUTTONDBLCLK">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.MK_LBUTTON">
+            <summary>
+            Key State Masks for Mouse Messages
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.MK_RBUTTON">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.MK_SHIFT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.MK_CONTROL">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.MK_MBUTTON">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.MK_XBUTTON1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.MK_XBUTTON2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.SW_HIDE">
+            <summary>
+            ShowWindow() Constants
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.SW_SHOWNORMAL">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.SW_NORMAL">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.SW_SHOWMINIMIZED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.SW_SHOWMAXIMIZED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.SW_MAXIMIZE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.SW_SHOWNOACTIVATE">
+            <summary>
+            显示但不激活窗口，一个关键参数
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.SW_SHOW">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.SW_MINIMIZE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.SW_SHOWMINNOACTIVE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.SW_SHOWNA">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.SW_RESTORE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.SW_SHOWDEFAULT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.SW_FORCEMINIMIZE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.SW_MAX">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.GW_HWNDFIRST">
+            <summary>
+            GetWindow() Constants
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.GW_HWNDLAST">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.GW_HWNDNEXT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.GW_HWNDPREV">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.GW_OWNER">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.GW_CHILD">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.GW_ENABLEDPOPUP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.GW_MAX">
+            <summary>
+            (低版本系统中定义为5)
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.R2_BLACK">
+            <summary>
+             Binary raster ops 
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.R2_NOTMERGEPEN">
+            <summary>
+            0
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.R2_MASKNOTPEN">
+            <summary>
+            DPon 
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.R2_NOTCOPYPEN">
+            <summary>
+             DPna
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.R2_MASKPENNOT">
+            <summary>
+            PN
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.R2_NOT">
+            <summary>
+            PDna 
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.R2_XORPEN">
+            <summary>
+             Dn
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.R2_NOTMASKPEN">
+            <summary>
+             DPx
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.R2_MASKPEN">
+            <summary>
+            DPan
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.R2_NOTXORPEN">
+            <summary>
+            DPa
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.R2_NOP">
+            <summary>
+            DPxn
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.R2_MERGENOTPEN">
+            <summary>
+            D
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.R2_COPYPEN">
+            <summary>
+            DPno
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.R2_MERGEPENNOT">
+            <summary>
+             P
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.R2_MERGEPEN">
+            <summary>
+            PDno
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.R2_WHITE">
+            <summary>
+            DPo
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.R2_LAST">
+            <summary>
+             1
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.SRCCOPY">
+            <summary>
+            Ternary raster operations 光栅操作码，BitBlt函数的参数
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.SRCPAINT">
+            <summary>
+            dest = source   
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.SRCAND">
+            <summary>
+            dest = source OR dest
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.SRCINVERT">
+            <summary>
+            dest = source AND dest 
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.SRCERASE">
+            <summary>
+            dest = source XOR dest 
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.NOTSRCCOPY">
+            <summary>
+            dest = source AND (NOT dest )
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.NOTSRCERASE">
+            <summary>
+            dest = (NOT source) 
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.MERGECOPY">
+            <summary>
+            dest = (NOT src) AND (NOT dest)
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.MERGEPAINT">
+            <summary>
+             dest = (source AND pattern)
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PATCOPY">
+            <summary>
+            dest = (NOT source) OR dest 
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PATPAINT">
+            <summary>
+            pattern
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PATINVERT">
+            <summary>
+            dest = DPSnoo 
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.DSTINVERT">
+            <summary>
+            dest = pattern XOR dest  dest = (NOT dest)
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.BLACKNESS">
+            <summary>
+            dest = BLACK 
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WHITENESS">
+            <summary>
+            dest = WHITE 
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PS_SOLID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PS_DASH">
+            <summary>
+                /* -------  */
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PS_DOT">
+            <summary>
+             /* .......  */
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PS_DASHDOT">
+            <summary>
+            /* _._._._  */
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PS_DASHDOTDOT">
+            <summary>
+             /* _.._.._  */
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PS_NULL">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PS_INSIDEFRAME">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PS_USERSTYLE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PS_ALTERNATE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PS_STYLE_MASK">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PS_ENDCAP_ROUND">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PS_ENDCAP_SQUARE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PS_ENDCAP_FLAT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PS_ENDCAP_MASK">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PS_JOIN_ROUND">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PS_JOIN_BEVEL">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PS_JOIN_MITER">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PS_JOIN_MASK">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PS_COSMETIC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PS_GEOMETRIC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PS_TYPE_MASK">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.PtInRect(CLDC_Comm.Win32Api.RECT@,CLDC_Comm.Win32Api.POINT)">
+            <summary>
+            判断一个点是否位于矩形内
+            </summary>
+            <param name="lprc"></param>
+            <param name="pt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.SetParent(System.IntPtr,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hwndChild"></param>
+            <param name="hwndNewParent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.FindWindow(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="lpClassName"></param>
+            <param name="lpWindowName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.FindWindowEx(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="hwndParent"></param>
+            <param name="hwndChildAfter"></param>
+            <param name="lpszClass"></param>
+            <param name="lpszWindow"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.SendMessage(System.Int32,System.Int32,System.Int32,System.IntPtr)">
+            <summary>
+            
+            </summary>
+            <param name="hWnd"></param>
+            <param name="wMsg"></param>
+            <param name="wParam"></param>
+            <param name="lParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.SendMessage(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hWnd"></param>
+            <param name="wMsg"></param>
+            <param name="wParam"></param>
+            <param name="lParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.SendMessage(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="hWnd"></param>
+            <param name="wMsg"></param>
+            <param name="wParam"></param>
+            <param name="lParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.SendMessage(System.Int32,System.Int32,System.Int32,System.Text.StringBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="hWnd"></param>
+            <param name="wMsg"></param>
+            <param name="wParam"></param>
+            <param name="lParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.GetWindowThreadProcessId(System.Int32,System.Int32@)">
+            <summary>
+            
+            </summary>
+            <param name="hWnd"></param>
+            <param name="lpdwProcessId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.Sleep(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="dwMilliseconds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.GetWindowRect(System.Int32,CLDC_Comm.Win32Api.RECT@)">
+            <summary>
+            
+            </summary>
+            <param name="hWnd"></param>
+            <param name="lpRect"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.GetWindowText(System.Int32,System.Text.StringBuilder,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hWnd"></param>
+            <param name="lpString"></param>
+            <param name="nMaxCount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.ShowWindow(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hWnd"></param>
+            <param name="nCmdShow"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.SetWindowLong(System.IntPtr,System.Int32,System.UInt32)">
+            <summary>
+            
+            </summary>
+            <param name="hwnd"></param>
+            <param name="nIndex"></param>
+            <param name="dwNewLong"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.GetWindowLong(System.IntPtr,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hwnd"></param>
+            <param name="nIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.SetLayeredWindowAttributes(System.IntPtr,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hwnd"></param>
+            <param name="ColorRefKey"></param>
+            <param name="bAlpha"></param>
+            <param name="dwFlags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.MoveWindow(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="hWnd"></param>
+            <param name="X"></param>
+            <param name="Y"></param>
+            <param name="nWidth"></param>
+            <param name="nHeight"></param>
+            <param name="bRepaint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.RealGetWindowClass(System.Int32,System.Text.StringBuilder,System.UInt32)">
+            <summary>
+            获得窗口类名称，返回值为字符串的字符数量
+            </summary>
+            <param name="hWnd"></param>
+            <param name="pszType"></param>
+            <param name="cchType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.EnumWindows(CLDC_Comm.Win32Api.WNDENUMPROC,System.Int32)">
+            <summary>
+            枚举屏幕上所有顶级窗口（不会枚举子窗口，除了一些有WS_CHILD的顶级窗口）
+            </summary>
+            <param name="lpEnumFunc"></param>
+            <param name="lParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.EnumChildWindows(System.Int32,CLDC_Comm.Win32Api.WNDENUMPROC,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hWndParent"></param>
+            <param name="lpEnumFunc"></param>
+            <param name="lParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.EnumThreadWindows(System.Int32,CLDC_Comm.Win32Api.WNDENUMPROC,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="dwThreadId"></param>
+            <param name="lpEnumFunc"></param>
+            <param name="lParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.GetParent(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hWnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.GetWindow(System.Int32,System.UInt32)">
+            <summary>
+            
+            </summary>
+            <param name="hWnd"></param>
+            <param name="uCmd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.GetCursorPos(CLDC_Comm.Win32Api.POINT@)">
+            <summary>
+            获取鼠标的屏幕坐标，填充到Point
+            * WINUSERAPI
+              BOOL
+              WINAPI
+              GetCursorPos(
+                     __out LPPOINT lpPoint);
+            </summary>
+            <param name="lpPoint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.GetDC(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hWnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.GetWindowDC(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hWnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.ReleaseDC(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hWnd"></param>
+            <param name="hDC"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.FillRect(System.Int32,CLDC_Comm.Win32Api.RECT,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hDC"></param>
+            <param name="lprc"></param>
+            <param name="hBrush"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.InvalidateRect(System.Int32,CLDC_Comm.Win32Api.RECT@,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="hwnd"></param>
+            <param name="lpRect"></param>
+            <param name="bErase"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.IsWindowVisible(System.Int32)">
+            <summary>
+            判断一个窗口是否是可见的
+            </summary>
+            <param name="hwnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.DrawFocusRect(System.Int32,CLDC_Comm.Win32Api.RECT@)">
+            <summary>
+            绘制焦点举行
+            </summary>
+            <param name="hDC"></param>
+            <param name="lprc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.UpdateWindow(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hwnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.EnableWindow(System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="hwnd"></param>
+            <param name="bEnable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.SetForegroundWindow(System.Int32)">
+            <summary>
+            设置前景窗口，强制其线程成为前台，并激活窗口
+            </summary>
+            <param name="hwnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.GetForegroundWindow">
+            <summary>
+            设置前景窗口，强制其线程成为前台，并激活窗口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.GetFocus">
+            <summary>
+            获取拥有焦点窗口（唯一拥有键盘输入的窗口）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.SetFocus(System.Int32)">
+            <summary>
+            设置焦点窗口（返回值是前一个焦点窗口）
+            </summary>
+            <param name="hwnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.WindowFromPoint(CLDC_Comm.Win32Api.POINT)">
+            <summary>
+            根据点查找窗口
+            </summary>
+            <param name="Point"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.ChildWindowFromPoint(System.Int32,CLDC_Comm.Win32Api.POINT)">
+            <summary>
+            
+            </summary>
+            <param name="hWndParent"></param>
+            <param name="Point"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.DestroyIcon(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hIcon"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.SetROP2(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hDC"></param>
+            <param name="fnDrawMode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.GetROP2(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hDC"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.ValidateRect(System.Int32,CLDC_Comm.Win32Api.RECT@)">
+            <summary>
+            
+            </summary>
+            <param name="hWnd"></param>
+            <param name="lpRect"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.CreateSolidBrush(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="crColor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.CreateDC(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="lpszDriver"></param>
+            <param name="lpszDevice"></param>
+            <param name="lpszOutput"></param>
+            <param name="lpInitData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.SelectObject(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hDC"></param>
+            <param name="hGdiObj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.DeleteObject(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.CreatePen(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="fnPenStyle"></param>
+            <param name="nWidth"></param>
+            <param name="crColor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.CreatePenIndirect(CLDC_Comm.Win32Api.LOGPEN@)">
+            <summary>
+            
+            </summary>
+            <param name="lplogpen"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.MoveToEx(System.Int32,System.Int32,System.Int32,CLDC_Comm.Win32Api.POINT@)">
+            <summary>
+            
+            </summary>
+            <param name="hDC"></param>
+            <param name="X"></param>
+            <param name="Y"></param>
+            <param name="lpPoint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.LineTo(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hDC"></param>
+            <param name="nXEnd"></param>
+            <param name="nYEnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.BitBlt(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            无伸展位图传送
+            </summary>
+            <param name="hdcDest"></param>
+            <param name="nXDest"></param>
+            <param name="nYDest"></param>
+            <param name="nWidth"></param>
+            <param name="nHeight"></param>
+            <param name="hdcSrc"></param>
+            <param name="nXsrc"></param>
+            <param name="nYsrc"></param>
+            <param name="dwRop"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.GetDeviceCaps(System.Int32,System.Int32)">
+            <summary>
+            获取特定设备的特定信息，例如屏幕象素高度，宽度
+            </summary>
+            <param name="hdc"></param>
+            <param name="nIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.CreateCompatibleDC(System.Int32)">
+            <summary>
+            创建一个匹配的内存DC，返回其句柄
+            </summary>
+            <param name="hDC"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.CreateCompatibleBitmap(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            创建一个与某dc匹配的内存位图，返回句柄
+            </summary>
+            <param name="hDC"></param>
+            <param name="nWidth"></param>
+            <param name="nHeight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.GetWindow">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.SetLayeredWindowAttributes(System.IntPtr,System.UInt32,System.Byte,System.UInt32)">
+            <summary>
+            
+            </summary>
+            <param name="hwnd"></param>
+            <param name="crKey"></param>
+            <param name="bAlpha"></param>
+            <param name="dwFlags"></param>
+            <returns></returns>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.LWA_COLORKEY">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.LWA_ALPHA">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.SetClassLong(System.IntPtr,System.Int32,System.Int32)">
+            <summary>
+            声明Win32 API
+            </summary>
+            <param name="hwnd"></param>
+            <param name="nIndex"></param>
+            <param name="dwNewLong"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.GetClassLong(System.IntPtr,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hwnd"></param>
+            <param name="nIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CLDC_Comm.Win32Api.WNDENUMPROC">
+            <summary>
+            
+            </summary>
+            <param name="hwnd"></param>
+            <param name="lParam"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CLDC_Comm.Win32Api.RECT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.RECT.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="_left"></param>
+            <param name="_top"></param>
+            <param name="_right"></param>
+            <param name="_bottom"></param>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.RECT.Left">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.RECT.Top">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.RECT.Right">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.RECT.Bottom">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Win32Api.POINT">
+            <summary>
+            Declare wrapper managed POINT class.
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.Win32Api.POINT.#ctor(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="_x"></param>
+            <param name="_y"></param>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.POINT.X">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.POINT.Y">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Win32Api.PAINTSTRUCT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PAINTSTRUCT.hdc">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PAINTSTRUCT.fErase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PAINTSTRUCT.rcPaint">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PAINTSTRUCT.fRestore">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PAINTSTRUCT.fIncUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.PAINTSTRUCT.rgbReserved">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Win32Api.LOGPEN">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.LOGPEN.lopnStyle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Win32Api.WindowStyle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.WindowStyle.GWL_EXSTYLE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Win32Api.ExWindowStyle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Win32Api.ExWindowStyle.WS_EX_LAYERED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_ZouZiMethod">
+            <summary>
+            走字试验方法类型枚举
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_ZouZiMethod.Erorr">
+            <summary>
+            Erorr
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_ZouZiMethod.标准表法">
+            <summary>
+            标准表法
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_ZouZiMethod.基本走字法">
+            <summary>
+            基本走字法
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_ZouZiMethod.计读脉冲法">
+            <summary>
+            计读脉冲法
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_ZouZiMethod.校核常数">
+            <summary>
+            校核常数
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_UpdateKeyType">
+            <summary>
+            密钥更新类型枚举
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_UpdateKeyType.主控密钥">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_UpdateKeyType.远程密钥">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_UpdateKeyType.参数密钥">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_UpdateKeyType.身份密钥">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_StdMeterScreen">
+            <summary>
+            标准表界面指示
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdMeterScreen.谐波柱图界面">
+            <summary>
+            谐波柱图界面
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdMeterScreen.谐波列表界面">
+            <summary>
+            谐波列表界面
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdMeterScreen.波形界面">
+            <summary>
+            波形界面
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_StdMeterScreen.清除设置界面">
+            <summary>
+            清除设置界面
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_MeterDataType">
+            <summary>
+            电能表数据分类
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.非法信息">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.基本信息">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.检定方案">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.误差数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.走字数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.多功能数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.检定结论">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.载波数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.误差一致性数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.费控数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.功耗数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.智能表功能数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.事件记录数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.冻结数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.潜动启动数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.特殊检定数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.费率时段功能">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.计量功能数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.计时功能数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.需量功能数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.脉冲输出功能数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.数据显示功能">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.规约一致性数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.耐压数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.负荷记录数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.条形码信息数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.当前试验项目信息数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterDataType.装置状态信息数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_CheckStaute">
+            <summary>
+            检定状态,0,2,32,16独立状态，（1、8）与（4）要组合
+            fjk
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CheckStaute.未赋值的">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CheckStaute.检定">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CheckStaute.停止检定">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CheckStaute.调表">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CheckStaute.单步检定">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CheckStaute.录入完成">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CheckStaute.错误">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_CommandType">
+            <summary>
+            消息命令类别
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CommandType.Cmd_Plan_DownPlan">
+            <summary>
+            请求下载_检定方案
+            </summary>0x10
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CommandType.Cmd_Plan_DownPlan_Answer">
+            <summary>
+             Cmd_DownPlan 消息的回复
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CommandType.Login">
+            <summary>
+            请求登陆
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CommandType.DownFile">
+            <summary>
+            文件下载
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CommandType.Txm">
+            <summary>
+            请求录入条码(参数)
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CommandType.InPutTxm">
+            <summary>
+            上传条码号
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CommandType.TxmOk">
+            <summary>
+            录入条码（参数）完毕
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CommandType.Start">
+            <summary>
+            开始检定
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CommandType.Stop">
+            <summary>
+            立即停止检定
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CommandType.CheckState">
+            <summary>
+            检定状态
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CommandType.UpdateCheck">
+            <summary>
+            检定完毕
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CommandType.Control">
+            <summary>
+            客户端申请控制，集控状态下
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CommandType.ServerControl">
+            <summary>
+            点对点控制申请
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CommandType.PtoPControl">
+            <summary>
+            点对点控制
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_PowerFangXiang">
+            <summary>
+            功率方向
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerFangXiang.组合有功">
+            <summary>
+            组合有功
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerFangXiang.正向有功">
+            <summary>
+            正向有功
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerFangXiang.反向有功">
+            <summary>
+            反向有功
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerFangXiang.正向无功">
+            <summary>
+            正向无功
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerFangXiang.反向无功">
+            <summary>
+            反向无功
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerFangXiang.第一象限无功">
+            <summary>
+            第一象限无功
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerFangXiang.第二象限无功">
+            <summary>
+            第二象限无功
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerFangXiang.第三象限无功">
+            <summary>
+            第三象限无功
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerFangXiang.第四象限无功">
+            <summary>
+            第四象限无功
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerFangXiang.Error">
+            <summary>
+            错误的、未赋值的
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.XuliangFangxiang">
+            <summary>
+            需量方向
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_MultiboardType">
+            <summary>
+            多功能板类型枚举
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MultiboardType.CL2029D">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MultiboardType.CL2029B">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Utils.ArrayHelper">
+            <summary>
+            数组集合相关操作
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.Utils.ArrayHelper.IsAllValueMatch``1(``0[])">
+            <summary>
+            判断数组中的所有元素是否相同
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Utils.ArrayHelper.IsAllValueMatch``1(``0[],``0)">
+            <summary>
+            判断数组中的所有元素是否与给定的 对象相同
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="values"></param>
+            <param name="va"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Utils.ArrayHelper.Max``1(``0[])">
+            <summary>
+            求数据中的最大数据
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Utils.ArrayHelper.MakeArray``1(``0,System.Int32)">
+            <summary>
+            使用给定的数据，生成一个数组
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+            <param name="value">用来实初始化数组内数据的值</param>
+            <param name="len">数组的长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:CLDC_Comm.Utils.ArrayHelper.GenArray``1(System.Int32)">
+            <summary>
+            生成指定类型的 List
+            
+            </summary>
+            <typeparam name="T">要生成的元素类型</typeparam>
+            <param name="len">元素的个数</param>
+            <returns></returns>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_ButtonEventID">
+            <summary>
+            InputPara读取参数事件枚举
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_ButtonEventID.错误">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_ButtonEventID.读取参数">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_RemoteProtocol">
+            <summary>
+            远程上电用到的协议
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_RemoteProtocol.GeneralProtocol">
+            <summary>
+            固定指令上电
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_RemoteProtocol.NewProtocol">
+            <summary>
+            新版协议上电
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_MeterWcChannelNo">
+            <summary>
+            电能误差通道号
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterWcChannelNo.正向有功">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterWcChannelNo.正向无功">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterWcChannelNo.反向有功">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterWcChannelNo.反向无功">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterWcChannelNo.需量">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MeterWcChannelNo.时钟">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_DgnWcChannelNo">
+            <summary>
+            多功能误差通道号
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnWcChannelNo.电能误差">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnWcChannelNo.日计时脉冲">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_DgnWcChannelNo.需量脉冲">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_CheckType">
+            <summary>
+            检定类型
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CheckType.电能误差">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CheckType.需量误差">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CheckType.日计时误差">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CheckType.脉冲计数">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CheckType.对标">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CheckType.预付费功能检定">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CheckType.耐压实验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CheckType.多功能脉冲计数试验">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_PulseType">
+            <summary>
+            光电头选择位
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PulseType.脉冲盒">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PulseType.光电头">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_FunctionItem">
+            <summary>
+            智能表功能试验检定项目枚举
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FunctionItem.无效的项目">
+            <summary>
+            无效的项目
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FunctionItem.计量功能">
+            <summary>
+            计量功能
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FunctionItem.计时功能">
+            <summary>
+            计时功能
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FunctionItem.显示功能">
+            <summary>
+            显示功能
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FunctionItem.费率时段功能">
+            <summary>
+            费率时段功能
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FunctionItem.脉冲输出功能">
+            <summary>
+            脉冲输出功能
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_FunctionItem.最大需量功能">
+            <summary>
+            最大需量功能
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_EventLogItem">
+            <summary>
+            事件记录检定项目枚举
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.无效的项目">
+            <summary>
+            无效的项目
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.失压记录">
+            <summary>
+            失压记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.过压记录">
+            <summary>
+            过压记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.欠压记录">
+            <summary>
+            欠压记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.失流记录">
+            <summary>
+            失流记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.断流记录">
+            <summary>
+            断流记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.过流记录">
+            <summary>
+            过流记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.过载记录">
+            <summary>
+            过载记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.断相记录">
+            <summary>
+            断相记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.掉电记录">
+            <summary>
+            掉电记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.全失压记录">
+            <summary>
+            全失压记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.电压不平衡记录">
+            <summary>
+             电压不平衡记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.电流不平衡记录">
+            <summary>
+             电流不平衡记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.电压逆相序记录">
+            <summary>
+            逆相序记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.电流逆相序记录">
+            <summary>
+            逆相序记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.开表盖记录">
+            <summary>
+            开表盖记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.开端钮盒记录">
+            <summary>
+            开端钮盒记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.编程记录">
+            <summary>
+            编程记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.校时记录">
+            <summary>
+            校时记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.需量清零记录">
+            <summary>
+            需量清零记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.事件清零记录">
+            <summary>
+            事件清零记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.电表清零记录">
+            <summary>
+            电量清零记录
+            </summary>               
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.潮流反向记录">
+            <summary>
+            潮流反向记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.功率反向记录">
+            <summary>
+            功率反向记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.需量超限记录">
+            <summary>
+            需量超限记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.功率因数超下限记录">
+            <summary>
+            功率因数超下限记录
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EventLogItem.过流载波记录">
+            <summary>
+            过流载波记录
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_EquipmentControlerType">
+            <summary>
+            设备控制器类型
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EquipmentControlerType.错误的台体类型">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EquipmentControlerType.CL2036大众版">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EquipmentControlerType.CL2036江苏版">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_EncryptionMachineType">
+            <summary>
+            加密机类型枚举
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionMachineType.服务器类型09">
+            <summary>
+            服务器类型
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionMachineType.简装类型">
+            <summary>
+            简装类型
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionMachineType.开发套件">
+            <summary>
+            开发套件
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionMachineType.企业服务器型">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionMachineType.服务器类型13">
+            <summary>
+            服务器类型13
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionMachineType.融通加密机">
+            <summary>
+            融通加密机
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionMachineType.南网加密机">
+            <summary>
+            南网加密机
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.LoginSettingData">
+            <summary>
+            保存登陆以前设置的数据信息以及登录者身份信息
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.LoginSettingData.LoginSetting">
+            <summary>
+            公共的、静态的数据
+            在登陆时设值、 创建方案时取值
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.LoginSettingData.MaxDianLiu">
+            <summary>
+            过压保护值
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.LoginSettingData.StrMaxDianLiu">
+            <summary>
+            过压保护值字符串
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.LoginSettingData.MaxDianYa">
+            <summary>
+            过流保护值
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.LoginSettingData.StrMaxDianYa">
+            <summary>
+             过流保护值字符串
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.LoginSettingData.JianDY_Name">
+            <summary>
+            检定员
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.LoginSettingData.HeDY_Name">
+            <summary>
+            核定员
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.LoginSettingData.JianDY_Pass">
+            <summary>
+            检定员密码
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.LoginSettingData.HeDY_Pass">
+            <summary>
+            核定员密码
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.LoginSettingData.IsUseYanShiMode">
+            <summary>
+            是否使用演示模式，true演示模式、false正常模式
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.EmEquipmentType">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.EmEquipmentType.StdMeter">
+            <summary>
+            标准表
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.EmEquipmentType.Power">
+            <summary>
+            交流源
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.EmEquipmentType.Carrier">
+            <summary>
+            载波仪表
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.EmEquipmentType.PLC">
+            <summary>
+            PLC
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.EmEquipmentType.NaiYa">
+            <summary>
+            耐压仪
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.EmEquipmentType.TimePanel">
+            <summary>
+            时序板
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.EmEquipmentType.ErrPanel">
+            <summary>
+            误差板
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.EmEquipmentType.Clock">
+            <summary>
+            时基源
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.EmEquipmentType.Sample">
+            <summary>
+            电流采样板
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.EmEquipmentType.SequelFlow">
+            <summary>
+            续流板
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.EmEquipmentType.VoltageSc">
+            <summary>
+            电压源
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_ReadParaType">
+            <summary>
+            多功能检定项目枚举
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_ReadParaType.通信地址">
+            <summary>
+            通信地址
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_ReadParaType.资产编号">
+            <summary>
+            资产编号
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_ReadParaType.有功常数">
+            <summary>
+            有功常数
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_ReadParaType.有功等级">
+            <summary>
+            有功等级
+            </summary>   
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_ReadParaType.电表型号">
+            <summary>
+            电表型号
+            </summary>            
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_ReadParaType.生产日期">
+            <summary>
+            生产日期
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_IChannelType">
+            <summary>
+            电流档位
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_IChannelType.档位100A">
+            <summary>
+            100A档位
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_IChannelType.档位2A">
+            <summary>
+            2A档位
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_UIXXType">
+            <summary>
+            电压电流相别
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_UIXXType.A相电压">
+            <summary>
+            A相电压
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_UIXXType.B相电压">
+            <summary>
+            B相电压
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_UIXXType.C相电压">
+            <summary>
+            C相电压
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_UIXXType.A相电流">
+            <summary>
+            A相电流
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_UIXXType.B相电流">
+            <summary>
+            B相电流
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_UIXXType.C相电流">
+            <summary>
+            C相电流
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_CostControlItem">
+            <summary>
+            费控功能试验检定项目枚举
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.无效的项目">
+            <summary>
+            无效的项目
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.身份认证">
+            <summary>
+            身份认证
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.远程控制">
+            <summary>
+            远程控制
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.报警功能">
+            <summary>
+            报警功能
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.保电功能">
+            <summary>
+            保电功能
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.保电解除">
+            <summary>
+            保电解除
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.远程保电">
+            <summary>
+            远程保电
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.数据回抄">
+            <summary>
+            数据回抄
+            </summary>  
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.参数设置">
+            <summary>
+            参数设置
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.剩余电量递减准确度">
+            <summary>
+            剩余电量递减准确度
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.电价切换">
+            <summary>
+            电价切换
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.负荷开关">
+            <summary>
+            负荷开关
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.电量清零">
+            <summary>
+            电量清零
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.密钥更新">
+            <summary>
+            密钥更新
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.密钥恢复">
+            <summary>
+            密钥恢复,特殊权限
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.控制功能">
+            <summary>
+            控制功能
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.阶梯电价检测">
+            <summary>
+            阶梯电价
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.费率电价检测">
+            <summary>
+            费率电价
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.远程控制直接合闸">
+            <summary>
+            远程拉闸后发送直接合闸
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.钱包初始化">
+            <summary>
+            钱包初始化
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.预置内容检查">
+            <summary>
+            预置内容检查 @C_B
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.预置内容设置">
+            <summary>
+            预置内容设置 @C_B
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.本地模式切换远程模式">
+            <summary>
+            本地——远程
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.远程模式切换本地模式">
+            <summary>
+            远程——本地
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.用户卡开户">
+            <summary>
+            用户卡开户
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CostControlItem.透支功能">
+            <summary>
+            透支
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Speechs.Speech">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.Speechs.Speech.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.Speechs.Speech.SpeakChina(System.String)">
+            <summary>
+            中文语音
+            </summary>
+            <param name="strSpeak"></param>
+        </member>
+        <member name="M:CLDC_Comm.Speechs.Speech.SpeakEnglishi(System.String)">
+            <summary>
+            英文语音
+            </summary>
+            <param name="strSpeak"></param>
+        </member>
+        <member name="M:CLDC_Comm.Speechs.Speech.SpeechMessage(System.String)">
+            <summary>
+            朗读指定的文本
+            </summary>
+            <param name="strSpeak"></param>
+        </member>
+        <member name="M:CLDC_Comm.Speechs.Speech.Stop">
+            <summary>
+            停止朗读
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.Speechs.Speech.Pause">
+            <summary>
+            暂停当前阅读
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.Speechs.Speech.Continue">
+            <summary>
+            继续当前阅读
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.Speechs.Speech.SpeakNum(System.String)">
+            <summary>
+            朗读数字
+            </summary>
+            <param name="_strBarCode"></param>
+        </member>
+        <member name="P:CLDC_Comm.Speechs.Speech.Volume">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.Speechs.Speech.Rate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Exceptions.EquipmentControlException">
+            <summary>
+            设备控制异常
+            系统在控制设备失败时会抛出此异常。
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.Exceptions.EquipmentControlException.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="P:CLDC_Comm.Exceptions.EquipmentControlException.Message">
+            <summary>
+            获取控制失败消息
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_EncryptionTrialType">
+            <summary>
+            加密机相关试验类型
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionTrialType.身份认证">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionTrialType.远程拉闸">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionTrialType.远程合闸">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionTrialType.远程保电">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionTrialType.解除保电">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionTrialType.远程报警">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionTrialType.解除报警">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionTrialType.密钥更新">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionTrialType.电量清零">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionTrialType.ESAM数据回抄">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionTrialType.密钥恢复">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionTrialType.主控密钥更新">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionTrialType.远程密钥更新">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionTrialType.参数密钥更新">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionTrialType.身份密钥更新">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionTrialType.融通秘钥更新">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_EncryptionTrialType.直接合闸">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_WcMeterStatus">
+            <summary>
+            误差板下表状态
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WcMeterStatus.接线故障状态">
+            <summary>
+            接线故障状态
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WcMeterStatus.预付费跳闸状态">
+            <summary>
+            预付费跳闸状态
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WcMeterStatus.报警信号状态">
+            <summary>
+            报警信号状态
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WcMeterStatus.对标状态">
+            <summary>
+            对标状态
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_WcType">
+            <summary>
+            误差试验类型
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WcType.error">
+            <summary>
+            错误
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WcType.基本误差">
+            <summary>
+            基本误差
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WcType.标准偏差">
+            <summary>
+            标准偏差
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WcType.特殊检定">
+            <summary>
+            特殊检定
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WcType.误差一致性">
+            <summary>
+            误差一致性
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WcType.误差变差试验">
+            <summary>
+            误差变差试验
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WcType.电流升降试验">
+            <summary>
+            电流升降试验
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WcType.电流过载试验">
+            <summary>
+            电流过载试验
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_TaiType">
+            <summary>
+            台体类型枚举
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_TaiType.三相台">
+            <summary>
+            三相台
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_TaiType.单相台">
+            <summary>
+            单相台
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.DrawXieBo.CCLCurve">
+            <summary>
+            类功能：曲线图
+            编写者：Kobe.Zhang
+            日  期：2009.01.19
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLCurve.#ctor(System.Windows.Forms.PictureBox)">
+            <summary>
+            
+            </summary>
+            <param name="pic_PicMap"></param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLCurve.ChangeSize(System.Int32,System.Int32)">
+            <summary>
+            调整宽高度
+            </summary>
+            <param name="int_Height"></param>
+            <param name="int_Width"></param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLCurve.Draw">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLCurve.AxisType">
+            <summary>
+            坐标类型
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLCurve.CellWidth">
+            <summary>
+            背景格的宽度
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLCurve.BackColor">
+            <summary>
+            背景着色
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLCurve.ScaleWidth">
+            <summary>
+            画图有效宽度
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLCurve.ScaleHeight">
+            <summary>
+            画图有效高度
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLCurve.Width">
+            <summary>
+            宽度
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLCurve.Height">
+            <summary>
+            高度
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLCurve.ShowPI">
+            <summary>
+            显示π
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLCurve.BackLineColor">
+            <summary>
+            背景线着色
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLCurve.Lines">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLCurve.Margin">
+            <summary>
+            边距
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_CarrierType">
+            <summary>
+            载波类型枚举
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CarrierType.Null">
+            <summary>
+            非载波
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CarrierType.晓程">
+            <summary>
+            晓程
+            XiaoCheng
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CarrierType.东软">
+            <summary>
+            东软
+            Neusoft
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CarrierType.鼎信">
+            <summary>
+            鼎信
+            DingXin
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CarrierType.瑞斯康">
+            <summary>
+            瑞斯康
+            RiseComm
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_CommunType">
+            <summary>
+            通讯类型枚举
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CommunType.通讯485">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CommunType.通讯载波">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_CommunType.通讯红外">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.DrawXieBo.CCLBackground">
+            <summary>
+            画背景
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLBackground.Draw">
+            <summary>
+            画背景
+            </summary>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLBackground.DrawXAxis(System.Drawing.Graphics,System.Drawing.Pen,System.Drawing.Rectangle,CLDC_Comm.DrawXieBo.AxisType)">
+            <summary>
+            画X轴
+            </summary>
+            <param name="gph_Map">图</param>
+            <param name="pen_DrawPen">画笔</param>
+            <param name="rcl_MapArec">区域</param>
+            <param name="enm_AxisType">坐标类型</param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLBackground.DrawYAxis(System.Drawing.Graphics,System.Drawing.Pen,System.Drawing.Rectangle,CLDC_Comm.DrawXieBo.AxisType)">
+            <summary>
+            画Y轴
+            </summary>
+            <param name="gph_Map">图</param>
+            <param name="pen_DrawPen">画笔</param>
+            <param name="rcl_MapArec">区域</param>
+            <param name="enm_AxisType">坐标类型</param>
+        </member>
+        <member name="M:CLDC_Comm.DrawXieBo.CCLBackground.GetCoordinate(System.Boolean,CLDC_Comm.DrawXieBo.AxisType)">
+            <summary>
+            坐标方向
+            </summary>
+            <param name="bln_IsXAxis">是X轴</param>
+            <param name="enm_AxisType">坐标类型</param>
+            <returns></returns>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLBackground.AxisType">
+            <summary>
+            坐标轴的位置类型
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLBackground.CellWidth">
+            <summary>
+            背景格的宽度
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLBackground.BackColor">
+            <summary>
+            背景着色
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLBackground.LineColor">
+            <summary>
+            背景线着色
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLBackground.Margin">
+            <summary>
+            边距 
+            </summary>
+        </member>
+        <member name="P:CLDC_Comm.DrawXieBo.CCLBackground.ShowPI">
+            <summary>
+            显示π
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.MessageArgs.DgnArgs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.MessageArgs.DgnArgs.BW">
+            <summary>
+            表位号
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_WorkStatus">
+            <summary>
+            FileName:Cus_WorkStatus.cs
+            CLRVersion:2.0.50727.5472
+            Author:kaury
+            Corporation:
+            Description:
+            DateTime:1/8/2014 10:53:15 AM
+            </summary>
+             <summary>
+             设备工作状态
+             </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WorkStatus.正常">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WorkStatus.工作中">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WorkStatus.未联机">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WorkStatus.联机失败">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WorkStatus.过载">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_WorkStatus.升源失败">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_stVerifyStep">
+            <summary>
+            检定状态维护
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_stVerifyStep.空闲状态">
+            <summary>
+            空闲状态
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_stVerifyStep.参数录入">
+            <summary>
+            参数录入
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_stVerifyStep.误差检定">
+            <summary>
+            误差检定
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_stVerifyStep.走字试验录起码">
+            <summary>
+            走字试验录起码
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_stVerifyStep.走字试验录起码完毕">
+            <summary>
+            走字试验录起码完毕
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_stVerifyStep.走字试验录止码">
+            <summary>
+            走字试验录止码
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_stVerifyStep.走字试验录止码完毕">
+            <summary>
+            走字试验录止码完毕
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_stVerifyStep.计算误差完毕">
+            <summary>
+            计算误差完毕
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_stVerifyStep.多功能检定">
+            <summary>
+            多功能检定
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_stVerifyStep.特殊检定">
+            <summary>
+            特殊检定
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_PowerType">
+            <summary>
+            功率源类型枚举
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerType.Power_101">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerType.Power_303">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerType.Power_303E">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerType.Power_309">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_PowerYuanJian">
+            <summary>
+            功率元件
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerYuanJian.Error">
+            <summary>
+            错误的、未赋值的
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerYuanJian.H">
+            <summary>
+            合元
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerYuanJian.A">
+            <summary>
+            A元
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerYuanJian.B">
+            <summary>
+            B元
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_PowerYuanJian.C">
+            <summary>
+            C元
+            </summary>
+        </member>
+        <member name="T:CLDC_Comm.Enum.Cus_MenuEventID">
+            <summary>
+            MainFrom菜单事件枚举
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.错误">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.系统配置">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.联机">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.脱机">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.升源">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.升标定电压电流">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.自由控源">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.关源">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.退出">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.方案管理">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.表位接线测试">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.读取设备状态">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.显示通讯数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.多功能协议配置">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.脉冲接线测试">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.配置设备端口">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.RS485通道配置">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.显示配置">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.协议配置">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.保存数据">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.关灯">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.待机灯">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.电机操作">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.报文工具">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.协议字典">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.模块测试">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.延时设置">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CLDC_Comm.Enum.Cus_MenuEventID.录入电量完毕">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

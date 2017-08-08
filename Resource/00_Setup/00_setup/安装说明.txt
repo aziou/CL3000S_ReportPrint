@@ -1,0 +1,2 @@
+1、没有安装过Microsoft .Net Framework 2.0 的电脑。请首先安装“Microsoft .Net Framework 2.0 安装程序包.rar”；
+2、运行“CL3000S-H_beta??.exe”。
