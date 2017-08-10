@@ -15,3 +15,8 @@ D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\Resource\Clie
 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\PrintLable\obj\Debug\PrintLable.dll
 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\PrintLable\obj\Debug\PrintLable.pdb
 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\PrintLable\obj\Debug\PrintLable.csprojResolveAssemblyReference.cache
+D:\AziouStudio\CL3000S_ReportPrint\Resource\Client\PrintLable.dll
+D:\AziouStudio\CL3000S_ReportPrint\Resource\Client\PrintLable.pdb
+D:\AziouStudio\CL3000S_ReportPrint\PrintLable\obj\Debug\PrintLable.csprojResolveAssemblyReference.cache
+D:\AziouStudio\CL3000S_ReportPrint\PrintLable\obj\Debug\PrintLable.dll
+D:\AziouStudio\CL3000S_ReportPrint\PrintLable\obj\Debug\PrintLable.pdb

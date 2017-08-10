@@ -53,3 +53,13 @@ D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_ManagerS
 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_ManagerStart\obj\x86\Debug\CLDC_ManagerStart.csproj.GenerateResource.Cache
 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_ManagerStart\obj\x86\Debug\CLDC_ManagerStart.exe
 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_ManagerStart\obj\x86\Debug\CLDC_ManagerStart.pdb
+D:\AziouStudio\CL3000S_ReportPrint\Resource\Client\AppConfigs\log4net.config
+D:\AziouStudio\CL3000S_ReportPrint\Resource\Client\CLDC_ManagerStart.exe.config
+D:\AziouStudio\CL3000S_ReportPrint\Resource\Client\CLDC_ManagerStart.exe
+D:\AziouStudio\CL3000S_ReportPrint\Resource\Client\CLDC_ManagerStart.pdb
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_ManagerStart\obj\x86\Debug\CLDC_ManagerStart.csprojResolveAssemblyReference.cache
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_ManagerStart\obj\x86\Debug\CLDC_ManagerStart.ManagerStart.resources
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_ManagerStart\obj\x86\Debug\CLDC_ManagerStart.Properties.Resources.resources
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_ManagerStart\obj\x86\Debug\CLDC_ManagerStart.csproj.GenerateResource.Cache
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_ManagerStart\obj\x86\Debug\CLDC_ManagerStart.exe
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_ManagerStart\obj\x86\Debug\CLDC_ManagerStart.pdb

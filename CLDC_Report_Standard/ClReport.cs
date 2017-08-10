@@ -275,6 +275,7 @@ namespace CLReport_Standard
                     //System.Windows.Forms.MessageBox.Show("模板配置错误，无法完成打印操作...", "打印失败", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Exclamation);
                     //return;
                 }
+                string GenaraPath = "";
 
                 if (!System.IO.File.Exists(string.Format(@"{0}\{1}", clsMain.getFilePath("Res"), Templet_Arr[0])))
                 {
@@ -283,7 +284,8 @@ namespace CLReport_Standard
                 }
                 WordApp = new clsWordControl();//创建word
                 Microsoft.Office.Interop.Word.Document Word_TmpDoc = WordApp.LoadDot(string.Format(@"{0}\{1}", clsMain.getFilePath("Res"), Templet_Arr[0]));
-
+                GenaraPath = string.Format(@"{0}\{1}", clsMain.getFilePath("Res"), Templet_Arr[0]);
+                
 
                 for (int Int_Mb = 1; Int_Mb < Templet_Arr.Length; Int_Mb++)
                 {
@@ -299,6 +301,10 @@ namespace CLReport_Standard
                 Word_TmpDoc.Paragraphs.Last.Range.Delete(ref clsWordControl.missing, ref clsWordControl.missing);
 
                // WordApp.InsertEditPwd(ref Word_TmpDoc, "myclou");         //Word报表加密
+
+
+               
+
 
                 if (PrintInfo.Saving)           //如果需要存盘
                 {
@@ -343,16 +349,17 @@ namespace CLReport_Standard
 
 
 
+
                 InsertIntoSignPhoto(saveTmpPath, "Checker", TesterName);
                 InsertIntoSignPhoto(saveTmpPath, "verificationer", CheckerName);
                 InsertIntoSignPhoto(saveTmpPath, "Supervisor", chargeName);
                 InsertIntoSignPhoto(saveTmpPath, "stamp", true);
 
 
-
                 WordApp.Doc(saveTmpPath);
 
-
+               // WordApp.SaveDoc(Word_TmpDoc, string.Format(@"{0}\{1}.doc", this.SavePath(DateTime.Parse(Items[i].Mb_DatJdrq)), reportName + "_" + PrintTypeName));
+                   
 
 
                // WordApp.SaveDocTmp(Word_TmpDoc, clsMain.getFilePath("") + @"\TmpDoc.doc");
@@ -724,6 +731,7 @@ namespace CLReport_Standard
         private void InsertIntoSignPhoto(string FilePath, string bookMarkName,string Man)
         {
             Microsoft.Office.Interop.Word.ApplicationClass wordApp = new Microsoft.Office.Interop.Word.ApplicationClass();
+            clsWordControl newApp = new clsWordControl();
             //定义该插入图片是否为外部链接
             object linkToFile = true;
 
@@ -765,7 +773,14 @@ namespace CLReport_Standard
                     inlineShape.Width = 100;
                     inlineShape.Height = 25;
                     doc.Save();
+                   
                     doc.Close(ref Nothing, ref Nothing, ref Nothing);
+                    string RealPath = filename.ToString();
+                    newApp.Convert(RealPath, RealPath.Substring(0, RealPath.LastIndexOf(".")) + ".PDF", Microsoft.Office.Interop.Word.WdExportFormat.wdExportFormatPDF);
+            
+                    
+                 
+                   
                 }
                 else
                 {
@@ -784,6 +799,8 @@ namespace CLReport_Standard
         {
             Microsoft.Office.Interop.Word.ApplicationClass wordApp = new Microsoft.Office.Interop.Word.ApplicationClass();
             //定义该插入图片是否为外部链接
+            clsWordControl newApp = new clsWordControl();
+          
             object linkToFile = true;
 
             object filename = FilePath;
@@ -825,6 +842,8 @@ namespace CLReport_Standard
                     inlineShape.Height = 110;
                     doc.Save();
                     doc.Close(ref Nothing, ref Nothing, ref Nothing);
+                    string RealPath = filename.ToString();
+                    newApp.Convert(RealPath, RealPath.Substring(0, RealPath.LastIndexOf(".")) + ".PDF", Microsoft.Office.Interop.Word.WdExportFormat.wdExportFormatPDF);
                 }
                 else
                 {

@@ -172,3 +172,17 @@ D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataMana
 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\Resource\Client\AppConfigs\log4net.config
 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\Resource\Client\CLDC_DataManager.exe
 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\Resource\Client\CLDC_DataManager.pdb
+D:\AziouStudio\CL3000S_ReportPrint\Resource\Client\AppConfigs\log4net.config
+D:\AziouStudio\CL3000S_ReportPrint\Resource\Client\CLDC_DataManager.exe.config
+D:\AziouStudio\CL3000S_ReportPrint\Resource\Client\CLDC_DataManager.exe
+D:\AziouStudio\CL3000S_ReportPrint\Resource\Client\CLDC_DataManager.pdb
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_DataManager\obj\x86\Debug\CLDC_DataManager.csprojResolveAssemblyReference.cache
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_DataManager\obj\x86\Debug\CLDC_DataManager.csproj.ResolveComReference.cache
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_DataManager\obj\x86\Debug\CLDC_DataManager.Frm_DataImport.resources
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_DataManager\obj\x86\Debug\CLDC_DataManager.Frm_Main.resources
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_DataManager\obj\x86\Debug\CLDC_DataManager.Frm_SelectJDY.resources
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_DataManager\obj\x86\Debug\CLDC_DataManager.Frm_SystemInfo.resources
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_DataManager\obj\x86\Debug\CLDC_DataManager.Properties.Resources.resources
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_DataManager\obj\x86\Debug\CLDC_DataManager.csproj.GenerateResource.Cache
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_DataManager\obj\x86\Debug\CLDC_DataManager.exe
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_DataManager\obj\x86\Debug\CLDC_DataManager.pdb

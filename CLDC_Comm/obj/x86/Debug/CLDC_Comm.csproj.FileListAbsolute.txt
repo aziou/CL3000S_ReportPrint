@@ -36,3 +36,12 @@ D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Comm\obj
 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Comm\obj\x86\Debug\CLDC_Comm.csproj.GenerateResource.Cache
 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Comm\obj\x86\Debug\CLDC_Comm.dll
 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Comm\obj\x86\Debug\CLDC_Comm.pdb
+D:\AziouStudio\CL3000S_ReportPrint\Resource\Client\AppConfigs\log4net.config
+D:\AziouStudio\CL3000S_ReportPrint\Resource\Client\CLDC_Comm.dll
+D:\AziouStudio\CL3000S_ReportPrint\Resource\Client\CLDC_Comm.pdb
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_Comm\obj\x86\Debug\CLDC_Comm.csprojResolveAssemblyReference.cache
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_Comm\obj\x86\Debug\CLDC_Comm.DesignTools.ModeMenu.resources
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_Comm\obj\x86\Debug\CLDC_Comm.DesignTools.配色工具.resources
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_Comm\obj\x86\Debug\CLDC_Comm.csproj.GenerateResource.Cache
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_Comm\obj\x86\Debug\CLDC_Comm.dll
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_Comm\obj\x86\Debug\CLDC_Comm.pdb

@@ -69,3 +69,15 @@ D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_S
 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_Standard\obj\x86\Debug\CLDC_Report_Standard.csproj.GenerateResource.Cache
 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_Standard\obj\x86\Debug\CLDC_Report_Standard.dll
 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_Report_Standard\obj\x86\Debug\CLDC_Report_Standard.pdb
+D:\AziouStudio\CL3000S_ReportPrint\Resource\Client\Plugins\AppConfigs\log4net.config
+D:\AziouStudio\CL3000S_ReportPrint\Resource\Client\Plugins\CLDC_Report_Standard.dll.config
+D:\AziouStudio\CL3000S_ReportPrint\Resource\Client\Plugins\CLDC_Report_Standard.dll
+D:\AziouStudio\CL3000S_ReportPrint\Resource\Client\Plugins\CLDC_Report_Standard.pdb
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_Report_Standard\obj\x86\Debug\CLDC_Report_Standard.csprojResolveAssemblyReference.cache
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_Report_Standard\obj\x86\Debug\CLDC_Report_Standard.csproj.ResolveComReference.cache
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_Report_Standard\obj\x86\Debug\CLDC_Report_Standard.Properties.Resources.resources
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_Report_Standard\obj\x86\Debug\CLReport_Standard.UI.UI_ReportInfo.resources
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_Report_Standard\obj\x86\Debug\CLReport_Standard.UI.UI_ReportSet.resources
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_Report_Standard\obj\x86\Debug\CLDC_Report_Standard.csproj.GenerateResource.Cache
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_Report_Standard\obj\x86\Debug\CLDC_Report_Standard.dll
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_Report_Standard\obj\x86\Debug\CLDC_Report_Standard.pdb

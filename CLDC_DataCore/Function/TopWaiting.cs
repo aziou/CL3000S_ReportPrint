@@ -190,7 +190,7 @@ namespace CLDC_DataCore.Function
         /// <param name="Notice"></param>
         public static void ShowWaiting(string Notice)
         {
-            ShowWaiting(Notice, "");
+            //ShowWaiting(Notice, "");
             //ShowWaiting(Notice, "");
         }
 

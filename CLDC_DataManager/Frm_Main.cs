@@ -1523,6 +1523,36 @@ namespace CLDC_DataManager
             clsMain.WriteIni("Certi", "cmb_value", Cmb_Value1.Text.ToString().Trim(), System.Windows.Forms.Application.StartupPath + "\\Plugins\\Reportinfo.ini");
                
         }
+
+        private void 导出茂名电能表检定记录ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            #region SaveFileDiolog
+            SaveFileDialog sfd = new SaveFileDialog();
+            //sfd.InitialDirectory = "E:\\";
+            sfd.Filter = "xls文件(*.xls)|*.xls";
+            sfd.Title = "选择Excel文件保存位置";
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                CLDC_DataManager.Const.Gb_Attribute.str_ExcelSavePath = sfd.FileName;
+            }
+
+            #endregion
+            CLDC_DataManager.Const.Gb_Attribute.chr_CheckYJ = Cmb_Jdyj.Text.ToString().Trim();
+            CLDC_DataCore.Function.TopWaiting.ShowWaiting("正在准备生成所有误差报表.....");
+            List<string> MeterID = new List<string>();
+            for (int i = 0; i < Meter_out.Count; i++)
+            {
+                MeterID.Add(Meter_out[i]._intMyId.ToString().Trim());
+                Const.Gb_Attribute.CHR_CT_CONNECTION_FLAG = Meter_out[i].Mb_BlnHgq.ToString().Trim();
+
+            }
+            clsExcelControl excelOut = new clsExcelControl();
+            UpdateEle MeterId_Ele = new UpdateEle();
+            excelOut.TaskCallBack += Accomplish;
+            MeterId_Ele.AddItemLsit = MeterID;
+            Thread UpThread = new Thread(new ParameterizedThreadStart(excelOut.OutPutAllError));
+            UpThread.Start(MeterId_Ele);
+        }
     }
     public static class PrintLab
     {

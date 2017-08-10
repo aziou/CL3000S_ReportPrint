@@ -205,3 +205,16 @@ D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataCore
 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataCore\obj\x86\Debug\CLDC_DataCore.csproj.GenerateResource.Cache
 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataCore\obj\x86\Debug\CLDC_DataCore.dll
 D:\Company\公共软件\3000S-h_CODE\报表\Test3.1.2.x_2017.07.17\CLDC_DataCore\obj\x86\Debug\CLDC_DataCore.pdb
+D:\AziouStudio\CL3000S_ReportPrint\Resource\Client\AppConfigs\log4net.config
+D:\AziouStudio\CL3000S_ReportPrint\Resource\Client\CLDC_DataCore.dll
+D:\AziouStudio\CL3000S_ReportPrint\Resource\Client\CLDC_DataCore.pdb
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_DataCore\obj\x86\Debug\CLDC_DataCore.csprojResolveAssemblyReference.cache
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_DataCore\obj\x86\Debug\CLDC_DataCore.Function.BindCombox_NewValue.resources
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_DataCore\obj\x86\Debug\CLDC_DataCore.Function.InputBox.resources
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_DataCore\obj\x86\Debug\CLDC_DataCore.Function.MessageBoxB.resources
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_DataCore\obj\x86\Debug\CLDC_DataCore.Function.RowMergeView.resources
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_DataCore\obj\x86\Debug\CLDC_DataCore.Function.TopWaiting.resources
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_DataCore\obj\x86\Debug\CLDC_DataCore.Function.Waiting.resources
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_DataCore\obj\x86\Debug\CLDC_DataCore.csproj.GenerateResource.Cache
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_DataCore\obj\x86\Debug\CLDC_DataCore.dll
+D:\AziouStudio\CL3000S_ReportPrint\CLDC_DataCore\obj\x86\Debug\CLDC_DataCore.pdb

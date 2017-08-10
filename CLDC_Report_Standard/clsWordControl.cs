@@ -244,7 +244,7 @@ namespace CLReport_Standard
         /// <param name="targetPath"></param>
         /// <param name="exportFormat"></param>
         /// <returns></returns>
-        private bool Convert(string sourcePath, string targetPath, Microsoft.Office.Interop.Word.WdExportFormat exportFormat)
+        public  bool Convert(string sourcePath, string targetPath, Microsoft.Office.Interop.Word.WdExportFormat exportFormat)
         {
             bool result;
             object paramMissing = Type.Missing;
