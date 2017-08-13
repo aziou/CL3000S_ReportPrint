@@ -1626,6 +1626,9 @@ namespace CLDC_DataManager
             FristKey.Add("等级：");
             FristKey.Add("规格：");
             FristKey.Add("检定时间：");
+            FristKey.Add("铅封一：");
+            FristKey.Add("铅封二：");
+            FristKey.Add("铅封三：");
             FristValue.Add(meterOutPut[0].Meter_Name);
             FristValue.Add(meterOutPut[0].Meter_factory);
             FristValue.Add(meterOutPut[0].Meter_Type);
@@ -1633,8 +1636,11 @@ namespace CLDC_DataManager
             FristValue.Add(meterOutPut[0].Meter_rank);
             FristValue.Add(meterOutPut[0].Meter_Size);
             FristValue.Add(meterOutPut[0].Meter_Checktime);
+            FristValue.Add(meterOutPut[0].Seal001);
+            FristValue.Add(meterOutPut[0].Seal002);
+            FristValue.Add(meterOutPut[0].Seal003);
             IRow Second = Sheet.CreateRow(2);
-            for (int First_int = 0; First_int < 7; First_int++)
+            for (int First_int = 0; First_int < 10; First_int++)
             {
                 Sheet.AddMergedRegion(new NPOI.SS.Util.CellRangeAddress(1, 1, 1 + First_int * 5, 4 + First_int * 5));
                 ICell Cell_Tile_key = Second.CreateCell(0 + First_int * 5);
@@ -1828,6 +1834,9 @@ namespace CLDC_DataManager
                             Meter_Size = "3×" + Myreader["AVR_UB"].ToString().Trim()+@"/"+votage + "V  " + "3×" + Myreader["AVR_IB"].ToString().Trim() + "A",
                             Meter_Checktime = Myreader["DTM_TEST_DATE"].ToString().Trim(),
                             Meter_factory = Myreader["AVR_FACTORY"].ToString().Trim(),
+                            Seal001 = Myreader["AVR_SEAL_1"].ToString().Trim(),
+                            Seal002 = Myreader["AVR_SEAL_1"].ToString().Trim(),
+                            Seal003 = Myreader["AVR_SEAL_2"].ToString().Trim(),
 
                         });
                     }

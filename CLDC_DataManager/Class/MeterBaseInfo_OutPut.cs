@@ -150,5 +150,14 @@ namespace CLDC_DataManager
         /// 多功能结论
         /// </summary>
         public string Meter_MultiResult { get; set; }
+
+        private string seal001;
+        public string Seal001 { get; set; }
+
+        private string seal002;
+        public string Seal002 { get; set; }
+
+        private string seal003;
+        public string Seal003 { get; set; }
     }
 }
