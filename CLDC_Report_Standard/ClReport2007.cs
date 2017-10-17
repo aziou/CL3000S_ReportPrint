@@ -570,6 +570,8 @@ namespace CLReport_Standard
                         }
                         else if (WcNum == -2)      //化整值
                         {
+                            ///区分0.5s级 以及1级表以上的区别
+                            
                             WcString = WcArr[WcArr.Length - 1];
                         }
                         else

@@ -18,7 +18,7 @@ namespace CLReport_Standard
         private bool blnColIsAll = false;
 
         private string iniPath = clsMain.getFilePath(@"Res\Templet.ini");
-
+        
         private clsWordControl WordApp = null;
 
         private UI.UI_ReportInfo uiReportInfo = null;
@@ -79,6 +79,11 @@ namespace CLReport_Standard
             冻结功能数据 = 13,
             南网费控软件数据=14,
         }
+
+        /// <summary>
+        /// 有功等级
+        /// </summary>
+        private int MeterYGlevel;
 
         public ClReport()
         {            
@@ -341,6 +346,11 @@ namespace CLReport_Standard
 
             CLDC_DataCore.Function.TopWaiting.HideWaiting();
 
+            InsertIntoSignPhoto(saveTmpPath, "Checker", TesterName);
+            InsertIntoSignPhoto(saveTmpPath, "verificationer", CheckerName);
+            InsertIntoSignPhoto(saveTmpPath, "Supervisor", chargeName);
+            InsertIntoSignPhoto(saveTmpPath, "stamp", true);
+
             if (WordApp.Count > 0)      //大于零表示要预览
             {
                 
@@ -350,10 +360,7 @@ namespace CLReport_Standard
 
 
 
-                InsertIntoSignPhoto(saveTmpPath, "Checker", TesterName);
-                InsertIntoSignPhoto(saveTmpPath, "verificationer", CheckerName);
-                InsertIntoSignPhoto(saveTmpPath, "Supervisor", chargeName);
-                InsertIntoSignPhoto(saveTmpPath, "stamp", true);
+              
 
 
                 WordApp.Doc(saveTmpPath);
@@ -1445,7 +1452,9 @@ namespace CLReport_Standard
                         }
                         else if (WcNum == -2)      //化整值
                         {
-                            if (clsMain.getIniString("Certi", "MeterLevel").Contains("0.5") || clsMain.getIniString("Certi", "MeterLevel").Contains("0.1"))
+                            string[] arrTmp = KeyValue.Trim().Split(':');
+                            bool IsYG = arrTmp[0].Contains("P");
+                            if ((clsMain.getIniString("Certi", "MeterLevel").Contains("0.5") || clsMain.getIniString("Certi", "MeterLevel").Contains("0.1")) && IsYG)
                             {
                                 WcString = Convert.ToDouble(WcArr[WcArr.Length - 1]).ToString("0.00");
                             }
@@ -1624,7 +1633,9 @@ namespace CLReport_Standard
                 BasicInfo.Add("hgq", "直接接入");
             }
 
-            BasicInfo.Add("yglevel", Convert.ToInt16(Convert.ToDouble(CLDC_DataCore.Function.Number.getDj(BasicInfo["meterlevel"])[0])).ToString());   //有功等级
+           
+            BasicInfo.Add("yglevel", Convert.ToDouble(CLDC_DataCore.Function.Number.getDj(BasicInfo["meterlevel"])[0]).ToString());   //有功等级
+            //MeterYGlevel = Convert.ToDouble(CLDC_DataCore.Function.Number.getDj(BasicInfo["meterlevel"])[0]);
             BasicInfo.Add("wglevel", Convert.ToInt16(Convert.ToDouble(CLDC_DataCore.Function.Number.getDj(BasicInfo["meterlevel"])[1])).ToString());   //无功等级
             string sTrConstDw = "";
             if (BasicInfo["metertype"].IndexOf("感应") >= 0 || BasicInfo["metertype"].IndexOf("机电") >= 0 || BasicInfo["metertype"].IndexOf("机械") >= 0)
